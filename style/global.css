@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+:root {
+--darkest-grey: #3d3e42;
+--darker-grey: #5A5E6B;
+--dark-grey: #696969;
+--medium-grey: #808080;
+--light-grey: #A9A9A9;
+--lighter-grey: #D3D3D3;
+--lightest-grey: #F5F5F5;
+--white: #ffffff;
+--black: #0e1442;
+--orange: #ffb300;
+--medium-orange: #e67e00;
+--dark-orange: #cc7000;
+--darker-orange: #b36200;
+--yellow: #fdd835;
+}
+@charset "UTF-8";
+* {
+  outline: none;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: var(--darkest-grey);
+  cursor: default;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+  display: block;
+  transition-duration: 0.3s;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+h2 {
+}
+
+h3 {
+  color: var(--orange);
+  margin: 10px 0;
+  text-transform: lowercase;
+  font-size: 1.25em;
+}
+
+#navigation li {
+  display: inline-block;
+  width:19%;
+  min-width:100px;
+  margin: 1px;
+}
+
+#navigation li a {
+  margin: 0px;
+  padding: 10px;
+  background: var(--dark-grey) ;
+  color: var(--lightest-grey) ;
+  text-align: center ;
+}
+
+#navigation li a:hover, #navigation li a:focus, #navigation li a:active {
+  background: var(--medium-grey) ;
+  color:var(--yellow);
+}
+
+.content {
+  background: var(--darkest-grey);
+  color: var(--white);
+  /*margin: 20px auto;
+  box-shadow: 10px 10px var(--black);*/
+  position: relative;
+  display: flex;
+}
+
+.content .func .content_block {
+  width: 100%;
+  background: var(--dark-grey);
+  padding: 15px;
+  margin: 0 4% 15px 0;
+  margin-bottom: 20px;
+}
+.content .func .content_block a:hover {
+  color: var(--yellow);
+}
+.content .func .content_block h2 {
+  margin-top:-10px;
+  text-align: center;
+  transition-duration: 0.3s;
+},
+.content .func .content_block small {
+  display: block;
+  opacity: 0.7;
+}
+.content .func:hover > div:not(:hover) {
+  opacity: 0.5;
+}
+
+.content .func {
+  box-sizing: border-box;
+  float: left;
+}
+.content .func > div {
+  padding-bottom: 10px;
+}
+.content .func > div:last-of-type {
+  padding-bottom: 0;
+}
+.content .func {
+  width: 100%;
+  padding: 30px;
+}
+.content .func:hover > div {
+  transition-duration: 0.5s;
+}
+.content .func:hover > div:hover h3 i {
+  transform: scale(1.25);
+}
+.content .func h3 {
+  transition-duration: 0.3s;
+  margin-top: 0;
+}
+.content .func h3 i {
+  color: var(--darker-grey);
+  background: var(--orange);
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  line-height: 42px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 8px;
+  transition-duration: 0.3s;
+}
+.content .func .lefty,
+.content .func .righty {
+  float: left;
+}
+.content .func .lefty {
+  width: 48%;
+  background: var(--dark-grey);
+  padding: 15px;
+  margin: 0 4% 15px 0;
+  margin-bottom: 20px;
+}
+.content .func .righty {
+  width: 48%;
+  background: var(--dark-grey);
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.content .func .copyright {
+  background: var(--dark-grey);
+  font-size: 12px;
+  padding: 2px;
+  padding-left:15px;
+}

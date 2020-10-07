@@ -1,0 +1,58 @@
+.inner-link{
+    text-decoration: none;
+    color: var(--orange);
+    display: inline;
+    transition-duration: 0.3s;
+}
+
+.inner-link:hover{
+    color: var(--yellow);
+}
+
+#structural_seg{
+  margin : 20px;
+  width: 90%;
+}
+
+.content .func {
+  box-sizing: border-box;
+  float: left;
+}
+.content .func > div {
+  padding-bottom: 10px;
+}
+.content .func > div:last-of-type {
+  padding-bottom: 0;
+}
+.content .func {
+  width: 100%;
+  padding: 30px;
+}
+.content .func:hover > div {
+  transition-duration: 0.5s;
+}
+.content .func:hover > div:hover h3 i {
+  transform: scale(1.25);
+}
+.content .func h3 {
+  transition-duration: 0.3s;
+  margin-top: 0;
+}
+.content .func h3 i {
+  color: var(--darker-grey);
+  background: var(--orange);
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  line-height: 42px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 8px;
+  transition-duration: 0.3s;
+}
+
+.inline li {
+  display: inline-block;
+  width:49%;
+}
