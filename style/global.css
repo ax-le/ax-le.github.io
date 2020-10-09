@@ -67,8 +67,9 @@ h3 {
 
 #navigation li {
   display: inline-block;
-  width:19%;
-  min-width:100px;
+  width:20%;
+  min-width:120px;
+  max-width: 200px;
   margin: 1px;
 }
 
