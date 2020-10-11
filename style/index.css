@@ -9,9 +9,13 @@
     color: var(--yellow);
 }
 
-#structural_seg{
-  margin : 20px;
+.content-img{
+  margin: 20px;
   width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
 }
 
 .content .func {
