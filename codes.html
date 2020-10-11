@@ -8,6 +8,16 @@
       <link rel="stylesheet" href="style/box_links.css">
 
     <script src="https://kit.fontawesome.com/12b596ef39.js" crossorigin="anonymous"></script>
+    <script>
+    function open_or_close(id){
+      var myDiv = document.getElementById(id)
+      if (myDiv.style.display=='block'){
+        myDiv.style.display='none';
+      } else {
+        myDiv.style.display='block';
+      }
+    };
+    </script>
     </head>
 <body>
 <div class="content">
@@ -53,16 +63,34 @@
       <h2>nn_fac</h2>
     <small>Axel Marmoret, Jérémy Cohen. nn_fac: Nonnegative Factorization techniques toolbox. 2020</small>
     <div class="box">
-      <a href="TODO.html"><i class="fas fa-quote-left"></i></a>
+      <a href="javascript:void(0);" onclick="open_or_close('nn_fac_bibtex')"><i class="fas fa-quote-left"></i></a>
       <a href="https://gitlab.inria.fr/amarmore/nonnegative-factorization" target="_blank"><i class="fab fa-gitlab"></i></a>
+    </div>
+    <div id="nn_fac_bibtex" class="hidden_content_block">
+      <div class="citation_content">
+        <p>@Misc{marmoret2020nnfac,
+          author={Marmoret, Axel and Cohen, Jeremy},
+          title = {nn_fac},
+          howpublished = {\url{https://gitlab.inria.fr/amarmore/nonnegative-factorization}},
+          year = {2020}}</p>
+        </div>
     </div>
     </div>
     <div class="content_block">
       <h2>MusicNTD</h2>
       <small>Axel Marmoret, Jérémy Cohen, Nancy Bertin, Frédéric Bimbot. MusicNTD. 2020, </small>
       <div class="box">
-        <a href="TODO.html"><i class="fas fa-quote-left"></i></a>
+        <a href="javascript:void(0);" onclick="open_or_close('musicntd_bibtex')"><i class="fas fa-quote-left"></i></a>
         <a href="https://gitlab.inria.fr/amarmore/musicntd" target="_blank"><i class="fab fa-gitlab"></i></a>
+      </div>
+      <div id="musicntd_bibtex" class="hidden_content_block">
+        <div class="citation_content">
+            <p>@Misc{marmoret2020musicntd,
+              author={Marmoret, Axel and Cohen, Jeremy and Bertin, Nancy and Bimbot, Frederic},
+              title = {{MusicNTD}},
+              howpublished = {\url{https://gitlab.inria.fr/amarmore/musicntd}},
+              year = {2020}}</p>
+        </div>
       </div>
     </div>
     <div></div>
