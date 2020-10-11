@@ -6,7 +6,16 @@
       <link rel="stylesheet" href="style/profile.css">
       <link rel="stylesheet" href="style/index.css">
       <link rel="stylesheet" href="style/box_links.css">
-
+<script>
+function open_or_close(id){
+  var myDiv = document.getElementById(id)
+  if (myDiv.style.display=='block'){
+    myDiv.style.display='none';
+  } else {
+    myDiv.style.display='block';
+  }
+};
+</script>
     <script src="https://kit.fontawesome.com/12b596ef39.js" crossorigin="anonymous"></script>
     </head>
 <body>
@@ -53,12 +62,22 @@
       <h2>Uncovering Audio Patterns in Music with Nonnegative Tucker Decomposition for Structural Segmentation.</h2>
         <small>Axel Marmoret, Jérémy Cohen, Nancy Bertin, Frédéric Bimbot. Uncovering Audio Patterns in Music with Nonnegative Tucker Decomposition for Structural Segmentation. ISMIR 2020 - 21st International Society for Music Information Retrieval, Oct 2020, Montréal (Online), Canada. pp.1-7.</small>
         <div class="box">
-          <a href="TODO.html"><i class="fas fa-quote-left"></i></a>
+          <a href="#" onclick="open_or_close('uncov_bibtex')"><i class="fas fa-quote-left"></i></a>
           <a href="https://hal.archives-ouvertes.fr/hal-02928733v1" target="_blank"><i class="fas fa-unlock-alt"></i></a>
           <a href="https://gitlab.inria.fr/amarmore/musicntd/-/tree/0.1.0" target="_blank"><i class="fab fa-gitlab"></i></a>
           <a href="https://youtu.be/qN8_y-k9KxI" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
+    <div id="uncov_bibtex" class="hidden_content_block">
+      <div class="citation_content">
+          <p>@inproceedings{marmoret2020uncovering,
+  title={Uncovering Audio Patterns in Music with Nonnegative Tucker Decomposition for Structural Segmentation},
+  author={Marmoret, Axel and Cohen, Jeremy and Bertin, Nancy and Bimbot, Frederic},
+  booktitle={ISMIR 2020-21st International Society for Music Information Retrieval},
+  year={2020}}</p>
+      </div>
     </div>
+  </div>
+
     <div></div>
     <footer>
       <div class="copyright">

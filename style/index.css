@@ -18,6 +18,17 @@
   max-width: 900px;
 }
 
+.citation_content{
+  margin:auto;
+  width:90%;
+  text-align:justify;
+  color: var(--lighter-grey);
+}
+
+.hidden_content_block {
+  display: none;
+}
+
 .content .func {
   box-sizing: border-box;
   float: left;
