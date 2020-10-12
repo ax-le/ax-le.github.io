@@ -3,8 +3,8 @@
     <head>
       <title>Nonnegative Tucker Decomposition</title>
       <link rel="stylesheet" href="style/global.css">
-      <link rel="stylesheet" href="style/profile.css">
       <link rel="stylesheet" href="style/index.css">
+      <link rel="stylesheet" href="style/text_file.css">
     <script src="https://kit.fontawesome.com/12b596ef39.js" crossorigin="anonymous"></script>
     </head>
 <body>
@@ -13,15 +13,58 @@
     <ul id="navigation">
       <li><a href="index.html">Home</a></li>
       <li><a href="research.html">Research</a></li>
-       <li><a href="resume.html">Resume</a></li>
-       <li><a href="publications.html">Publications</a></li>
-       <li><a href="codes.html">Codes</a></li>
+     <li><a href="resume.html">Resume</a></li>
+     <li><a href="publications.html">Publications</a></li>
+     <li><a href="codes.html">Codes</a></li>
+     <li><a href="resources.html">Resources</a></li>
     </ul>
 
-      <div class="content_block">
-        <h3><i class="fas fa-cube"></i>Soon</h3>
+      <div class="content_block to_justify">
+        <h3 class="not-lowercase"><i class="fas fa-cube"></i>NTD: Nonnegative Tucker Decomposition</h3>
+        <h2>Tensors and NTD general model.</h2>
 
+        NTD is a tensor factorization technique.<br>
+        Formally, a tensor is a multi-dimensional array. In our work, we focus on 3-rd order tensor (at least for now).
+        <img class="content-img not-too-big" src="imgs/tensor.png"/>
+        As we focus on 3-rd order tensors, we will restrict "tensors" to 3-rd order ones.<br>
+        <br>
+        Given a nonnegative tensor X, NTD decomposes it in three factor matrices, one per mode, and a core tensor linking these matrices.
+        <img class="content-img" src="imgs/NTD.png"/>
+        <br>
+        <h2>Application to Music.</h2>
+        Let's consider the spectrogram of a Music, that is a two-dimensional time-frequency (or frequency-ish representation) matrix.
+        <br>
+        We split this matrix on each downbeat (in order to obtain a spectrogram for each bar of the song),
+        and refold the obtain matrices in a tensor, with three dimensions. We can also see this operation as the concatenation of matrices along a third dimension.
+        <img class="content-img not-too-big" src="imgs/tfb.png"/>
+        In that sense, we obtain a tensor with two time dimensions: a low scale (inner-bar time), and an upper-scale (bar indexes).
+        We then decompose this tensor with the NTD model.<br>
+        <br>
+        <h2>Interpretation of NTD, in our context.</h2>
+        As the three factor matrices each represent a mode, each of them represent factors of a specific dimension. In our context:
+        <ul>
+          <li>- W represents frequency information, that is, each column of W will represent a frequential template. We then hope that each of these templates will represent an note, a chord, or at least a musically salient object.</li>
+          <li>- H represents the inner-bar time, that is, each column of H will represent a time template, at the scale of a bar. It can be seen as a rhtyhmic template.</li>
+          <li>- Q represents time at the barscale. It is hard to interpret Q without an understanding of the core tensor G, so we will come back to that right after.</li>
+        </ul>
+        Finally, the core tensor G links all these matrices. Below is a gif which shows how these elements are connected.
+        <img class="content-img" src="imgs/ntd.gif">
+        As presented above, each slice of the core tensor G will link columns of W and H, that is, frequential and rhythmic patterns.
+        Hence, each slice of G, mutiplied by W and H, is a time-frequency representation of some of their columns.<br>
+        It is then a spectrogram at the bar scale, composed of factorized elements. We call that representation a "musical pattern".<br>
+        <br>
+        Each slice of G is associated with a column of Q. In that context, each column of Q indicates the weight of this musical pattern in all bars of the song.
+        <br>
+        Hence, Q is a barwise representation of the song, with musical pattern as features.<br>
+        <br>
+        <h2>In practice: NTD for segmentation</h2>
+        Finally, starting from this representation, we developed and tested a segmentation algorithm, which resulted in a publication in <a class="inner-link" href="https://hal.archives-ouvertes.fr/hal-02928733v1" target="_blank">ISMIR</a>.<br>
+        In short, the idea of the segmentation algorithm is to study this barwise representation Q, and notably its autosimilarity, to obtain barwise similarity coefficients. The higher a zone is in terms of similairty, the more probable it belongs to a same segment.<br>
+        <br>
+        For more details, you should read our article, and take a look <a class="inner-link" href="./resources/ISMIR2020/Appendix - Focus on the segmentation algorithm.html" target="_blank">at this link</a>, which is a reupload of a Jupyter Notebook (compiled as HTML) we developed along with our article.<br>
+        All notebooks can be found in the <a class="inner-link" href="./resources/ISMIR2020/Notebooks_mainpage.html" target="_blank">resources for ISMIR2020 (click)</a><br>
       </div>
+      <div></div>
 
     <footer>
       <div class="copyright">

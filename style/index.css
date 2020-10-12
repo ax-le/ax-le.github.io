@@ -17,6 +17,9 @@
   margin-right: auto;
   max-width: 900px;
 }
+.not-too-big{
+  max-width: 600px;
+}
 
 .citation_content{
   margin:auto;
