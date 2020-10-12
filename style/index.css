@@ -20,7 +20,9 @@
 .not-too-big{
   max-width: 600px;
 }
-
+.rel-small{
+  max-width: 300px;
+}
 .citation_content{
   margin:auto;
   width:90%;
