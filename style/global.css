@@ -65,11 +65,15 @@ h3 {
   font-size: 1.25em;
 }
 
+.not-lowercase {
+  text-transform: none;
+}
+
 #navigation li {
   display: inline-block;
-  width:20%;
+  width:19%;
   min-width:120px;
-  max-width: 200px;
+  max-width: 190px;
   margin: 1px;
 }
 
@@ -93,6 +97,10 @@ h3 {
   box-shadow: 10px 10px var(--black);*/
   position: relative;
   display: flex;
+}
+
+.to_justify{
+  text-align:justify;
 }
 
 .content .func .content_block {
