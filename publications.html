@@ -32,9 +32,9 @@ function open_or_close(id){
     </div>
     <div class="about">
       <h3>About Me</h3>
-      Hello! My name is Axel Marmoret, I'm 23, and I'm a PhD Student at IRISA, Rennes in France.<br>
+      Hello! My name is Axel Marmoret, I'm 24, and I'm a PhD Student at IRISA, Rennes in France.<br>
       I work on Machine Learning and Optimisation techniques for rerieving musical structure, based on its audio form.<br>
-      I'm also a musician (mainly drummer, newly bassist!), and a music passionate.
+      I'm also a musician (mainly drummer, newly bassist!), and passionate about music.
     </div>
     <div class="contact">
       <h3>Contact Me</h3>
@@ -59,9 +59,11 @@ function open_or_close(id){
        <li><a href="codes.html">Codes</a></li>
        <li><a href="resources.html">Resources</a></li>
     </ul>
+    <h1>Conference Papers</h1>
+    <h2>Accepted</h2>
     <div class="content_block">
       <h2>Uncovering Audio Patterns in Music with Nonnegative Tucker Decomposition for Structural Segmentation.</h2>
-      Abstract : Recent work has proposed the use of tensor decomposition to model repetitions and to separate tracks in loop-based electronic music.
+      Abstract: Recent work has proposed the use of tensor decomposition to model repetitions and to separate tracks in loop-based electronic music.
       The present work investigates further on the ability of Nonnegative Tucker Decompositon (NTD) to uncover musical patterns and structure in pop songs in their audio form.
       Exploiting the fact that NTD tends to express the content of bars as linear combinations of a few patterns, we illustrate the ability of the decomposition to capture and single out repeated motifs in the corresponding compressed space, which can be interpreted from a musical viewpoint.
       The resulting features also turn out to be efficient for structural segmentation, leading to experimental results on the RWC Pop data set which are potentially challenging state-of-the-art approaches that rely on extensive example-based learning schemes.
@@ -83,6 +85,60 @@ function open_or_close(id){
       </div>
     </div>
   </div>
+  <h2>Under review</h2>
+  <div class="content_block">
+    <h2>Exploring single-song autoencoding schemes for audio-based music structure analysis.</h2>
+    <h4><em>Submitted to ICASSP 2022</em></h4>
+    Abstract: The ability of deep neural networks to learn complex data relations and representations is established nowadays, but it generally relies on large sets of training data.
+    This work explores a "piece-specific" autoencoding scheme, in which a low-dimensional autoencoder is trained to learn a latent/compressed representation specific to a given song, which can then be used to infer the song structure.
+    Such a model does not rely on supervision nor annotations, which are well-known to be tedious to collect and often ambiguous in Music Structure Analysis.
+    We report that the proposed unsupervised auto-encoding scheme achieves the level of performance of supervised state-of-the-art methods with 3 seconds tolerance when using a Log Mel spectrogram representation on the RWC-Pop dataset.
+    <br><br>
+      <small>Axel Marmoret, Jérémy Cohen, Frédéric Bimbot. Exploring single-song autoencoding schemes for audio-based music structure analysis. arXiv preprint arXiv:2110.14437.</small>
+      <div class="box">
+        <a href="javascript:void(0);" onclick="open_or_close('exploring_bibtex')"><i class="fas fa-quote-left"></i></a>
+        <a href="https://hal.archives-ouvertes.fr/hal-03409518v1" target="_blank"><i class="fas fa-unlock-alt"></i></a>
+        <a href="https://gitlab.inria.fr/amarmore/musicae/-/tree/v0.1.0" target="_blank"><i class="fab fa-gitlab"></i></a>
+      </div>
+  <div id="exploring_bibtex" class="hidden_content_block">
+    <div class="citation_content">
+        <p>@article{marmoret2021exploring,
+  title={Exploring single-song autoencoding schemes for audio-based music structure analysis},
+  author={Marmoret, Axel and Cohen, J{\'e}r{\'e}my E and Bimbot, Fr{\'e}d{\'e}ric},
+  journal={arXiv preprint arXiv:2110.14437},
+  year={2021}}</p>
+    </div>
+  </div>
+</div>
+
+<div class="content_block">
+  <h2>Nonnegative Tucker Decomposition with Beta-divergence for Music Structure Analysis of audio signals.</h2>
+  <h4><em>Submitted to ICASSP 2022</em></h4>
+  Abstract: Nonnegative Tucker Decomposition (NTD), a tensor decomposition model, has received increased interest in the recent years because of its ability to blindly extract meaningful patterns in tensor data.
+  Nevertheless, existing algorithms to compute NTD are mostly designed for the Euclidean loss.
+  On the other hand, NTD has recently proven to be a powerful tool in Music Information Retrieval.
+  This work proposes a Multiplicative Updates algorithm to compute NTD with the beta-divergence loss, often considered a better loss for audio processing.
+  We notably show how to implement efficiently the multiplicative rules using tensor algebra, a naive approach being intractable.
+  Finally, we show on a Music Structure Analysis task that unsupervised NTD fitted with beta-divergence loss outperforms earlier results obtained with the Euclidean loss.
+  <br><br>
+    <small>Axel Marmoret, Florian Voorwinden, Valentin Leplat, Jérémy E Cohen, Frédéric Bimbot. Nonnegative Tucker Decomposition with Beta-divergence for Music Structure Analysis of audio signals. arXiv preprint arXiv:2110.14434.</small>
+    <div class="box">
+      <a href="javascript:void(0);" onclick="open_or_close('nonnegative_bibtex')"><i class="fas fa-quote-left"></i></a>
+      <a href="https://hal.archives-ouvertes.fr/hal-03409508v1" target="_blank"><i class="fas fa-unlock-alt"></i></a>
+      <a href="https://gitlab.inria.fr/amarmore/nonnegative-factorization/-/tree/v0.2.0" target="_blank"><i class="fab fa-gitlab"></i></a>
+      <a href="https://gitlab.inria.fr/amarmore/musicntd/-/tree/v0.3.0" target="_blank"><i class="fab fa-gitlab"></i></a>
+    </div>
+<div id="nonnegative_bibtex" class="hidden_content_block">
+  <div class="citation_content">
+      <p>@article{marmoret2021nonnegative,
+  title={Nonnegative Tucker Decomposition with Beta-divergence for Music Structure Analysis of audio signals},
+  author={Marmoret, Axel and Voorwinden, Florian and Leplat, Valentin and Cohen, J{\'e}r{\'e}my E and Bimbot, Fr{\'e}d{\'e}ric},
+  journal={arXiv preprint arXiv:2110.14434},
+  year={2021}}</p>
+  </div>
+</div>
+</div>
+
 
     <div></div>
     <footer>
