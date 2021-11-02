@@ -58,11 +58,15 @@
         Hence, Q is a barwise representation of the song, with musical pattern as features.<br>
         <br>
         <h2>In practice: NTD for segmentation</h2>
-        Finally, starting from this representation, we developed and tested a segmentation algorithm, which resulted in a publication in <a class="inner-link" href="https://hal.archives-ouvertes.fr/hal-02928733v1" target="_blank">ISMIR</a>.<br>
-        In short, the idea of the segmentation algorithm is to study this barwise representation Q, and notably its autosimilarity, to obtain barwise similarity coefficients. The higher a zone is in terms of similairty, the more probable it belongs to a same segment.<br>
+        Finally, starting from this representation, we developed and tested a segmentation algorithm, which resulted in <a class="inner-link" href="https://hal.archives-ouvertes.fr/hal-02928733v1" target="_blank">a publication in ISMIR 2020</a>.<br>
+        In short, the idea of the segmentation algorithm is to study this barwise representation Q, and notably its autosimilarity, to obtain barwise similarity coefficients. The higher a zone is in terms of similairty, the more probable it belongs to a same segment. Details about this segmentation technique can be found <a class="inner-link" href="./resources/ISMIR2020/Appendix - Focus on the segmentation algorithm.html" target="_blank">at this link</a><br>
         <br>
-        For more details, you should read our article, and take a look <a class="inner-link" href="./resources/ISMIR2020/Appendix - Focus on the segmentation algorithm.html" target="_blank">at this link</a>, which is a reupload of a Jupyter Notebook (compiled as HTML) we developed along with our article.<br>
-        All notebooks can be found in the <a class="inner-link" href="./resources/ISMIR2020/Notebooks_mainpage.html" target="_blank">resources for ISMIR2020 (click)</a><br>
+        For more details, you should read the aformentioned article, and take a look at <a class="inner-link" href="./resources/ISMIR2020/Notebooks_mainpage.html" target="_blank">these notebooks</a>, which are HTML uploads of our experimental results while developing the technique.<br>
+        <br>
+        <h2>Beta-divergence and listenable examples.</h2>
+        Recently, we adapted the NTD to other metrics, from the beta-divergence family. In short, this family of divergences generalizes the Euclidean norm (beta = 2), the Kullback-Leibler divergence (beta = 1) and the Itakura-Saito divergence (beta = 0). These last two divergences are well-studied in audio signal processing.<br>
+        Details about this work can be found in our <a class="inner-link" href="https://hal.archives-ouvertes.fr/hal-03409508" target="_blank">ICASSP 2022 submission (still under review)</a>, detailling the algorithm, or in <a class="inner-link" href="https://ax-le.github.io/resources/ICASSP2022/ListeningToNTDResults.html" target="_blank">these listenable results</a>, which are signals reconstructed from the NTD results (both the entire song and each musical pattern), according to different beta values.<br>
+        Note though that we used the Griffin-Lim algorithm to reconstruct signals (from the STFT), so reconstructed signals can contain artifacts or unpleasant parts.
       </div>
       <div></div>
 
