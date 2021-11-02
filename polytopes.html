@@ -22,7 +22,7 @@
       <div class="content_block to_justify">
         <h3><i class="fab fa-connectdevelop"></i>Polytopic Representation of Music.</h3>
         <h2>Polywhat?</h2>
-        A polytope is a mathematical object, with no consensual definition. Then, let's redefine it! (yay!)<br>
+        A polytope is a mathematical object, with several different definitions. Then, let's redefine it! (yay!)<br>
         Here, we will restrict "polytope" to n-cubes, or altered n-cubes. More particularily, we will only focus on the set and edges of the polytope, which is called the "polytope graph" in the litterature.	Polytopes, in our context, fall into 2 classes:
         <ul>
           <dl>
@@ -33,8 +33,9 @@
             <dd>- n-regular-polytopes on which we have added and/or deleted a smaller polytope (at most (n-2)-regular-polytopes). Typically, a cube where we deleted a vertex is an irregular polytope.</dd>
           </dl>
         </ul>
-		Under this definition, a n-regular polytope will contain 2<SUP>n</SUP> vertices, and can be seen as the concatenation of 2 (n-1)-regular polytopes.
-		<br><br>
+		Under this definition, a n-regular polytope will contain 2<SUP>n</SUP> vertices, and can be seen as the concatenation of 2 (n-1)-regular polytopes.<br>
+    They were introduced in Corentin Guichaoua's PhD thesis [4]. It is planned in near future to present a document (in english) explaining these polytopes.<br>
+    <br>
         But first, let's start with another model: the System and Contrast.
         <br>
         <br>
@@ -78,9 +79,9 @@
         <br><br>
         <strong>Well, almost.</strong> What is the cost of the relations between elements when talking about musical passages?
         <br>
-        Many costs can be implemented, but the most simple one (maybe) would be to reduce each chord on each vertex to its closest triad, and then consider the difference between two chords as a rotation in the circle of thirds (presented below).
+        Many costs can be implemented, for instance reducing each chord on each vertex to its closest triad, and then consider the difference between two chords as a rotation in the circle of thirds (presented below), closely related to the circle of fifths.
         <img class="content-img rel-small" src="imgs/circle_thirds.png"/>
-        <strong>And what about audio signals?</strong><br> Well, that's actually my contribution! But it's still TODO work... If this subject interests you, fell free to contact me at axel.marmoret_at_irisa.fr for a potential collaboration! :)
+        <strong>And what about audio signals?</strong><br> Well, <s>that's actually my contribution!</s> I was planning on extending this work to audio signals, but I wasn't able to to do so. If you're interested for this task, you can contact me at axel.marmoret.at.irisa.fr or contact Frédéric Bimbot at bimbot.at.irisa.fr.
         <br><br>
         <h2>Irregular polytopes [4]</h2>
         Regular polytopes are great, but what can we do when segments aren't of size 2**n (4, 8, 16, 32)?<br>
@@ -92,18 +93,23 @@
         <br>
         <br>
         <h2>Code</h2>
-        Python code for this work, mixing both models, is available at <a class="inner-link" href="https://gitlab.inria.fr/amarmore/musiconpolytopes" target="_blank">this link</a> (for symbolic music only, for now).<br>
-        It's still under development, and lacks of (a lot) of explanations, but it's a first step, and soon it will be more understandabme! I'll then encourage you to play with it! :)
+        Python code for this work, mixing both models, is available at <a class="inner-link" href="https://gitlab.inria.fr/amarmore/musiconpolytopes" target="_blank">this link</a> (for symbolic music only).<br>
+        It's still under development, and lacks of (a lot) of explanations, but it's a first step! You can start by looking at the <a class="inner-link" href="https://gitlab.inria.fr/amarmore/musiconpolytopes/-/blob/master/Notebooks/Tutorial%20-%20Handling%20polytopes.ipynb" target="_blank">Tutorial Notebook</a>.<br>
+        Don't hesitate to warn me if you encounter a bug or any problem!
       </div>
       <div class="content_block to_justify">
         <h3><i class="fas fa-list"></i>References</h3>
         [1] Bimbot, F., Deruty, E., Sargent, G., & Vincent, E. (2016). System & contrast: A polymorphous model of the inner organization of structural segments within music pieces. Music Perception: An Interdisciplinary Journal, 33(5), 631-661.
+        <a class="inner-link" href="https://hal.inria.fr/hal-01188244" target="_blank">Link.</a>
         <br>
         [2] Louboutin, C., & Bimbot, F. (2017, June). Polytopic Graph of Latent Relations: A Multiscale Structure Model for Music Segments.
+        <a class="inner-link" href="https://hal.archives-ouvertes.fr/hal-01653445/" target="_blank">Link.</a>
         <br>
         [3] Louboutin, C. (2019). Modélisation multi-échelle et multi-dimensionnelle de la structure musicale par graphes polytopiques (Doctoral dissertation, Rennes 1).
+        <a class="inner-link" href="https://www.theses.fr/2019REN1S012" target="_blank">Link.</a>
         <br>
         [4] Guichaoua, C. (2017). Modèles de compression et critères de complexité pour la description et l'inférence de structure musicale (Doctoral dissertation).
+        <a class="inner-link" href="https://tel.archives-ouvertes.fr/tel-01687054/" target="_blank">Link.</a>
       </div>
       <div></div>
     <footer>
