@@ -103,6 +103,10 @@ h3 {
   text-align:justify;
 }
 
+.center{
+  text-align: center ;
+}
+
 .content .func .content_block {
   width: 100%;
   background: var(--dark-grey);

@@ -62,16 +62,15 @@
     </ul>
     <div class="content_block">
       <h2>nn_fac</h2>
-	Toolbox of nonnegative factorization techniques, for both matrices (NMF) and tensors (CP, PARAFAC2 and NTD).
+      <h4 class="center">pip install nn-fac</h4>
+	Toolbox of nonnegative factorization techniques, for both matrices (NMF) and tensors (NN-CP, NN-PARAFAC2 and NTD).
   <br>
-	These decompositions are computed by solving NNLS (NonNegative Least Squares) problems on every factor.
-  <br>
-  All these decompositions can be constrained to enforce sparsity, via l1-norm penalization.
-	<br><br>
+	These decompositions are computed by solving NNLS (NonNegative Least Squares) problems on every factor when optimizing with respect to the Euclidean norm, or with Multiplicative Updates subject to each factor when optimizing the Beta-divergences.
+  <br><br>
 	Note: the techniques of this toolbox will soon be integrated to the <a class="inner-link" href="https://github.com/tensorly/tensorly" target="_blank">tensorly toolbox</a> thanks to my colleague <a class="inner-link" href="https://www.researchgate.net/profile/Caglayan-Tuna" target="_blank">Caglayan Tuna</a>! :)
+  <br><br>
+  <small>Axel Marmoret, Jérémy Cohen. nn_fac: Nonnegative Factorization techniques toolbox. 2020.</small>
   <br>
-  <br>
-    <small>Axel Marmoret, Jérémy Cohen. nn_fac: Nonnegative Factorization techniques toolbox. 2020.</small>
     <div class="box">
       <a href="javascript:void(0);" onclick="open_or_close('nn_fac_bibtex')"><i class="fas fa-quote-left"></i></a>
       <a href="https://gitlab.inria.fr/amarmore/nonnegative-factorization" target="_blank"><i class="fab fa-gitlab"></i></a>
@@ -88,11 +87,12 @@
     </div>
     <div class="content_block">
       <h2>MusicNTD</h2>
+      <h4 class="center">pip install musicntd</h4>
       Code related to pre and post-processing of music when analyzed with NTD, notably for music segmentation.
       <br>
       See <a class="inner-link" href="NTD.html">Nonnegative Tucker Decomposition</a> or our article "Uncovering Audio Patterns in Music with Nonnegative Tucker Decomposition for Structural Segmentation." for more details.
       <br><br>
-      <small>Axel Marmoret, Jérémy Cohen, Nancy Bertin, Frédéric Bimbot. MusicNTD. 2020.</small>
+      <small>Axel Marmoret, Jérémy Cohen, Nancy Bertin, Frédéric Bimbot. 2020.</small>
       <div class="box">
         <a href="javascript:void(0);" onclick="open_or_close('musicntd_bibtex')"><i class="fas fa-quote-left"></i></a>
         <a href="https://gitlab.inria.fr/amarmore/musicntd" target="_blank"><i class="fab fa-gitlab"></i></a>
@@ -110,11 +110,12 @@
 
     <div class="content_block">
       <h2>MusicAE</h2>
+      <h4 class="center">pip install musicae</h4>
       Code related to single-song autoencoding, then used for music segmentation.
       <br>
       See <a class="inner-link" href="SingleSongAE.html">Single-song AE</a> or our article "Exploring single-song autoencoding schemes for audio-based music structure analysis." for more details.
       <br><br>
-      <small>Axel Marmoret, Jérémy Cohen, Frédéric Bimbot. MusicAE. 2021.</small>
+      <small>Axel Marmoret, Jérémy Cohen, Frédéric Bimbot. 2021.</small>
       <div class="box">
         <a href="javascript:void(0);" onclick="open_or_close('musicae_bibtex')"><i class="fas fa-quote-left"></i></a>
         <a href="https://gitlab.inria.fr/amarmore/musicae" target="_blank"><i class="fab fa-gitlab"></i></a>
@@ -142,7 +143,7 @@
       <br>
       See <a class="inner-link" href="polytopes.html">Polytopes</a> for more details.
       <br><br>
-    <small>Axel Marmoret, Jérémy Cohen, Frédéric Bimbot. MusicOnPolytopes. 2021.</small>
+    <small>Axel Marmoret, Jérémy Cohen, Frédéric Bimbot. 2021.</small>
     <div class="box">
       <a href="javascript:void(0);" onclick="open_or_close('musicpolytopes_bibtex')"><i class="fas fa-quote-left"></i></a>
       <a href="https://gitlab.inria.fr/amarmore/musiconpolytopes" target="_blank"><i class="fab fa-gitlab"></i></a>
