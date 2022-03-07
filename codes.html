@@ -33,7 +33,7 @@
     </div>
     <div class="about">
       <h3>About Me</h3>
-      Hello! My name is Axel Marmoret, I'm 24, and I'm a PhD Student at IRISA, Rennes in France.<br>
+      Hello! My name is Axel Marmoret, I'm 25, and I'm a PhD Student at IRISA, Rennes in France.<br>
       I work on Machine Learning and Optimisation techniques for rerieving musical structure, based on its audio form.<br>
       I'm also a musician (mainly drummer, newly bassist!), and passionate about music.
     </div>
@@ -109,11 +109,40 @@
     </div>
 
     <div class="content_block">
-      <h2>MusicAE</h2>
-      <h4 class="center">pip install musicae</h4>
-      Code related to single-song autoencoding, then used for music segmentation.
+      <h2>BarwiseMusicCompression</h2>
+      <h4 class="center">pip install not available yet.</h4>
+      Code related to linear and non-linear barwise music compression, then used for music segmentation.
       <br>
-      See <a class="inner-link" href="SingleSongAE.html">Single-song AE</a> or our article "Exploring single-song autoencoding schemes for audio-based music structure analysis." for more details.
+      See <a class="inner-link" href="barwisecompression.html">barwise music compression</a> or our article "Barwise Compression Schemes for Audio-Based Music Structure Analysis." for more details.
+      <br><br>
+      <small>Axel Marmoret, Jérémy Cohen, Frédéric Bimbot. 2022.</small>
+      <div class="box">
+        <!--<a href="javascript:void(0);" onclick="open_or_close('musicae_bibtex')"><i class="fas fa-quote-left"></i></a>-->
+        <a href="https://gitlab.inria.fr/amarmore/musicae" target="_blank"><i class="fab fa-gitlab"></i></a>
+      </div>
+      <div id="musicae_bibtex" class="hidden_content_block">
+        <div class="citation_content">
+            <p>@softwareversion{marmoret:hal-03406224v1,
+  TITLE = {{MusicAE: Encoding songs with Autoencoders to reveal structure}},
+  AUTHOR = {Marmoret, Axel and Cohen, J{\'e}r{\'e}my E and Bimbot, Fr{\'e}d{\'e}ric},
+  URL = {https://hal.archives-ouvertes.fr/hal-03406224},
+  YEAR = {2021},
+  MONTH = Oct,
+  SWHID = {swh:1:dir:a5df9cf7e88b8893dc205465dbd7ba6595869d0a;origin=https://hal.archives-ouvertes.fr/hal-03406224;visit=swh:1:snp:18fb7d99d56d01720cd104405c78dfe757c06308;anchor=swh:1:rev:fb43c7c06c6483761726c753df0905510487458b;path=/},
+  LICENSE = {BSD 3-Clause ''New'' or ''Revised'' License},
+  FILE = {https://hal.archives-ouvertes.fr/hal-03406224/file/zipHal.zip},
+  HAL_ID = {hal-03406224},
+  HAL_VERSION = {v1}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content_block">
+      <h2>MusicAE (deprecated)</h2>
+      <h4 class="center">pip install musicae</h4>
+      Code related to single-song autoencoding, then used for music segmentation. This code is actually deprecated, because contained in the larger "barwisemusiccompression" package.
+      <br>
+      See the Single-Song AutoEncoder part in <a class="inner-link" href="barwisecompression.html">barwise music compression</a> or our article "Barwise Compression Schemes for Audio-Based Music Structure Analysis." for more details.
       <br><br>
       <small>Axel Marmoret, Jérémy Cohen, Frédéric Bimbot. 2021.</small>
       <div class="box">
