@@ -1,19 +1,64 @@
-<?php include('header.php'); ?>
+<html lang="fr"><head>
+    <meta charset="utf-8">
+    <head>
+      <title>Publications - Axel Marmoret</title>
+      <link rel="stylesheet" href="style/global.css">
+      <link rel="stylesheet" href="style/profile.css">
+      <link rel="stylesheet" href="style/index.css">
+      <link rel="stylesheet" href="style/box_links.css">
 <script>
 function open_or_close(id){
   var myDiv = document.getElementById(id)
   if (myDiv.style.display=='block'){
-	myDiv.style.display='none';
+    myDiv.style.display='none';
   } else {
-	myDiv.style.display='block';
+    myDiv.style.display='block';
   }
 };
 </script>
+    <script src="https://kit.fontawesome.com/12b596ef39.js" crossorigin="anonymous"></script>
+    </head>
 <body>
 <div class="content">
-  <?php include('side_bar_profile.php'); ?>
+  <div class="base">
+    <div class="profile">
+      <div class="photo">
+        <img src="imgs/light_photo_sympa.jpeg"/>
+      </div>
+      <div class="info">
+        <h1 class="name"><a href="index.html">Axel Marmoret</a></h1>
+        <h2 class="job">PhD Student, Computer Science Engineer</h2>
+      </div>
+    </div>
+    <div class="about">
+      <h3>About Me</h3>
+      Hello! My name is Axel Marmoret, I'm 25, and I'm a PhD Student at IRISA, Rennes in France.<br>
+      I work on Machine Learning and Optimisation techniques for rerieving musical structure, based on its audio form.<br>
+      I'm also a musician (mainly drummer, newly bassist!), and passionate about music.
+    </div>
+    <div class="contact">
+      <h3>Contact Me</h3>
+      <div class="email"><a href="mailto:axel.marmoret@irisa.fr"><i class="fas fa-envelope"></i><span>My mail adress</span></a></div>
+      <div class="address"><a href="https://goo.gl/maps/3sw2My34x8vZPEP86" target="_blank"><i class="fas fa-map-marker"></i><span>Living in Rennes, France</span></a></div>
+    </div>
+    <div class="follow">
+      <h3>Follow Me</h3>
+      <div class="box">
+        <a href="https://gitlab.inria.fr/amarmore" target="_blank"><i class="fab fa-gitlab "></i></a>
+        <a href="https://hal.archives-ouvertes.fr/search/index/?q=%2A&authFullName_s=Axel+Marmoret" target="_blank"><i class="far fa-file-alt"></i></a>
+        <a href="https://fr.linkedin.com/in/axel-marmoret-732491136" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://open.spotify.com/user/e-xa" target="_blank"><i class="fab fa-spotify"></i></a>
+      </div>
+    </div>
+  </div>
   <div class="func">
-      <?php include('menu.php'); ?>
+    <ul id="navigation">
+      <li><a href="research.html">Research</a></li>
+       <li><a href="resume.html">Resume</a></li>
+       <li><a href="publications.html">Publications</a></li>
+       <li><a href="codes.html">Codes</a></li>
+       <li><a href="resources.html">Resources</a></li>
+    </ul>
     <h1>Conference Papers</h1>
     <h2>Accepted</h2>
     <div class="content_block">
