@@ -1,24 +1,9 @@
-<html lang="fr"><head>
-    <meta charset="utf-8">
-    <head>
-      <title>Polytopic Representation of Music</title>
-      <link rel="stylesheet" href="style/global.css">
-      <link rel="stylesheet" href="style/profile.css">
-      <link rel="stylesheet" href="style/index.css">
-    <script src="https://kit.fontawesome.com/12b596ef39.js" crossorigin="anonymous"></script>
-    </head>
+<?php include('header.php'); ?>
 <body>
 <div class="content">
+  <?php include('side_bar_profile.php'); ?>
   <div class="func">
-    <ul id="navigation">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="research.html">Research</a></li>
-       <li><a href="resume.html">Resume</a></li>
-       <li><a href="publications.html">Publications</a></li>
-       <li><a href="codes.html">Codes</a></li>
-       <li><a href="resources.html">Resources</a></li>
-    </ul>
-
+      <?php include('menu.php'); ?>
       <div class="content_block to_justify">
         <h3><i class="fab fa-connectdevelop"></i>Polytopic Representation of Music.</h3>
         <h2>Polywhat?</h2>
