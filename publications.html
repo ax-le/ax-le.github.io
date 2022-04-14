@@ -92,11 +92,10 @@ function open_or_close(id){
     </div>
   </div>
 
-  <h2>Under review</h2>
+  <!--<h2>Under review</h2>-->
   <div class="content_block">
     <h2>Barwise Compression Schemes for Audio-Based Music Structure Analysis </h2>
-    Axel Marmoret, Jérémy Cohen, Frédéric Bimbot. arXiv preprint arXiv:2202.04981.
-    <h4><em>Submitted to SMC 2022</em></h4>
+    Axel Marmoret, Jérémy Cohen, Frédéric Bimbot. arXiv preprint arXiv:2202.04981 - 19th Sound and Music Computing Conference, June 8th-11th 2022. https://smc22.grame.fr/
       <div class="box">
         <a href="javascript:void(0);" onclick="open_or_close('barcomp_abstract')"><i class="fas fa-info-circle"></i></a>
         <a href="javascript:void(0);" onclick="open_or_close('barcomp_bibtex')"><i class="fas fa-quote-left"></i></a>
@@ -114,22 +113,15 @@ function open_or_close(id){
   </div>
   <div id="barcomp_abstract" class="hidden_content_block">
     <div class="citation_content">
-        <p>Abstract: Music Structure Analysis (MSA) consists in segmenting a music piece in several distinct sections.
-          We approach MSA within a compression framework, under the hypothesis that the structure is more easily revealed by a simplified representation of the original content of the song.
-          More specifically, under the hypothesis that MSA is correlated with similarities occurring at the bar scale, linear and non-linear compression schemes can be applied to barwise audio signals.
-          Compressed representations capture the most salient components of the different bars in the song and are then used to infer the song structure using a dynamic programming algorithm.
-          This work explores both low-rank approximation models such as Principal Component Analysis or Nonnegative Matrix Factorization and "piece-specific" Auto-Encoding Neural Networks, with the objective to learn latent representations specific to a given song.
-          Such approaches do not rely on supervision nor annotations, which are well-known to be tedious to collect and possibly ambiguous in MSA description.
-          In our experiments, several unsupervised compression schemes achieve a level of performance comparable to that of state-of-the-art supervised methods (for 3s tolerance) on the RWC-Pop dataset, showcasing the importance of the barwise compression processing for MSA.
+        <p>Abstract: Music Structure Analysis (MSA) consists in segmenting a music piece in several distinct sections. We approach MSA within a compression framework, under the hypothesis that the structure is more easily revealed by a simplified representation of the original content of the song. More specifically, under the hypothesis that MSA is correlated with similarities occurring at the bar scale, this article introduces the use of linear and non-linear compression schemes on barwise audio signals. Compressed representations capture the most salient components of the different bars in the song and are then used to infer the song structure using a dynamic programming algorithm. This work explores both low-rank approximation models such as Principal Component Analysis or Nonnegative Matrix Factorization and ``piece-specific'' Auto-Encoding Neural Networks, with the objective to learn latent representations specific to a given song. Such approaches do not rely on supervision nor annotations, which are well-known to be tedious to collect and possibly ambiguous in MSA description. In our experiments, several unsupervised compression schemes achieve a level of performance comparable to that of state-of-the-art supervised methods (for 3s tolerance) on the RWC-Pop dataset, showcasing the importance of the barwise compression processing for MSA.
       </p>
     </div>
   </div>
 </div>
 
   <div class="content_block">
-    <h2>Semi-Supervised Convolutive NMF for Automatic Music Transcription</h2>
-    Haoran Wu, Axel Marmoret, Jérémy Cohen. arXiv preprint arXiv:2202.04989.
-    <h4><em>Submitted to SMC 2022</em></h4>
+    <h2>Semi-Supervised Convolutive NMF for Automatic Piano Transcription</h2>
+    Haoran Wu, Axel Marmoret, Jérémy Cohen. arXiv preprint arXiv:2202.04989 - 19th Sound and Music Computing Conference, June 8th-11th 2022. https://smc22.grame.fr/
       <div class="box">
         <a href="javascript:void(0);" onclick="open_or_close('cnmf_abstract')"><i class="fas fa-info-circle"></i></a>
         <a href="javascript:void(0);" onclick="open_or_close('cnmf_bibtex')"><i class="fas fa-quote-left"></i></a>
@@ -148,8 +140,7 @@ function open_or_close(id){
   </div>
   <div id="cnmf_abstract" class="hidden_content_block">
     <div class="citation_content">
-        <p>Automatic Music Transcription, which consists in transforming an audio recording of a musical performance into symbolic format, remains a difficult Music Information Retrieval task. In this work, we propose a semi-supervised approach using low-rank matrix factorization techniques, in particular Convolutive Nonnegative Matrix Factorization. In the semi-supervised setting, only a single recording of each individual notes is required.
-		We show on the MAPS dataset that the proposed semi-supervised CNMF method performs better than state-of-the-art low-rank factorization techniques and a little worse than supervised deep learning state-of-the-art methods, while however suffering from generalization issues. 
+        <p>Abstract: Automatic Music Transcription, which consists in transforming an audio recording of a musical performance into symbolic format, remains a difficult Music Information Retrieval task. In this work, which focuses on piano transcription, we propose a semi-supervised approach using low-rank matrix factorization techniques, in particular Convolutive Nonnegative Matrix Factorization. In the semi-supervised setting, only a single recording of each individual notes is required. We show on the MAPS dataset that the proposed semi-supervised CNMF method performs better than state-of-the-art low-rank factorization techniques and a little worse than supervised deep learning state-of-the-art methods, while however suffering from generalization issues.
       </p>
     </div>
   </div>
