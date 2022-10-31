@@ -105,10 +105,10 @@ function open_or_close(id){
       </div>
   <div id="barcomp_bibtex" class="hidden_content_block">
     <div class="citation_content">
-        <p>@article{marmoret2022barwise,
+        <p>@inproceedings{marmoret2022barwise,
   title={Barwise Compression Schemes for Audio-Based Music Structure Analysis},
   author={Marmoret, Axel and Cohen, J{\'e}r{\'e}my E and Bimbot, Fr{\'e}d{\'e}ric},
-  journal={{Proceedings of the 19th Sound and Music Computing Conference}},
+  booktitle={{Proceedings of the 19th Sound and Music Computing Conference}},
   year={2022},
   doi= {10.5281/zenodo.6822204}}</p>
     </div>
@@ -133,10 +133,10 @@ function open_or_close(id){
       </div>
   <div id="cnmf_bibtex" class="hidden_content_block">
     <div class="citation_content">
-        <p>@article{wu2022semi,
+        <p>@inproceedings{wu2022semi,
   title={Semi-Supervised Convolutive NMF for Automatic Music Transcription},
   author={Wu, Haoran and Marmoret, Axel and Cohen, J{\'e}r{\'e}my E},
-  journal={{Proceedings of the 19th Sound and Music Computing Conference}},
+  booktitle={{Proceedings of the 19th Sound and Music Computing Conference}},
   year={2022},
   doi= {10.5281/zenodo.6822204}}</p>
     </div>
@@ -149,12 +149,42 @@ function open_or_close(id){
   </div>
 </div>
 
+<h2>Submitted</h2>
+<div class="content_block">
+    <h2>Convolutive Block-Matching Segmentation Algorithm with Application to Music Structure Analysis</h2>
+    Axel Marmoret, Jérémy Cohen, Frédéric Bimbot. arXiv preprint arXiv:2210.15356.
+	<p><i>Submitted at ICASSP 2023.</i></p>
+      <div class="box">
+        <a href="javascript:void(0);" onclick="open_or_close('convolutive_abstract')"><i class="fas fa-info-circle"></i></a>
+        <a href="javascript:void(0);" onclick="open_or_close('convolutive_bibtex')"><i class="fas fa-quote-left"></i></a>
+        <a href="https://arxiv.org/abs/2210.15356" target="_blank"><i class="fas fa-unlock-alt"></i></a>
+        <a href="https://gitlab.inria.fr/amarmore/autosimilarity_segmentation" target="_blank"><i class="fab fa-gitlab"></i></a>
+      </div>
+  <div id="convolutive_bibtex" class="hidden_content_block">
+    <div class="citation_content">
+        <p>@article{marmoret2022convolutive,
+  title={Convolutive Block-Matching Segmentation Algorithm with Application to Music Structure Analysis},
+  author={Marmoret, Axel and Cohen, J{\'e}r{\'e}my E and Bimbot, Fr{\'e}d{\'e}ric},
+  journal={arXiv preprint arXiv:2210.15356},
+  year={2022}
+  }</p>
+    </div>
+  </div>
+  <div id="convolutive_abstract" class="hidden_content_block">
+    <div class="citation_content">
+        <p>Abstract: Music Structure Analysis (MSA) consists of representing a song in sections (such as "chorus", "verse", "solo" etc), and can be seen as the retrieval of a simplified organization of the song. This work presents a new algorithm, called Convolutive Block-Matching (CBM) algorithm, devoted to MSA. In particular, the CBM algorithm is a dynamic programming algorithm, applying on autosimilarity matrices, a standard tool in MSA. In this work, autosimilarity matrices are computed from the feature representation of an audio signal, and time is sampled on the barscale. We study three different similarity functions for the computation of autosimilarity matrices. We report that the proposed algorithm achieves a level of performance competitive to that of supervised state-of-the-art methods on 3 among 4 metrics, while being fully unsupervised.
+      </p>
+    </div>
+  </div>
+</div>
+
+
 <h1>National Conferences</h1>
 <h2>Accepted</h2>
 
 <div class="content_block">
   <h2>Nonnegative Tucker Decomposition with Beta-divergence for Music Structure Analysis of audio signals.</h2>
-  Axel Marmoret, Florian Voorwinden, Valentin Leplat, Jérémy E Cohen, Frédéric Bimbot. arXiv preprint arXiv:2110.14434 - GRETSI 2022, Sep 2022, Nancy, France.
+  Axel Marmoret, Florian Voorwinden, Valentin Leplat, Jérémy E Cohen, Frédéric Bimbot. GRETSI 2022: XXVIIIe Colloque, Sep 2022, Nancy, France.
   <div class="box">
     <a href="javascript:void(0);" onclick="open_or_close('nonnegative_abstract')"><i class="fas fa-info-circle"></i></a>
     <a href="javascript:void(0);" onclick="open_or_close('nonnegative_bibtex')"><i class="fas fa-quote-left"></i></a>
@@ -164,11 +194,12 @@ function open_or_close(id){
   </div>
   <div id="nonnegative_bibtex" class="hidden_content_block">
     <div class="citation_content">
-      <p>@article{marmoret2021nonnegative,
+      <p>@inproceedings{marmoret2022nonnegative,
         title={Nonnegative Tucker Decomposition with Beta-divergence for Music Structure Analysis of audio signals},
         author={Marmoret, Axel and Voorwinden, Florian and Leplat, Valentin and Cohen, J{\'e}r{\'e}my E and Bimbot, Fr{\'e}d{\'e}ric},
-        journal={arXiv preprint arXiv:2110.14434},
-        year={2022}}</p>
+		booktitle={{GRETSI 2022: XXVIIIe Colloque}},
+		year={2022},
+		organization={GRETSI}}</p>
       </div>
     </div>
     <div id="nonnegative_abstract" class="hidden_content_block">
@@ -202,7 +233,7 @@ function open_or_close(id){
     </div>
 <div id="master_bibtex" class="hidden_content_block">
   <div class="citation_content">
-      <p>@article{marmoret2021multi,
+      <p>@article{marmoret2019multi,
   title={Multi-Channel Automatic Music Transcription Using Tensor Algebra},
   author={Marmoret, Axel and Bertin, Nancy and Cohen, J{\'e}r{\'e}my},
   journal={arXiv preprint arXiv:2107.11250},
