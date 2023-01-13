@@ -220,10 +220,39 @@ function open_or_close(id){
 
 <!--<h1>Pre-prints</h1>-->
 
-<h1>Thesis</h1>
+<h1>Theses</h1>
+<div class="content_block">
+  <h2>PhD: Unsupervised Machine Learning Paradigms for the Representation of Music Similarity and Structure.</h2>
+  Axel Marmoret, Ph.D. thesis. Under the supervision of Frédéric Bimbot and Jérémy Cohen. hal document hal:tel-03937846.
+    <div class="box">
+      <a href="javascript:void(0);" onclick="open_or_close('phd_abstract')"><i class="fas fa-info-circle"></i></a>
+      <a href="javascript:void(0);" onclick="open_or_close('phd_bibtex')"><i class="fas fa-quote-left"></i></a>
+      <a href="https://hal.science/tel-03937846" target="_blank"><i class="far fa-file-alt"></i></a>
+	  <a href="https://youtu.be/Mw7WiuDlQjs" target="_blank"><i class="fab fa-youtube"></i></a>	  
+    </div>
+<div id="phd_bibtex" class="hidden_content_block">
+  <div class="citation_content">
+      <p>@phdthesis{marmoret2022phd,
+  TITLE = {{Unsupervised Machine Learning Paradigms for the Representation of Music Similarity and Structure}},
+  AUTHOR = {Marmoret, Axel},
+  URL = {https://hal.science/tel-03937846},
+  SCHOOL = {{Universit{\'e}  Rennes 1}},
+  YEAR = {2022},
+  HAL_ID = {tel-03937846}}</p>
+  </div>
+</div>
+<div id="phd_abstract" class="hidden_content_block">
+  <div class="citation_content">
+      <p>Abstract: Musical structure, defined as a simplified representation of the organization of a song, is an important musicological concept, but hard to automatically estimate. This thesis presents new methods to automatically estimate the structural segmentation of a song, focusing the study of music at the barscale. By developing a new segmentation algorithm (called ``CBM'') and by comparing several unsupervised compression schemes (from linear and multilinear algebra to neural networks), paradigms introduced in this thesis result in segmentation performance outperforming those of the unsupervised State-of-the-Art methods and almost similar with those of the global State-of-the-Art, obtained with supervised machine learning algorithms. In particular, as the methods described in this thesis are unsupervised, the estimation do not rely on annotated data, lowering the bias in the estimates related to ambiguity and subjectivity (inherent to musical structure) while limiting the loss in performance compared to the best supervised methods. In addition, some of the methods studied in this thesis (in particular Nonnegative Tucker Decomposition) allow to extract automatically interpretable parts of a song which may be used for other task than the estimation of structure, and participate in the development of interpretable machine and deep learning algorithms, which is a major field of research nowadays.
+    </p>
+  </div>
+</div>
+</div>
+
+
 
 <div class="content_block">
-  <h2>Multi-Channel Automatic Music Transcription Using Tensor Algebra</h2>
+  <h2>Master: Multi-Channel Automatic Music Transcription Using Tensor Algebra</h2>
   Axel Marmoret, Master's thesis. Under the supervision of Nancy Bertin and Jérémy Cohen. arXiv preprint arXiv:2107.11250.
     <div class="box">
       <a href="javascript:void(0);" onclick="open_or_close('master_abstract')"><i class="fas fa-info-circle"></i></a>
