@@ -1,0 +1,35 @@
+.content .func .content_block .box {
+  margin-top: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+.content .func .content_block .box a {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+.content .func .content_block .box a:hover i {
+  background: var(--yellow);
+  border-radius: 5px;
+  transform: rotate(45deg) scale(0.8);
+}
+.content .func .content_block .box a:hover i::before {
+  transform: rotate(-45deg) scale(1.5);
+}
+.content .func .content_block .box i {
+  display: inline-block;
+  font-size: 30px;
+  background: var(--orange);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  color: var(--darker-grey);
+  margin: 0 10px 10px 10px;
+  transition-duration: 0.3s;
+}
+.content .func .content_block .box i::before {
+  transition-duration: 0.3s;
+}
+.content .func .content_block .box i.fa::before {
+  display: block;
+}
