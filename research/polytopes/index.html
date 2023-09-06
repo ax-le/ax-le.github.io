@@ -1,25 +1,47 @@
 <html lang="fr"><head>
-    <meta charset="utf-8">
-    <head>
-      <title>Polytopic Representation of Music</title>
-      <link rel="stylesheet" href="style/global.css">
-      <link rel="stylesheet" href="style/profile.css">
-      <link rel="stylesheet" href="style/index.css">
-    <script src="https://kit.fontawesome.com/12b596ef39.js" crossorigin="anonymous"></script>
-    </head>
-<body>
-<div class="content">
-  <div class="func">
-    <ul id="navigation">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="research.html">Research</a></li>
-       <li><a href="resume.html">Resume</a></li>
-       <li><a href="publications.html">Publications</a></li>
-       <li><a href="codes.html">Codes</a></li>
-       <li><a href="resources.html">Resources</a></li>
-    </ul>
+  <meta charset="utf-8">
+  <head>
+    <title>Polytopes</title>
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/profile.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    
+  <script src="https://kit.fontawesome.com/12b596ef39.js" crossorigin="anonymous"></script>
+  <link type="application/atom+xml" rel="alternate" href="/feed.xml" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Polytopes</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Polytopes" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Polytopes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"Polytopes","url":"/research/polytopes/"}</script>
+<!-- End Jekyll SEO tag -->
 
-      <div class="content_block to_justify">
+  </head>
+<body>
+  <div class="content">
+
+    <div class="func">
+      <ul id="navigation">
+  
+    <li><a href="/research/">Research</a></li>
+  
+    <li><a href="/resume/">Resume</a></li>
+  
+    <li><a href="/publications/">Publications</a></li>
+  
+    <li><a href="/codes/">Codes</a></li>
+  
+    <li><a href="/TODO/">Music</a></li>
+  
+    <li><a href="/resources/">Resources</a></li>
+  
+</ul>
+
+            <div class="content_block to_justify">
         <h3><i class="fab fa-connectdevelop"></i>Polytopic Representation of Music.</h3>
         <h2>Polywhat?</h2>
         A polytope is a mathematical object, with several different definitions. Then, let's redefine it! (yay!)<br>
@@ -43,7 +65,7 @@
         The S&C model is a model which links 4 elements. The first 3 will represent a system, and the 4-th will be compared to the 3 others, to form a contrast (which can be null).
         <br>
         Before a more precise explanation, take a look at the follwoing picture (from [3]).
-        <img class="content-img" src="imgs/s_and_c.png"/>
+        <img class="content-img" src="/assets/images/s_and_c.png"/>
         In the previous examples, we infer a logical sequence from the 3 first elements, and try to predict the 4-th element in this logic.
         <br>
         The "logical sequence" is the system, and the difference between the prediction and the "real" 4-th element is the contrast.
@@ -64,7 +86,7 @@
         <h2>Regular polytopes [2]</h2>
         <p><strong>Note: for now, all the presented models (and also the figures) come from C. Louboutin's work (principaly [2], but also his thesis [3]).</strong></p>
         We present below a 4-regular-polytope (an hypercube).
-        <img class="content-img rel-small" src="imgs/4-polytope.png"/>
+        <img class="content-img rel-small" src="/assets/images/4-polytope.png"/>
         This polytope has 16 vertices, indexed from 0 to 15, with edges connecting some of them.
         <br>
         The idea is to put, on each vertex, a musical element (typically, a chord). In a 4/4 time metric, 4 bars represents 16 beats.
@@ -74,19 +96,19 @@
         Hence, our polytope now define a 16 elements musical passage. Great! But what's the point?<br>
         <br>
         The trick is that this 4-regular-polytope can also be seen as 5 systems of 4 elements: 4 systems linking 4 consecutive elements (0/1/2/3, 4/5/6/7, 8/9/10/11 and 12/13/14/15), and a 5-th system linking the first elements of these systems (0/4/8/12).
-        <img class="content-img not-too-big" src="imgs/4-polytope-squares.png"/>
+        <img class="content-img not-too-big" src="/assets/images/4-polytope-squares.png"/>
         Hence, this 4 bars passage be seen as 5 S&C models.<br>Et voilà ! By summing the costs of each of these systems, we have defined a cost for this musical passage.
         <br><br>
         <strong>Well, almost.</strong> What is the cost of the relations between elements when talking about musical passages?
         <br>
         Many costs can be implemented, for instance reducing each chord on each vertex to its closest triad, and then consider the difference between two chords as a rotation in the circle of thirds (presented below), closely related to the circle of fifths.
-        <img class="content-img rel-small" src="imgs/circle_thirds.png"/>
+        <img class="content-img rel-small" src="/assets/images/circle_thirds.png"/>
         <strong>And what about audio signals?</strong><br> Well, <s>that's actually my contribution!</s> I was planning on extending this work to audio signals, but I wasn't able to to do so. If you're interested for this task, you can contact me at axel.marmoret.at.irisa.fr or contact Frédéric Bimbot at bimbot.at.irisa.fr.
         <br><br>
         <h2>Irregular polytopes [4]</h2>
         Regular polytopes are great, but what can we do when segments aren't of size 2**n (4, 8, 16, 32)?<br>
         For this task, C. Guichaoua introduced irregular polytopes. Some of them are presented below.
-        <img class="content-img" src="imgs/irreg_polytopes.png"/>
+        <img class="content-img" src="/assets/images/irreg_polytopes.png"/>
         Basically, it allows us to define a polytope for a lot (but not all!)* of segments sizes.<br>
         The challenging work here is to extend the previous S&C model to non-4 elements (done in the seminal paper, but not on Corentin's work) and to adapt this to audio signals (as before).<br>
         <small>*I don't want to detail their generation here, but basically, as we only alter regular polytopes with other regular polytopes, some size remain inaccessible.</small>
@@ -111,12 +133,17 @@
         [4] Guichaoua, C. (2017). Modèles de compression et critères de complexité pour la description et l'inférence de structure musicale (Doctoral dissertation).
         <a class="inner-link" href="https://tel.archives-ouvertes.fr/tel-01687054/" target="_blank">Link.</a>
       </div>
-      <div></div>
+
+
+    
+    <div>
+    </div>
     <footer>
       <div class="copyright">
         <p>For the theme: Copyright (c) 2020 by Naomi Bastian Weatherford <a target="_blank" class="inner-link" href="https://codepen.io/astronaomical/pen/KexYgb">(https://codepen.io/astronaomical/pen/KexYgb)</a></p>
       </div>
     </footer>
+    </div>
   </div>
-</div>
-</body></html>
+</body>
+</html>
