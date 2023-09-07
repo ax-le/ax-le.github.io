@@ -91,133 +91,151 @@
   
 </ul>
 
-          <div class="content_block">
+      
+
+    <div class="content_block">
       <h2>nn_fac</h2>
       <h4 class="center">pip install nn-fac</h4>
-	Toolbox of nonnegative factorization techniques, for both matrices (NMF) and tensors (NN-CP, NN-PARAFAC2 and NTD).
-  <br>
-	These decompositions are computed by solving NNLS (NonNegative Least Squares) problems on every factor when optimizing with respect to the Euclidean norm, or with Multiplicative Updates subject to each factor when optimizing the Beta-divergences.
-  <br><br>
-	Note: the techniques of this toolbox will soon be integrated to the <a class="inner-link" href="https://github.com/tensorly/tensorly" target="_blank">tensorly toolbox</a> thanks to my colleague <a class="inner-link" href="https://www.researchgate.net/profile/Caglayan-Tuna" target="_blank">Caglayan Tuna</a>! :)
+      <br>
+	Toolbox of nonnegative factorization techniques, for both matrices (NMF) and tensors (NN-CP, NN-PARAFAC2 and NTD). <br> These decompositions are computed by solving NNLS (NonNegative Least Squares) problems on every factor when optimizing with respect to the Euclidean norm, or with Multiplicative Updates subject to each factor when optimizing the Beta-divergences. <br><br> Note: the techniques of this toolbox are also integrated to the <a class="inner-link" href="https://github.com/tensorly/tensorly" target="_blank">tensorly toolbox</a> thanks to my colleague <a class="inner-link" href="https://www.researchgate.net/profile/Caglayan-Tuna" target="_blank">Caglayan Tuna</a>! :)
   <br><br>
   <small>Axel Marmoret, Jérémy Cohen. nn_fac: Nonnegative Factorization techniques toolbox. 2020.</small>
   <br>
     <div class="box">
       <a href="javascript:void(0);" onclick="open_or_close('nn_fac_bibtex')"><i class="fas fa-quote-left"></i></a>
-      <a href="https://gitlab.inria.fr/amarmore/nonnegative-factorization" target="_blank"><i class="fab fa-gitlab"></i></a>
-    </div>
+      
+        <a href=https://gitlab.inria.fr/amarmore/nonnegative-factorization target="_blank"><i class="fab fa-gitlab"></i></a> 
+          </div>
     <div id="nn_fac_bibtex" class="hidden_content_block">
       <div class="citation_content">
-        <p>@Misc{marmoret2020nnfac,
-          author={Marmoret, Axel and Cohen, Jeremy},
-          title = {nn_fac},
-          howpublished = {\url{https://gitlab.inria.fr/amarmore/nonnegative-factorization}},
-          year = {2020}}</p>
+        <p>@softwareversion{marmoret2020nn_fac, title={nn_fac: Nonnegative Factorization techniques toolbox}, author={Marmoret, Axel and Cohen, J{'e}r{'e}my}, URL={https://gitlab.inria.fr/amarmore/nonnegative-factorization}, LICENSE = {BSD 3-Clause ''New'' or ''Revised'' License}, year={2020}}</p>
         </div>
     </div>
     </div>
+  
+
     <div class="content_block">
       <h2>as_seg</h2>
       <h4 class="center">pip install as-seg</h4>
-      Code related to the CBM segmentation algorithm.
-	  <br>
-	  See our article "Convolutive Block-Matching Segmentation Algorithm with Application to Music Structure Analysis" for more details.
-      <br><br>
-      <small>Axel Marmoret, Jérémy Cohen, Frédéric Bimbot. 2022.</small>
-      <div class="box">
-        <a href="javascript:void(0);" onclick="open_or_close('as_seg_bibtex')"><i class="fas fa-quote-left"></i></a>
-        <a href="https://gitlab.inria.fr/amarmore/musicntd" target="_blank"><i class="fab fa-gitlab"></i></a>
-      </div>
-      <div id="as_seg_bibtex" class="hidden_content_block">
-        <div class="citation_content">
-            <p>@Misc{marmoret2020musicntd,
-              author={Marmoret, Axel and Cohen, Jeremy and Bertin, Nancy and Bimbot, Frederic},
-              title = ,
-              howpublished = {\url{https://gitlab.inria.fr/amarmore/musicntd}},
-              year = {2022}}</p>
+      <br>
+	Code related to the CBM segmentation algorithm. <br> See our article "Convolutive Block-Matching Segmentation Algorithm with Application to Music Structure Analysis" for more details.
+  <br><br>
+  <small>Axel Marmoret, Jérémy Cohen, Frédéric Bimbot. as_seg: module for computing and segmenting autosimilarity matrices. 2022.</small>
+  <br>
+    <div class="box">
+      <a href="javascript:void(0);" onclick="open_or_close('as_seg_bibtex')"><i class="fas fa-quote-left"></i></a>
+      
+        <a href=https://gitlab.inria.fr/amarmore/autosimilarity_segmentation target="_blank"><i class="fab fa-gitlab"></i></a> 
+      
+        <a href=https://hal.archives-ouvertes.fr/hal-03834996v1 target="_blank"><i class="far fa-file-alt"></i></a> 
+          </div>
+    <div id="as_seg_bibtex" class="hidden_content_block">
+      <div class="citation_content">
+        <p>@softwareversion{marmoret2022as_seg, title={as_seg: module for computing and segmenting autosimilarity matrices}, author={Marmoret, Axel and Cohen, J{'e}r{'e}my and Bimbot, Fr{'e}d{'e}ric}, URL={https://gitlab.inria.fr/amarmore/autosimilarity_segmentation}, LICENSE = {BSD 3-Clause ''New'' or ''Revised'' License}, year={2022}}</p>
         </div>
-      </div>
     </div>
+    </div>
+  
+
+    <div class="content_block">
+      <h2>barmuscomp</h2>
+      <h4 class="center">pip install barmuscomp</h4>
+      <br>
+	Code related to linear and nonlinear compression schemes, applied to music songs. The compressed representations are then used to infer the music structure. <br> See our article "Barwise Compression Schemes for Audio-Based Music Structure Analysis." for more details.
+  <br><br>
+  <small>Axel Marmoret, Jérémy Cohen, Frédéric Bimbot. BarMusComp: Encoding songs with linear and nonlinear compression methods to reveal structure. 2022.</small>
+  <br>
+    <div class="box">
+      <a href="javascript:void(0);" onclick="open_or_close('barmuscomp_bibtex')"><i class="fas fa-quote-left"></i></a>
+      
+        <a href=https://gitlab.inria.fr/amarmore/barmuscomp target="_blank"><i class="fab fa-gitlab"></i></a> 
+      
+        <a href=https://hal.science/hal-03600873 target="_blank"><i class="far fa-file-alt"></i></a> 
+          </div>
+    <div id="barmuscomp_bibtex" class="hidden_content_block">
+      <div class="citation_content">
+        <p>@softwareversion{marmoret2022barmuscomp, title={BarMusComp: module for computing barwise compressed representations of music}, author={Marmoret, Axel and Cohen, J{'e}r{'e}my and Bimbot, Fr{'e}d{'e}ric}, URL={https://gitlab.inria.fr/amarmore/barmuscomp}, LICENSE = {BSD 3-Clause ''New'' or ''Revised'' License}, year={2022}}</p>
+        </div>
+    </div>
+    </div>
+  
+
+    <div class="content_block">
+      <h2>musiconpolytopes</h2>
+      <h4 class="center">pip install musiconpolytopes</h4>
+      <br>
+	Code associated with the polytopical framework, used as a structural segmentation criterion for symbolic music. <br> See the preprint "Polytopic Analysis of Music" for more details.
+  <br><br>
+  <small>Axel Marmoret, Jérémy Cohen, Frédéric Bimbot. MusicOnPolytopes. 2021.</small>
+  <br>
+    <div class="box">
+      <a href="javascript:void(0);" onclick="open_or_close('musiconpolytope_bibtex')"><i class="fas fa-quote-left"></i></a>
+      
+        <a href=https://gitlab.inria.fr/amarmore/musiconpolytopes target="_blank"><i class="fab fa-gitlab"></i></a> 
+      
+        <a href=https://arxiv.org/abs/2212.11054v2 target="_blank"><i class="far fa-file-alt"></i></a> 
+          </div>
+    <div id="musiconpolytope_bibtex" class="hidden_content_block">
+      <div class="citation_content">
+        <p>@softwareversion{marmoret2021musiconpolytopes, title={MusicOnPolytopes}, author={Marmoret, Axel and Cohen, J{'e}r{'e}my and Bimbot, Fr{'e}d{'e}ric}, URL={https://gitlab.inria.fr/amarmore/musiconpolytopes}, LICENSE = {BSD 3-Clause ''New'' or ''Revised'' License}, year={2021}}</p>
+        </div>
+    </div>
+    </div>
+  
+
+    <h1>Deprecated toolboxes</h1>
+    <h2>(Sometimes refered to in articles)</h2>
+
+
+  
 
     <div class="content_block">
       <h2>BarwiseMusicCompression</h2>
-      <h4 class="center">pip install not available yet.</h4>
-      Code related to linear and non-linear barwise music compression, then used for music segmentation.
       <br>
-      See <a class="inner-link" href="barwisecompression.html">barwise music compression</a> or our article "Barwise Compression Schemes for Audio-Based Music Structure Analysis." for more details.
-      <br><br>
-      <small>Axel Marmoret, Jérémy Cohen, Frédéric Bimbot. 2022.</small>
-      <div class="box">
-        <!--<a href="javascript:void(0);" onclick="open_or_close('musicae_bibtex')"><i class="fas fa-quote-left"></i></a>-->
-        <a href="https://gitlab.inria.fr/amarmore/barwisemusiccompression" target="_blank"><i class="fab fa-gitlab"></i></a>
-      </div>
-      <div id="musicae_bibtex" class="hidden_content_block">
-        <div class="citation_content">
-            <p>@softwareversion{marmoret:hal-03406224v1,
-  TITLE = ,
-  AUTHOR = {Marmoret, Axel and Cohen, J{\'e}r{\'e}my E and Bimbot, Fr{\'e}d{\'e}ric},
-  URL = {https://hal.archives-ouvertes.fr/hal-03406224},
-  YEAR = {2021},
-  MONTH = Oct,
-  SWHID = {swh:1:dir:a5df9cf7e88b8893dc205465dbd7ba6595869d0a;origin=https://hal.archives-ouvertes.fr/hal-03406224;visit=swh:1:snp:18fb7d99d56d01720cd104405c78dfe757c06308;anchor=swh:1:rev:fb43c7c06c6483761726c753df0905510487458b;path=/},
-  LICENSE = {BSD 3-Clause ''New'' or ''Revised'' License},
-  FILE = {https://hal.archives-ouvertes.fr/hal-03406224/file/zipHal.zip},
-  HAL_ID = {hal-03406224},
-  HAL_VERSION = {v1}}</p>
-        </div>
-      </div>
+	Code related to linear and non-linear barwise music compression, then used for music segmentation. <br> Associated to the paper "Barwise Compression Schemes for Audio-Based Music Structure Analysis.", but replaced by the toolbox <i>barmuscomp</i> since.
+  <br><br>
+  <small>Axel Marmoret, Jérémy Cohen, Frédéric Bimbot. BarwiseMusicCompression. 2022.</small>
+  <br>
+    <div class="box">
+      
+        <a href=https://gitlab.inria.fr/amarmore/barwisemusiccompression target="_blank"><i class="fab fa-gitlab"></i></a> 
+      
+        <a href=https://hal.science/hal-03600873 target="_blank"><i class="far fa-file-alt"></i></a> 
+          </div>
     </div>
+  
 
     <div class="content_block">
-      <h2>MusicAE (deprecated)</h2>
-      <h4 class="center">pip install musicae</h4>
-      Code related to single-song autoencoding, then used for music segmentation. This code is actually deprecated, because contained in the larger "barwisemusiccompression" package.
+      <h2>MusicAE</h2>
       <br>
-      See the Single-Song AutoEncoder part in <a class="inner-link" href="barwisecompression.html">barwise music compression</a> or our article "Barwise Compression Schemes for Audio-Based Music Structure Analysis." for more details.
-      <br><br>
-      <small>Axel Marmoret, Jérémy Cohen, Frédéric Bimbot. 2021.</small>
-      <div class="box">
-        <a href="javascript:void(0);" onclick="open_or_close('musicae_bibtex')"><i class="fas fa-quote-left"></i></a>
-        <a href="https://gitlab.inria.fr/amarmore/musicae" target="_blank"><i class="fab fa-gitlab"></i></a>
-      </div>
-      <div id="musicae_bibtex" class="hidden_content_block">
-        <div class="citation_content">
-            <p>@softwareversion{marmoret:hal-03406224v1,
-  TITLE = ,
-  AUTHOR = {Marmoret, Axel and Cohen, J{\'e}r{\'e}my E and Bimbot, Fr{\'e}d{\'e}ric},
-  URL = {https://hal.archives-ouvertes.fr/hal-03406224},
-  YEAR = {2021},
-  MONTH = Oct,
-  SWHID = {swh:1:dir:a5df9cf7e88b8893dc205465dbd7ba6595869d0a;origin=https://hal.archives-ouvertes.fr/hal-03406224;visit=swh:1:snp:18fb7d99d56d01720cd104405c78dfe757c06308;anchor=swh:1:rev:fb43c7c06c6483761726c753df0905510487458b;path=/},
-  LICENSE = {BSD 3-Clause ''New'' or ''Revised'' License},
-  FILE = {https://hal.archives-ouvertes.fr/hal-03406224/file/zipHal.zip},
-  HAL_ID = {hal-03406224},
-  HAL_VERSION = {v1}}</p>
-        </div>
-      </div>
-    </div>
-
-	<div class="content_block">
-      <h2>MusicOnPolytopes</h2>
-      Code associated with the polytopical framework, used as a structural segmentation criterion for symbolic music.
-      <br>
-      See <a class="inner-link" href="polytopes.html">Polytopes</a> for more details.
-      <br><br>
-    <small>Axel Marmoret, Jérémy Cohen, Frédéric Bimbot. 2021.</small>
+	Code related to single-song autoencoding, then used for music segmentation. This code is actually deprecated, because contained and enhanced in the larger <i>barmuscomp</i> toolbox. <br> Associated to the preprint "Exploring single-song autoencoding schemes for audio-based music structure analysis".
+  <br><br>
+  <small>Axel Marmoret, Jérémy Cohen, Frédéric Bimbot. MusicAE. 2021.</small>
+  <br>
     <div class="box">
-      <a href="javascript:void(0);" onclick="open_or_close('musicpolytopes_bibtex')"><i class="fas fa-quote-left"></i></a>
-      <a href="https://gitlab.inria.fr/amarmore/musiconpolytopes" target="_blank"><i class="fab fa-gitlab"></i></a>
+      
+        <a href=https://gitlab.inria.fr/amarmore/musicae target="_blank"><i class="fab fa-gitlab"></i></a> 
+      
+        <a href=https://arxiv.org/abs/2110.14437 target="_blank"><i class="far fa-file-alt"></i></a> 
+          </div>
     </div>
-    <div id="musicpolytopes_bibtex" class="hidden_content_block">
-      <div class="citation_content">
-        <p>@Misc{marmoret2021musiconpolytopes,
-          author={Marmoret, Axel and Cohen, J{\'e}r{\'e}my E and Bimbot, Fr{\'e}d{\'e}ric},
-          title = ,
-          howpublished = {\url{https://gitlab.inria.fr/amarmore/musiconpolytopes}},
-          year = {2021}}</p>
-        </div>
+  
+
+    <div class="content_block">
+      <h2>MusicNTD</h2>
+      <br>
+	Code related to the pre-processing of data for using the NTD. This code is actually deprecated, because contained and enhanced in the larger <i>barmuscomp</i> toolbox. <br> Associated to the article "Uncovering Audio Patterns in Music with Nonnegative Tucker Decomposition for Structural Segmentation".
+  <br><br>
+  <small>Axel Marmoret, Jérémy Cohen, Nancy Bertin, Frédéric Bimbot. MusicNTD. 2021.</small>
+  <br>
+    <div class="box">
+      
+        <a href=https://gitlab.inria.fr/amarmore/musicntd target="_blank"><i class="fab fa-gitlab"></i></a> 
+      
+        <a href=https://hal.science/hal-02928733v1 target="_blank"><i class="far fa-file-alt"></i></a> 
+          </div>
     </div>
-    </div>
+  
 
 
     
