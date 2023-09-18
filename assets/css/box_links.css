@@ -2,6 +2,8 @@
   margin-top: 20px;
   text-align: center;
   vertical-align: middle;
+  	background: var(--dark-grey);
+
 }
 .content .func .content_block .box a {
   display: inline-block;
@@ -33,3 +35,17 @@
 .content .func .content_block .box i.fa::before {
   display: block;
 }
+.content .func .content_block h2 {
+font-size: large;
+}
+
+.responsive-iframe {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+}
+
