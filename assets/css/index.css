@@ -44,10 +44,6 @@
 .content .func > div:last-of-type {
   padding-bottom: 0;
 }
-.content .func {
-  width: 100%;
-  padding: 30px;
-}
 .content .func:hover > div {
   transition-duration: 0.5s;
 }

@@ -33,8 +33,6 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  min-height:100vh;
-  height: 100%;
   margin: 0;
   padding: 0;
   -webkit-transition: 0.5s;
@@ -78,7 +76,7 @@ h3 {
   box-shadow: 10px 10px var(--black);*/
   position: relative;
   display: flex;
-  height: 100%;
+  margin-top: 80px; /*For the navbar*/
 }
 
 .to_justify{
@@ -123,6 +121,10 @@ h3 {
   box-sizing: border-box;
   float: right;
   margin-left: 400px;
+  width: 100%;
+  padding-top: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .content .func > div {
   padding-bottom: 10px;
@@ -130,10 +132,7 @@ h3 {
 .content .func > div:last-of-type {
   padding-bottom: 0;
 }
-.content .func {
-  width: 100%;
-  padding: 30px;
-}
+
 .content .func:hover > div {
   transition-duration: 0.5s;
 }
@@ -179,4 +178,88 @@ h3 {
   font-size: 12px;
   padding: 2px;
   padding-left:15px;
+}
+
+#navigation_mobile {
+    display: none;
+}
+
+.navigation_div{
+  margin: 0;
+  background: var(--dark-grey) ;
+  padding: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.navigation_div ul {
+margin: 0px;
+padding-left: 20px;
+}
+
+.navigation_div li {
+  display: inline-block;
+  width:10%;
+  margin: 5px;
+  padding: 0px;
+  min-width:120px;
+}
+
+.navigation_div li a {
+  margin: auto;
+  background: var(--dark-grey) ;
+  color: var(--lightest-grey) ;
+  text-align: center ;
+  max-width:600px;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navigation_div li a:hover, .navigation_div li a:focus, .navigation_div li a:active {
+  background: var(--light-grey) ;
+  color:var(--yellow);
+}
+
+@media only screen and (max-width: 850px) {
+  .base, .navigation_div {
+    display: none;
+  }
+  .content .func {
+    margin-left: 0;
+  }
+  #navigation_mobile {
+  display: block;
+  position: relative; 
+  }
+  
+  #navigation_mobile li {
+  display: inline-block;
+  width:50%;
+  min-width:120px;
+  margin: 0px;
+}
+
+#navigation_mobile li a {
+  margin: 5px;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background: var(--dark-grey) ;
+  color: var(--lightest-grey) ;
+  text-align: center ;
+}
+
+#navigation_mobile li a:hover, #navigation_mobile li a:focus, #navigation_mobile li a:active {
+  background: var(--light-grey) ;
+  color:var(--yellow);
+}
+
+.content {
+  margin-top: 0px; /*For the navbar*/
+}
+  
 }
