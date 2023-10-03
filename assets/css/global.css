@@ -192,6 +192,9 @@ h3 {
   position: fixed;
   top: 0;
   z-index: 10;
+  border-bottom-width: 10px;
+  border-color: var(--darkest-grey);
+  border-bottom-style: solid;
 }
 
 .navigation_div ul {
