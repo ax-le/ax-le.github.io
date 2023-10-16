@@ -2,7 +2,7 @@
   box-sizing: border-box;
   float: left;
   position:fixed;
-  height:100vh;
+  height:90vh;
   overflow:auto;
 }
 .content .base > div {
