@@ -1,62 +1,149 @@
-<h1>
-    Song reconstruction with NTD.
-</h1>
-<h2>Original song (baseline)</h2>
-<audio controls>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Showcasing NTD</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .container {
+      text-align: center;
+      padding: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    h1, h2 {
+      font-family: 'Arial', sans-serif;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    p, a {
+      font-size: 1em;
+      line-height: 1.6;
+      color: #555;
+    }
+    a {
+      text-decoration: none;
+      color: #007bff;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
+      margin: 10px 0;
+    }
+    hr {
+      border: none;
+      height: 1px;
+      background-color: #ddd;
+      margin: 20px 0;
+    }
+    .reference {
+      text-align: left;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Song Reconstruction with NTD</h1>
+    <h2>Original Song (Baseline)</h2>
+    <div class="description">
+      <p>Listen to the original song below to get a baseline of the audio quality.</p>
+    </div>
+    <audio controls>
   <source src="/assets/audio/original_recons.wav" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-<h2>NTD reconstruction</h2>
-<p>Euclidean distance:</p>
-<audio controls>
+  </div>
+
+  <div class="container">
+    <h2>NTD Reconstruction</h2>
+    <div class="description">
+      <h4>Here are reconstrutions of the song, computed with NTD.</h4>
+    </div>
+    <p>Euclidean Distance optimization:</p>
+    <audio controls>
   <source src="/assets/audio/NTD_recons_euc.wav" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-<p>KL-divergence:</p>
-<audio controls>
+    <p>KL-Divergence optimization:</p>
+    <audio controls>
   <source src="/assets/audio/NTD_recons_kl.wav" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-<p>IS-divergence:</p>
-
-<audio controls>
+    <p>IS-Divergence optimization:</p>
+    <audio controls>
   <source src="/assets/audio/NTD_recons_is.wav" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
+  </div>
+  <hr>
 
-<h1>
-    Focusing on one particular pattern.
-</h1>
-<h2>Original bar (baseline)</h2>
-<audio controls>
+  <div class="container">
+    <h1>Focusing on One Particular Pattern</h1>
+    <h2>Original Bar (Baseline)</h2>
+    <div class="description">
+      <p>Listen to a particular bar of the song (first bar of Come Together).</p>
+    </div>
+    <audio controls>
   <source src="/assets/audio/a_bar_original.wav" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-<h2>A musical pattern from NTD</h2>
-<p>Euclidean distance:</p>
-<audio controls>
+  </div>
+
+  <div class="container">
+    <h2>A Musical Pattern from NTD</h2>   
+    <div class="description">
+      <h4>Here are musical patterns from the NTD, corresponding to the previous bar.</h4>
+    </div>
+    <p>Euclidean Distance optimization:</p>
+    <audio controls>
   <source src="/assets/audio/NTD_pattern_euc.wav" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-<p>KL-divergence:</p>
-<audio controls>
+    <p>KL-Divergence optimization:</p>
+    <audio controls>
   <source src="/assets/audio/NTD_pattern_kl.wav" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-<p>IS-divergence:</p>
-<audio controls>
+    <p>IS-Divergence optimization:</p>
+    <audio controls>
   <source src="/assets/audio/NTD_pattern_is.wav" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
+  </div>
+  <hr>
 
-<h1>More details</h1>
-See our Notebook over <a href"resources/examples/ListeningNTD_details.html" target="_blank">here</a>, with code details and more explanations on the outputs.
-
-You can also see [1, Chap. 4] for complete details about NTD, or [2] for our original NTD publication and [3] for the extension to the beta-divergences losses.
-
-<h2>References</h2>
-[1] Axel Marmoret, Unsupervised Machine Learning Paradigms for the Representation of Music Similarity and Structure. PhD thesis, Université Rennes 1, 2022.
-<br>
-[2] Axel Marmoret, Jérémy Cohen, Nancy Bertin, Frédéric Bimbot. ISMIR 2020 - 21st International Society for Music Information Retrieval, Oct 2020, Montréal (Online), Canada. 
-<br>
-[3] Axel Marmoret, Florian Voorwinden, Valentin Leplat, Jérémy E Cohen, Frédéric Bimbot. GRETSI 2022: XXVIIIe Colloque, Sep 2022, Nancy, France.
+  <div class="container">
+    <h1>More Details</h1>
+    <p><a href="/resources/examples/ListeningNTD_details.html" target="_blank">See our Notebook here</a>, with code details and more explanations on the outputs.</p>
+    <p>You can also refer to the literature below for more comprehensive details:</p>
+    <div class="reference">
+      <p>[1] Axel Marmoret, "Unsupervised Machine Learning Paradigms for the Representation of Music Similarity and Structure". PhD thesis, Université Rennes 1, 2022.</p>
+      <p>[2] Axel Marmoret, Jérémy Cohen, Nancy Bertin, Frédéric Bimbot. "ISMIR 2020 - 21st International Society for Music Information Retrieval", Oct 2020, Montréal (Online), Canada.</p>
+      <p>[3] Axel Marmoret, Florian Voorwinden, Valentin Leplat, Jérémy E Cohen, Frédéric Bimbot. "GRETSI 2022: XXVIIIe Colloque", Sep 2022, Nancy, France.</p>
+    </div>
+  </div>
+</body>
+</html>
