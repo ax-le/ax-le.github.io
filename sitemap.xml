@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/resources/examples/ListeningNTD%20-%20Copie.html</loc>
-</url>
-<url>
 <loc>/resources/examples/ListeningNTD.html</loc>
 </url>
 <url>
@@ -59,6 +56,10 @@
 <lastmod>2022-09-14T17:21:50+02:00</lastmod>
 </url>
 <url>
+<loc>/assets/pdf/posters/WASPAA23_convolutive.pdf</loc>
+<lastmod>2023-10-06T18:21:04+02:00</lastmod>
+</url>
+<url>
 <loc>/assets/pdf/resume.pdf</loc>
 <lastmod>2023-10-07T15:14:27+02:00</lastmod>
 </url>
@@ -100,6 +101,6 @@
 </url>
 <url>
 <loc>/resources/examples/ListeningNTD_details.html</loc>
-<lastmod>2022-09-07T00:01:23+02:00</lastmod>
+<lastmod>2023-10-26T03:02:32+02:00</lastmod>
 </url>
 </urlset>
