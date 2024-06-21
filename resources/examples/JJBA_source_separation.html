@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Showcasing NMF</title>
+  <title>Audio Source Separation with NMF</title>
   <style>
     body {
       margin: 0;
@@ -58,92 +58,82 @@
       background-color: #ddd;
       margin: 20px 0;
     }
-    .reference {
-      text-align: left;
-      margin-top: 20px;
+    .arrow-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 20px 0;
+    }
+    .arrow {
+      font-size: 2em;
+      /* transform: rotate(45deg); */
+    }
+    .audio-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .audio-item {
+      margin: 10px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Song Reconstruction with NTD</h1>
-    <h2>Original Song (Baseline)</h2>
-    <div class="description">
-      <p>Listen to the original song below to get a baseline of the audio quality.</p>
-    </div>
-    <audio controls>
-  <source src="/assets/audio/original_recons.wav" type="audio/mpeg">
+    <h1>Audio Source Separation with NMF</h1>
+    <p>
+      Hello! This example demonstrates the use of Non-negative Matrix Factorization (NMF) for audio source separation, in the context of bioacoustics data. 
+      <br>
+      This presentations is intended for the JJBA conference.
+    <hr>
+    <h2>Example on the Anuraset dataset</h2>
+    <p>File: INCT17_20191113_040000. Three estimated sources (according to the author).</p>
+      <div class="audio-container">
+      <div class="audio-item">
+        <h3>Original Audio</h3>
+        <audio controls>
+  <source src="/assets/audio/JJBA/original_anuraset_audio.wav" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-  </div>
+      </div>
+    </div>
+    <div class="arrow-container">
+      <div class="arrow">↙</div>
+      <div class="arrow">↓</div>
+      <div class="arrow">↘</div>
 
-  <div class="container">
-    <h2>NTD Reconstruction</h2>
-    <div class="description">
-      <h4>Here are reconstrutions of the song, computed with NTD.</h4>
     </div>
-    <p>Euclidean Distance optimization:</p>
-    <audio controls>
-  <source src="/assets/audio/NTD_recons_euc.wav" type="audio/mpeg">
+    <div class="audio-container">
+      <div class="audio-item">
+        <h3>Separated Source 1</h3>
+        <p>(Noise)</p>
+        <audio controls>
+  <source src="/assets/audio/JJBA/anuraset_separated_source1.wav" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-    <p>KL-Divergence optimization:</p>
-    <audio controls>
-  <source src="/assets/audio/NTD_recons_kl.wav" type="audio/mpeg">
+      </div>
+      <div class="audio-item">
+        <h3>Separated Source 2</h3>
+        <p>(Frog)</p>
+        <audio controls>
+  <source src="/assets/audio/JJBA/anuraset_separated_source2.wav" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-    <p>IS-Divergence optimization:</p>
-    <audio controls>
-  <source src="/assets/audio/NTD_recons_is.wav" type="audio/mpeg">
+      </div>
+      <div class="audio-item">
+        <h3>Separated Source 3</h3>
+        <p>(Bird)</p>
+        <audio controls>
+  <source src="/assets/audio/JJBA/anuraset_separated_source3.wav" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-  </div>
-  <hr>
-
-  <div class="container">
-    <h1>Focusing on One Particular Pattern</h1>
-    <h2>Original Bar (Baseline)</h2>
-    <div class="description">
-      <p>Listen to a particular bar of the song (first bar of Come Together).</p>
+      </div>
     </div>
-    <audio controls>
-  <source src="/assets/audio/a_bar_original.wav" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-  </div>
-
-  <div class="container">
-    <h2>A Musical Pattern from NTD</h2>   
-    <div class="description">
-      <h4>Here are musical patterns from the NTD, corresponding to the previous bar.</h4>
-    </div>
-    <p>Euclidean Distance optimization:</p>
-    <audio controls>
-  <source src="/assets/audio/NTD_pattern_euc.wav" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-    <p>KL-Divergence optimization:</p>
-    <audio controls>
-  <source src="/assets/audio/NTD_pattern_kl.wav" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-    <p>IS-Divergence optimization:</p>
-    <audio controls>
-  <source src="/assets/audio/NTD_pattern_is.wav" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-  </div>
-  <hr>
-
-  <div class="container">
-    <h1>More Details</h1>
-    <p><a href="/resources/examples/ListeningNTD_details.html" target="_blank">See our Notebook here</a>, with code details and more explanations on the outputs.</p>
-    <p>You can also refer to the literature below for more comprehensive details:</p>
-    <div class="reference">
-      <p>[1] Axel Marmoret, "Unsupervised Machine Learning Paradigms for the Representation of Music Similarity and Structure". PhD thesis, Université Rennes 1, 2022.</p>
-      <p>[2] Axel Marmoret, Jérémy Cohen, Nancy Bertin, Frédéric Bimbot. "ISMIR 2020 - 21st International Society for Music Information Retrieval", Oct 2020, Montréal (Online), Canada.</p>
-      <p>[3] Axel Marmoret, Florian Voorwinden, Valentin Leplat, Jérémy E Cohen, Frédéric Bimbot. "GRETSI 2022: XXVIIIe Colloque", Sep 2022, Nancy, France.</p>
-    </div>
+    <hr>
+    <h2>Examples on marine mammals</h2>
+    <p>TODO</p>
   </div>
 </body>
 </html>
+<!--  -->
