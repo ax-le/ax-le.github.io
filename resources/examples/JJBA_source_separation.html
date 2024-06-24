@@ -51,7 +51,7 @@
       border-radius: 4px;
       padding: 5px;
       margin: 10px 0;
-    }
+    } 
     hr {
       border: none;
       height: 1px;
@@ -69,26 +69,42 @@
       /* transform: rotate(45deg); */
     }
     .audio-container {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; /* Changed to flex-start to align items to the top */
+  flex-wrap: wrap;
+}
+.audio-item {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+    .image-audio-pair {
+      margin-bottom: 20px;
     }
-    .audio-item {
-      margin: 10px;
-    }
+    .image-audio-pair-small img {
+      max-width: 400px; /* Resize the images to be smaller */
+      height: auto;    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Audio Source Separation with NMF</h1>
     <p>
-      Hello! This example demonstrates the use of Non-negative Matrix Factorization (NMF) for audio source separation, in the context of bioacoustics data. 
+      Hello! This example demonstrates the use of Non-negative Matrix Factorization (NMF) for audio source separation, in the context of bioacoustics data (amphibean and whales). 
       <br>
-      This presentations is intended for the JJBA conference.
+      This presentation is designed for the <a href="https://jjbioacoustique.wixsite.com/jjba">JJBA 2024 conference</a>.
     <hr>
+
+
+
+
+
+
+
     <h2>Example on the Anuraset dataset</h2>
-    <p>File: INCT17_20191113_040000. Three estimated sources (according to the author).</p>
+    <p>File: INCT17_20191113_040000. 3 estimated sources (according to the authors), hence NMF was performed with 3 components.</p>
       <div class="audio-container">
       <div class="audio-item">
         <h3>Original Audio</h3>
@@ -107,7 +123,7 @@
     <div class="audio-container">
       <div class="audio-item">
         <h3>Separated Source 1</h3>
-        <p>(Noise)</p>
+        <p>(Noise + grasshopper + constant bass frog)</p>
         <audio controls>
   <source src="/assets/audio/JJBA/anuraset_separated_source1.wav" type="audio/mpeg">
   Your browser does not support the audio element.
@@ -131,8 +147,117 @@
       </div>
     </div>
     <hr>
+
+
+
+
+
+
+
     <h2>Examples on marine mammals</h2>
-    <p>TODO</p>
+    <p>This example is an underwater recordings containing humpback whales (TODO: ask Dorian Cazau for the reference).</p>
+    <p>The signal has been restricted to the first 12 minutes, for simplifying the problem and listening conditions.</p>
+    <p>Below, you will find the original audio of the first 12 minutes, along with the spectrogram (STFT) of this audio.</p>
+    <p>6 sources have been estimated by the authors, hence NMF was performed with 6 components. Find the results below. For the separated sources, only 10s with strong activity have been kept.</p>      
+      <p>Note that for this example, NMF was computed using the Kullback-Leibler divergence</p>
+    <div class="container">
+      <div class="audio-container">
+        <div class="audio-item image-audio-pair">
+          <h2>Original signal</h2>
+          <img src="/assets/images/JJBA/marine_mammals/original_spectrogram.png" alt="Original spectrogram.">
+          <br>
+          <audio controls>
+  <source src="/assets/audio/JJBA/marine_mammals/original_signal.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+        </div>
+      </div>
+      <!-- <hr> -->
+      <div class="audio-container">
+        <div class="audio-item image-audio-pair">
+          <h2>Reconstructed mixture (with NMF)</h2>
+          <img src="/assets/images/JJBA/marine_mammals/whole_mixture.png" alt="Reconstructed mixture.">
+          <br>
+          <audio controls>
+  <source src="/assets/audio/JJBA/marine_mammals/reconstructed_mixture.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+        </div>
+      </div>
+      <div class="arrow-container">
+        <div class="arrow">↓</div>
+        <div class="arrow">↓</div>
+        <div class="arrow">↓</div>
+        <div class="arrow">↓</div>
+        <div class="arrow">↓</div>
+        <div class="arrow">↓</div>
+      </div>
+      <div class="audio-container">
+        <div class="audio-item image-audio-pair-small">
+          <h2>Separated Source 1</h2>
+          <p>Background and water noise</p>
+          <img src="/assets/images/JJBA/marine_mammals/source_0.png" alt="First source.">
+          <br>
+          <audio controls>
+  <source src="/assets/audio/JJBA/marine_mammals/source_0.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+        </div>
+        <div class="audio-item image-audio-pair-small">
+          <h2>Separated Source 2</h2>
+          <p>Low frequency call</p>
+          <img src="/assets/images/JJBA/marine_mammals/source_1.png" alt="Second source.">
+          <br>
+          <audio controls>
+  <source src="/assets/audio/JJBA/marine_mammals/source_1.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+        </div>
+        <div class="audio-item image-audio-pair-small">
+          <h2>Separated Source 3</h2>
+          <p>High frequency call</p>
+          <img src="/assets/images/JJBA/marine_mammals/source_2.png" alt="Third source.">
+          <br>
+          <audio controls>
+  <source src="/assets/audio/JJBA/marine_mammals/source_2.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+        </div>
+        <div class="audio-item image-audio-pair-small">
+          <h2>Separated Source 4</h2>
+          <p>Medium-to-High frequency call</p>
+          <img src="/assets/images/JJBA/marine_mammals/source_3.png" alt="Fourth source.">
+          <br>
+          <audio controls>
+  <source src="/assets/audio/JJBA/marine_mammals/source_3.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+        </div>
+        <div class="audio-item image-audio-pair-small">
+          <h2>Separated Source 1</h2>
+          <p>Medium-to-Low frequency call</p>
+          <img src="/assets/images/JJBA/marine_mammals/source_4.png" alt="Fifth source.">
+          <br>
+          <audio controls>
+  <source src="/assets/audio/JJBA/marine_mammals/source_4.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+        </div>
+        <div class="audio-item image-audio-pair-small">
+          <h2>Separated Source 1</h2>
+          <p>Medium frequency call</p>
+          <img src="/assets/images/JJBA/marine_mammals/source_5.png" alt="Sixth source.">
+          <br>
+          <audio controls>
+  <source src="/assets/audio/JJBA/marine_mammals/source_5.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+        </div>
+      </div>
+    </div>
+
+
+    <br>intended
   </div>
 </body>
 </html>
