@@ -28,6 +28,9 @@
 <loc>/music/</loc>
 </url>
 <url>
+<loc>/resources/examples/nuit_des_chercheurs_2024.html</loc>
+</url>
+<url>
 <loc>/research/polytopes/</loc>
 </url>
 <url>
@@ -49,6 +52,10 @@
 <url>
 <loc>/assets/pdf/posters/ISMIR20_uncovering.pdf</loc>
 <lastmod>2020-10-02T12:38:40+02:00</lastmod>
+</url>
+<url>
+<loc>/assets/pdf/posters/JJBA_2024_naive.pdf</loc>
+<lastmod>2024-06-20T17:16:11+02:00</lastmod>
 </url>
 <url>
 <loc>/assets/pdf/posters/SMC22_barwise.pdf</loc>
