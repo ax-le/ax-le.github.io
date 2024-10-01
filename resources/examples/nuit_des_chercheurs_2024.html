@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Nuit des Chercheur·es: IA et musique</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #4A4A4A; /* Dark gray */
+            color: white;
+            margin-top: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .column {
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #4A4A4A; /* Dark gray */
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .arrows {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .arrow {
+            margin: 5px 0;
+            font-size: 1.5em;
+            color: #888888; /* Light gray */
+        }
+
+        .arrow:after {
+            content: "↓";
+        }
+
+        .container p {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+
+        .container_footer {
+            text-align: center;
+            padding: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .reference {
+            text-align: left;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>La Nuit des Chercheur·es: AI and music</h1>
+
+    <div class="container">
+        <!-- First Column: Source Separation -->
+        <div class="column">
+            <h2>Analysis: Source Separation </h2>
+            <p>Using the Demucs neural network [Rouard, 2023]</p>
+
+            <br>
+            <p>Original Audio - Come Together, The Beatles</p>
+            <audio controls>
+  <source src="/assets/audio/nuit_chercheurs/source_sep/come_tog.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio> 
+
+            <div class="arrows">
+                <div class="arrow"></div>
+            </div>
+
+                
+            <p>Vocals</p>
+            <audio controls>
+  <source src="/assets/audio/nuit_chercheurs/source_sep/vocals.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio> 
+
+            <p>Guitar</p>
+            <audio controls>
+  <source src="/assets/audio/nuit_chercheurs/source_sep/other.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio> 
+
+            <p>Drums</p>
+            <audio controls>
+  <source src="/assets/audio/nuit_chercheurs/source_sep/drums.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio> 
+
+            <p>Bass</p>
+            <audio controls>
+  <source src="/assets/audio/nuit_chercheurs/source_sep/bass.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio> 
+
+        </div>
+
+        <!-- Second Column: Generation -->
+        <div class="column">
+            <h2>Generation by text prompt</h2>
+            <p>This song was obtaiined using the site <a href="https://www.udio.com" target="_blank">udio</a></p>
+  
+            <audio controls>
+  <source src="/assets/audio/nuit_chercheurs/generation/udio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>                 
+
+			<p>Prompt: "une chanson à propos d'un évènement de vulgarisation scientifique appelé 'la nuit des chercheurs' ayant lieu à Océanopolis à Brest."</p>
+            <p>Some tags were also added: longing, warm, french pop, happy, sensual, uplifting, love, rhythmic, melodic, female vocalist</p>
+            <p>(NB: I remember adding some of these tags, but not all actually, "Love" for instance. Because I copied some tags from a different song, I liked, I may have unintenionally added them. Some tags are hence not suited for the context, sorry about that.)</p>
+              
+
+        </div>
+
+        <!-- Third Column: Fun stuff -->
+        <div class="column">
+            <h2>Fun stuff</h2>
+			<p>Guess what's happening</p>
+
+            <audio controls>
+  <source src="/assets/audio/nuit_chercheurs/meowify/dumb_crop.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio> 
+
+			
+			<div class="arrows">
+                <div class="arrow"></div>
+			</div>
+
+            <audio controls>
+  <source src="/assets/audio/nuit_chercheurs/meowify/meowify_dumb_crop.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio> 
+
+            <br><br><br><br>
+            <p>Spoiler: It replaces the singer by a cat! And it's called <b>Meowify</b> [Melistas, 2020]</p>
+            <p><a href="https://www.youtube.com/watch?v=8xiwuumLkOQ" target="_blank">Original YouTube link</a>, and a <a href="https://www.youtube.com/watch?v=EjrlgksRq0U" target="_blank">video with some details</a></p>
+			
+        </div>
+    </div>
+
+    <div class="container_footer">
+        <h2>Credits</h2>
+        <p>This work was presented at the "Nuit des Chercheur·es", in Sep. 2024, in Brest, France, by Axel Marmoret (https://ax-le.github.io/).</p>
+        <p>The website was coded using ChatGPT 4o.</p>
+        <h2>A little bit of context</h2>
+        <p>"La Nuit des Chercheur·es" (<i>Night of researchers</i>) is a scientific vulgarization event which aims at introducing researchers' work to a wide audience of general public.</p>
+        <p>This page was generated in this context, with the goal of presenting some tools using AI (Artificial Intelligence) in relation to music.</p>
+        <h2>Technical Details</h2>
+        <p>You can also refer to the literature below for more comprehensive details:</p>
+        <div class="reference">
+          <p>[Rouard, 2023] Rouard S, Massa F, Défossez A. "Hybrid transformers for music source separation." ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) 2023 Jun 4. IEEE.</p>
+          <p>[Melistas, 2020] Thomas Melistas. "Meowify". HAMR Hackathon, 2020. <a href="https://github.com/gulnazaki/meowify" target="_blank">Code link</a></p>
+        </div>
+      </div>
+
+</body>
+
+</html>
