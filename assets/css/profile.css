@@ -15,11 +15,11 @@
   width: 45%;
   max-width:400px;
   padding: 30px 15px;
-  background: var(--dark-grey);
-  color: var(--lightest-grey);
+  background: var(--menu-color);
+  color: var(--text-nav);
 }
 .content .base .profile {
-  background: var(--lighter-grey);
+  background: var(--profile-background);
   padding: 30px 15px 40px 15px;
   margin: -30px -15px 45px -15px;
   position: relative;
@@ -28,7 +28,7 @@
 .content .base .profile::after {
   content: "";
   position: absolute;
-  background: var(--darkest-grey);
+  background: var(--background);
   width: 100%;
   height: 30px;
   bottom: -16px;
@@ -48,42 +48,42 @@
 }
 .content .base .profile .info {
   text-align: center;
-  color: var(--lightest-grey);
+  color: var(--text-nav);
 }
 .content .base .profile .info .name {
   margin-top: 10px;
   margin-bottom: 0;
   font-size: 1.75em;
   /*text-transform: lowercase;*/
-  color: var(--medium-orange);
+  color: var(--text-titles);
 }
 .content .base .profile .info .name a {
-  color: var(--medium-orange);
+  color: var(--text-name-title);
 }
 .content .base .profile .info .name a:hover {
-  color: var(--yellow);
+  color: var(--text-hover);
 }
 .content .base .profile .info .job {
   margin-top: 10px;
   margin-bottom: 0;
   font-size: 1.5em;
   /*text-transform: lowercase;*/
-  color: var(--dark-grey);
+  color: var(--menu-color);
 }
 .content .base .contact div {
   line-height: 24px;
 }
 .content .base .contact div a:hover {
-  color: var(--yellow);
+  color: var(--text-hover);
 }
 .content .base .contact div a:hover span::after {
   width: 100%;
 }
 .content .base .contact div:hover i {
-  color: var(--yellow);
+  color: var(--text-hover);
 }
 .content .base .contact div i {
-  color: var(--orange);
+  color: var(--icon-color);
   width: 20px;
   height: 20px;
   font-size: 20px;
@@ -97,7 +97,7 @@
 .content .base .contact div span::after {
   content: "";
   position: absolute;
-  background: var(--yellow);
+  background: var(--text-hover);
   height: 1px;
   width: 0;
   bottom: 0;
@@ -113,7 +113,7 @@
   vertical-align: text-bottom;
 }
 .content .base .follow .box a:hover i {
-  background: var(--yellow);
+  background: var(--text-hover);
   border-radius: 5px;
   transform: rotate(45deg) scale(0.8);
 }
@@ -123,12 +123,12 @@
 .content .base .follow .box i {
   display: inline-block;
   font-size: 30px;
-  background: var(--orange);
+  background: var(--icon-color);
   width: 60px;
   height: 60px;
   border-radius: 50%;
   line-height: 60px;
-  color: var(--darker-grey);
+  color: var(--icon-sec-color);
   margin: 0 10px 10px 10px;
   transition-duration: 0.3s;
 }

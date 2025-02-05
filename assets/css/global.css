@@ -14,6 +14,27 @@
 --dark-orange: #cc7000;
 --darker-orange: #b36200;
 --yellow: #fdd835;
+--blue: #2196f3;
+
+--background: var(--darkest-grey);
+--menu-color: var(--dark-grey);
+--profile-background: var(--lighter-grey);
+
+--icon-color: var(--orange);
+--icon-sec-color: var(--darker-grey);
+
+--text-color: var(--white);
+--text-titles: var(--orange);
+--text-links: var(--orange);
+--text-nav: var(--lightest-grey);
+--text-name-title: var(--medium-orange);
+--text-hover: var(--yellow);
+--text-sec-block: var(--lighter-grey);
+
+--nav-hover: var(--light-grey);
+--nav-active: var(--medium-grey);
+--text-active: var(--yellow);
+
 }
 @charset "UTF-8";
 * {
@@ -37,7 +58,7 @@ body {
   padding: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  background: var(--darkest-grey);
+  background: var(--background);
   cursor: default;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -45,7 +66,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--white);
+  color: var(--text-color);
   display: block;
   transition-duration: 0.3s;
 }
@@ -59,7 +80,7 @@ h2 {
 }
 
 h3 {
-  color: var(--orange);
+  color: var(--text-titles);
   margin: 10px 0;
   text-transform: lowercase;
   font-size: 1.25em;
@@ -70,8 +91,8 @@ h3 {
 }
 
 .content {
-  background: var(--darkest-grey);
-  color: var(--white);
+  background: var(--background);
+  color: var(--text-color);
   /*margin: 20px auto;
   box-shadow: 10px 10px var(--black);*/
   position: relative;
@@ -96,13 +117,13 @@ h3 {
 
 .content .func .content_block {
   width: 100%;
-  background: var(--dark-grey);
+  background: var(--menu-color);
   padding: 15px;
   margin-bottom: 20px;
 
 }
 .content .func .content_block a:hover {
-  color: var(--yellow);
+  color: var(--text-hover);
 }
 .content .func .content_block h2 {
   margin-top:-10px;
@@ -144,8 +165,8 @@ h3 {
   margin-top: 0;
 }
 .content .func h3 i {
-  color: var(--darker-grey);
-  background: var(--orange);
+  color: var(--icon-sec-color);
+  background: var(--text-titles);
   width: 42px;
   height: 42px;
   font-size: 20px;
@@ -162,19 +183,19 @@ h3 {
 }
 .content .func .lefty {
   width: 48%;
-  background: var(--dark-grey);
+  background: var(--menu-color);
   padding: 15px;
   margin: 0 4% 15px 0;
   margin-bottom: 20px;
 }
 .content .func .righty {
   width: 48%;
-  background: var(--dark-grey);
+  background: var(--menu-color);
   padding: 15px;
   margin-bottom: 20px;
 }
 .content .func .copyright {
-  background: var(--dark-grey);
+  background: var(--menu-color);
   font-size: 12px;
   padding: 2px;
   padding-left:15px;
@@ -186,14 +207,14 @@ h3 {
 
 .navigation_div{
   margin: 0;
-  background: var(--dark-grey) ;
+  background: var(--menu-color) ;
   padding: 0;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 10;
   border-bottom-width: 10px;
-  border-color: var(--darkest-grey);
+  border-color: var(--background);
   border-bottom-style: solid;
 }
 
@@ -212,8 +233,8 @@ padding-left: 20px;
 
 .navigation_div li a {
   margin: auto;
-  background: var(--dark-grey) ;
-  color: var(--lightest-grey) ;
+  background: var(--menu-color) ;
+  color: var(--text-nav) ;
   text-align: center ;
   max-width:600px;
   padding: 10px;
@@ -222,8 +243,8 @@ padding-left: 20px;
 }
 
 .navigation_div li a:hover, .navigation_div li a:focus, .navigation_div li a:active {
-  background: var(--light-grey) ;
-  color:var(--yellow);
+  background: var(--nav-hover) ;
+  color:var(--text-hover);
 }
 
 @media only screen and (max-width: 850px) {
@@ -251,14 +272,14 @@ padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
 
-  background: var(--dark-grey) ;
-  color: var(--lightest-grey) ;
+  background: var(--menu-color) ;
+  color: var(--text-nav) ;
   text-align: center ;
 }
 
 #navigation_mobile li a:hover, #navigation_mobile li a:focus, #navigation_mobile li a:active {
-  background: var(--light-grey) ;
-  color:var(--yellow);
+  background: var(--nav-hover) ;
+  color:var(--text-hover);
 }
 
 .content {

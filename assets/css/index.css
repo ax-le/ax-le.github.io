@@ -1,12 +1,12 @@
 .inner-link{
     text-decoration: none;
-    color: var(--orange);
+    color: var(--text-links);
     display: inline;
     transition-duration: 0.3s;
 }
 
 .inner-link:hover{
-    color: var(--yellow);
+    color: var(--text-hover);
 }
 
 .content-img{
@@ -27,7 +27,7 @@
   margin:auto;
   width:90%;
   text-align:justify;
-  color: var(--lighter-grey);
+  color: var(--text-sec-block);
 }
 
 .hidden_content_block {
@@ -55,8 +55,8 @@
   margin-top: 0;
 }
 .content .func h3 i {
-  color: var(--darker-grey);
-  background: var(--orange);
+  color: var(--icon-sec-color);
+  background: var(--orange); /* doesn't seem useful */
   width: 42px;
   height: 42px;
   font-size: 20px;

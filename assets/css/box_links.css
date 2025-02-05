@@ -2,7 +2,7 @@
   margin-top: 20px;
   text-align: center;
   vertical-align: middle;
-  	background: var(--dark-grey);
+  	background: var(--menu-color);
 
 }
 .content .func .content_block .box a {
@@ -10,7 +10,7 @@
   vertical-align: text-bottom;
 }
 .content .func .content_block .box a:hover i {
-  background: var(--yellow);
+  background: var(--text-hover);
   border-radius: 5px;
   transform: rotate(45deg) scale(0.8);
 }
@@ -20,12 +20,12 @@
 .content .func .content_block .box i {
   display: inline-block;
   font-size: 30px;
-  background: var(--orange);
+  background: var(--icon-color);
   width: 60px;
   height: 60px;
   border-radius: 50%;
   line-height: 60px;
-  color: var(--darker-grey);
+  color: var(--icon-sec-color);
   margin: 0 10px 10px 10px;
   transition-duration: 0.3s;
 }
