@@ -142,7 +142,7 @@ ninja.data = [
         {%- when "gitlab_username" -%}
           {%- assign social_id = "social-gitlab" -%}
           {%- assign social_title = "GitLab" -%}
-          {%- capture social_url %}"https://gitlab.com/{{ social[1] }}"{% endcapture -%}
+          {%- capture social_url %}"https://gitlab.imt-atlantique.fr/{{ social[1] }}"{% endcapture -%}
         {%- when "hal_id" -%}
           {%- assign social_id = "social-hal" -%}
           {%- assign social_title = "HAL" -%}
@@ -235,6 +235,10 @@ ninja.data = [
           {%- assign social_id = "social-spotify" -%}
           {%- assign social_title = "Spotify" -%}
           {%- capture social_url %}"https://open.spotify.com/user/{{ social[1] }}"{% endcapture -%}
+        {%- when "deezer_id" -%}
+          {%- assign social_id = "social-deezer" -%}
+          {%- assign social_title = "Deezer" -%}
+          {%- capture social_url %}"https://www.deezer.com/profile/{{ social[1] }}"{% endcapture -%}
         {%- when "stackoverflow_id" -%}
           {%- assign social_id = "social-stackoverflow" -%}
           {%- assign social_title = "Stackoverflow" -%}

@@ -1,34 +1,59 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+# Permanent colleagues
+"farrugia":
+  - firstname: ["Nicolas", "N."]
+    url: https://nicofarr.github.io/
+  
+"pasdeloup":
+  - firstname: ["Bastien", "B."]
+    url: https://scholar.google.fr/citations?user=dKOgoG4AAAAJ
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"gripon":
+  - firstname: ["Vincent", "V."]
+    url: https://www.vincent-gripon.com/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"leonardon":
+  - firstname: ["Mathieu", "M."]
+    url: https://www.mathieuleonardon.com/
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"lioi":
+  - firstname: ["Giulia", "G."]
+    url: https://scholar.google.com/citations?user=mx2AqLYAAAAJ
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+# PhD candidates
+"lys":
+  - firstname: ["Jonathan", "J."]
+    url: https://scholar.google.com/citations?user=heUq7WEAAAAJ
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"jean-labadye":
+  - firstname: ["Lucie", "L."]
+    url: https://www.linkedin.com/in/lucie-jean-labadye-9884141a4
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"lefeuvre":
+  - firstname: ["Ulysse", "U."]
+    url: https://www.linkedin.com/in/ulysse-lefeuvre-638591170
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+# External colleagues
+"leplat":
+  - firstname: ["Valentin", "V."]
+    url: https://sites.google.com/view/valentinleplat/
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"cazau":
+  - firstname: ["Dorian", "D."]
+    url: https://osmose.ifremer.fr/people/1
+
+"dubus":
+  - firstname: ["Gabriel", "G."]
+    url: https://scholar.google.com/citations?user=jC8ovUkAAAAJ
+
+# PhD supervisors
+"bertin":
+  - firstname: ["Nancy", "N."]
+    url: https://scholar.google.com/citations?user=6BxpGj4AAAAJ
+
+"cohen":
+  - firstname: ["Jérémy", "J.", "J. E.", "Jérémy Emile", "Jérémy E", "Jérémy E."]
+    url: https://jeremy-e-cohen.jimdofree.com/
+
+"bimbot":
+  - firstname: ["Frédéric", "F."]
+    url: https://scholar.google.com/citations?user=CUI-kVgAAAAJ

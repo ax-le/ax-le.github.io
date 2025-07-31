@@ -112,7 +112,7 @@
         {% capture link %}https://github.com/{{ social[1] }}{% endcapture %}
         {% assign sameaslinks = sameaslinks | push: link %}
       {% when 'gitlab_username' %}
-        {% capture link %}https://gitlab.com/{{ social[1] }}{% endcapture %}
+        {% capture link %}https://gitlab.imt-atlantique.fr/{{ social[1] }}{% endcapture %}
         {% assign sameaslinks = sameaslinks | push: link %}
       {% when 'hal_id' %}
         {% capture link %}https://cv.hal.science/{{ social[1] }}/{% endcapture %}
@@ -184,6 +184,9 @@
         {% assign sameaslinks = sameaslinks | push: link %}
       {% when 'spotify_id' %}
         {% capture link %}https://open.spotify.com/user/{{ social[1] }}{% endcapture %}
+        {% assign sameaslinks = sameaslinks | push: link %}
+      {% when 'deezer_id' %}
+        {% capture link %}https://www.deezer.com/profile/{{ social[1] }}{% endcapture %}
         {% assign sameaslinks = sameaslinks | push: link %}
       {% when 'stackoverflow_id' %}
         {% capture link %}https://stackoverflow.com/users/{{ social[1] }}{% endcapture %}

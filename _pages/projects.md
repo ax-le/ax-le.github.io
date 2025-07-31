@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Projects I'm involved in. Basically, it regroups the toolboxes I developed in research context, and the students project I supervised.
 nav: true
-nav_order: 3
-display_categories: [work, fun]
+nav_order: 6
+display_categories: [toolbox, students]
 horizontal: false
 ---
 

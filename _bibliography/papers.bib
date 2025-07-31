@@ -1,115 +1,215 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
-}
+# Journals
 
-@book{einstein1956investigations,
+@article{marmoret2023barwise,
   bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
+  abbr={Journal},
   selected={true},
-  inspirehep_id = {3255}
+  author={Marmoret*†, Axel and Cohen‡, Jérémy E and Bimbot†, Fr{\'e}d{\'e}ric},
+  annotation={* IMT Atlantique, Lab-STICC, UMR CNRS 6285, F-29238 Brest, France<br>† Univ. Rennes 1, Inria, CNRS, IRISA, France.<br>‡ CNRS, CREATIS, Villeurbanne France.},
+  doi = {10.5334/tismir.167}, 
+  journal = {Transactions of the International Society for Music Information Retrieval}, 
+  volume = {6}, 
+  number = {1}, 
+  pages = {167--185}, 
+  title = {Barwise Music Structure Analysis with the Correlation Block-Matching Segmentation Algorithm}, 
+  month = {Nov}, 
+  year = {2023},
+  url={https://transactions.ismir.net/articles/10.5334/tismir.167},
+  pdf={https://hal.science/hal-04323556/document},
+  code={https://gitlab.imt-atlantique.fr/a23marmo/autosimilarity_segmentation/-/tree/TISMIR},
+  abstract={Music Structure Analysis (MSA) is a Music Information Retrieval task consisting of representing a song in a simplified, organized manner by breaking it down into sections typically corresponding to 'chorus', 'verse', 'solo', etc. In this work, we extend an MSA algorithm called the Correlation Block-Matching (CBM) algorithm introduced by (Marmoret et al., 2020, 2022b). The CBM algorithm is a dynamic programming algorithm that segments self-similarity matrices, which are a standard description used in MSA and in numerous other applications. In this work, self-similarity matrices are computed from the feature representation of an audio signal and time is sampled at the bar-scale. This study examines three different standard similarity functions for the computation of self-similarity matrices. Results show that, in optimal conditions, the proposed algorithm achieves a level of performance which is competitive with supervised state-of-the-art methods while only requiring knowledge of bar positions. In addition, the algorithm is made open-source and is highly customizable.},
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
+# Int Conf
+@inproceedings{marmoret2020uncovering,  
   bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+  abbr={International Conf.},
+  annotation={* Univ. Rennes 1, Inria, CNRS, IRISA, France.},
+  title={Uncovering audio patterns in music with nonnegative Tucker decomposition for structural segmentation},
+  author={Marmoret*, Axel and Cohen*, J{\'e}r{\'e}my E and Bertin*, Nancy and Bimbot*, Fr{\'e}d{\'e}ric},
+  booktitle={ISMIR 2020-21st International Society for Music Information Retrieval},  
+  year={2020},
+  pages={788--794},
+  selected={true},
+  url={https://hal.science/hal-02928733v1},
+  pdf={https://hal.science/hal-02928733v1/document},
+  abstract={Recent work has proposed the use of tensor decomposition to model repetitions and to separate tracks in loop-based electronic music. The present work investigates further on the ability of Nonnegative Tucker Decompositon (NTD) to uncover musical patterns and structure in pop songs in their audio form. Exploiting the fact that NTD tends to express the content of bars as linear combinations of a few patterns, we illustrate the ability of the decomposition to capture and single out repeated motifs in the corresponding compressed space, which can be interpreted from a musical viewpoint. The resulting features also turn out to be efficient for structural segmentation, leading to experimental results on the RWC Pop data set which are potentially challenging state-of-the-art approaches that rely on extensive example-based learning schemes.},
+  video={https://youtu.be/qN8_y-k9KxI?si=aw6V4Z5mFThfQA-j},
+  poster={posters/ISMIR20_uncovering.pdf},
+  code={https://gitlab.inria.fr/amarmore/musicntd/-/tree/0.1.0},
+}
+@inproceedings{wu2022semi,
+  bibtex_show={true},
+  abbr={International Conf.},
+  title={Semi-Supervised Convolutive NMF for Automatic Music Transcription}, 
+  author={Wu, Haoran and Marmoret†, Axel and Cohen‡, J{\'e}r{\'e}my E}, 
+  annotation={* INSA Rennes, France.<br>† Univ. Rennes 1, Inria, CNRS, IRISA, France.<br>‡ CNRS, CREATIS, Villeurbanne France.},
+  booktitle={Proceedings of the 19th Sound and Music Computing Conference}, 
+  year={2022}, 
+  doi= {10.5281/zenodo.6798192},
+  url={https://hal.science/hal-03608497},
+  pdf={https://arxiv.org/pdf/2202.04989},
+  poster={posters/SMC22_semi.pdf},
+  code={https://github.com/cohenjer/TransSSCNMF},
+  abstract={Automatic Music Transcription, which consists in transforming an audio recording of a musical performance into symbolic format, remains a difficult Music Information Retrieval task. In this work, which focuses on piano transcription, we propose a semi-supervised approach using low-rank matrix factorization techniques, in particular Convolutive Nonnegative Matrix Factorization. In the semi-supervised setting, only a single recording of each individual notes is required. We show on the MAPS dataset that the proposed semi-supervised CNMF method performs better than state-of-the-art low-rank factorization techniques and a little worse than supervised deep learning state-of-the-art methods, while however suffering from generalization issues.},
 }
 
-@book{przibram1967letters,
+@inproceedings{marmoret2022barwise,
   bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+  abbr={International Conf.},
+  title={Barwise Compression Schemes for Audio-Based Music Structure Analysis}, 
+  author={Marmoret*, Axel and Cohen†, J{\'e}r{\'e}my E and Bimbot*, Fr{\'e}d{\'e}ric}, 
+  booktitle={{Proceedings of the 19th Sound and Music Computing Conference}}, 
+  annotation={* Univ. Rennes 1, Inria, CNRS, IRISA, France.<br>† CNRS, CREATIS, Villeurbanne France},
+  year={2022}, 
+  doi= {10.5281/zenodo.6798330},
+  url = {https://hal.science/hal-03600873},
+  pdf = {https://arxiv.org/pdf/2202.04981},
+  poster={posters/SMC22_barwise.pdf},
+  code={https://gitlab.inria.fr/amarmore/barwisemusiccompression},
+  abstract={Music Structure Analysis (MSA) consists in segmenting a music piece in several distinct sections. We approach MSA within a compression framework, under the hypothesis that the structure is more easily revealed by a simplified representation of the original content of the song. More specifically, under the hypothesis that MSA is correlated with similarities occurring at the bar scale, this article introduces the use of linear and non-linear compression schemes on barwise audio signals. Compressed representations capture the most salient components of the different bars in the song and are then used to infer the song structure using a dynamic programming algorithm. This work explores both low-rank approximation models such as Principal Component Analysis or Nonnegative Matrix Factorization and ``piece-specific'' Auto-Encoding Neural Networks, with the objective to learn latent representations specific to a given song. Such approaches do not rely on supervision nor annotations, which are well-known to be tedious to collect and possibly ambiguous in MSA description. In our experiments, several unsupervised compression schemes achieve a level of performance comparable to that of state-of-the-art supervised methods (for 3s tolerance) on the RWC-Pop dataset, showcasing the importance of the barwise compression processing for MSA.},
 }
+
+@inproceedings{marmoret2023convolutive,
+  bibtex_show={true},
+  abbr={International Conf.},
+  title={Convolutive block-matching segmentation algorithm with application to music structure analysis},
+  author={Marmoret*†, Axel and Cohen‡, Jérémy E and Bimbot†, Fr{\'e}d{\'e}ric},
+  annotation={* IMT Atlantique, Lab-STICC, UMR CNRS 6285, F-29238 Brest, France<br>† Univ. Rennes 1, Inria, CNRS, IRISA, France.<br>‡ CNRS, CREATIS, Villeurbanne France.},
+  booktitle={2023 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)},
+  year={2023},
+  organization={IEEE},
+  DOI={10.1109/WASPAA58266.2023.10248174},
+  URL={https://hal.science/hal-03834996},
+  abstract={Music Structure Analysis (MSA) consists of representing a song in sections (such as 'chorus', 'verse', 'solo' etc), and can be seen as the retrieval of a simplified organization of the song. This work presents a new algorithm, called Convolutive Block-Matching (CBM) algorithm, devoted to MSA. In particular, the CBM algorithm is a dynamic programming algorithm, applying on autosimilarity matrices, a standard tool in MSA. In this work, autosimilarity matrices are computed from the feature representation of an audio signal, and time is sampled on the barscale. We study three different similarity functions for the computation of autosimilarity matrices. We report that the proposed algorithm achieves a level of performance competitive to that of supervised state-of-the-art methods on 3 among 4 metrics, while being fully unsupervised.},
+  url={https://hal.science/hal-03834996},
+  pdf={https://arxiv.org/pdf/2210.15356},
+  poster={posters/WASPAA23_convolutive.pdf},
+  code={https://gitlab.imt-atlantique.fr/a23marmo/autosimilarity_segmentation/-/tree/WASPAA23},
+  video={https://www.youtube.com/watch?v=0FzByrBTY3E},
+}
+
+# Nat Conf
+@inproceedings{marmoret2022nonnegative,
+  bibtex_show={true},
+  abbr={National Conf.},
+  title={Nonnegative tucker decomposition with beta-divergence for music structure analysis of audio signals},
+  author={Marmoret*, Axel and Voorwinden*, Florian and Leplat†, Valentin and Cohen‡, J{\'e}r{\'e}my E and Bimbot*, Fr{\'e}d{\'e}ric},
+  annotation={* Univ. Rennes 1, Inria, CNRS, IRISA, France.<br>† Center for Artificial Intelligence Technology (CAIT), Skoltech, Moscow, Russia.<br>‡ CNRS, CREATIS, Villeurbanne France.},
+  booktitle={XXVIII{\`e}me Colloque Francophone de Traitement du Signal et des Images (GRETSI 2022)},
+  year={2022},
+	publisher={GRETSI - Groupe de Recherche en Traitement du Signal et des Images},
+	number={001-0233},
+	pages={933--936},
+  abstract={Nonnegative Tucker Decomposition (NTD), a tensor decomposition model, has received increased interest in the recent years because of its ability to blindly extract meaningful patterns in tensor data. Nevertheless, existing algorithms to compute NTD are mostly designed for the Euclidean loss. On the other hand, NTD has recently proven to be a powerful tool in Music Information Retrieval. This work proposes a Multiplicative Updates algorithm to compute NTD with the beta-divergence loss, often considered a better loss for audio processing. We notably show how to implement efficiently the multiplicative rules using tensor algebra, a naive approach being intractable. Finally, we show on a Music Structure Analysis task that unsupervised NTD fitted with beta-divergence loss outperforms earlier results obtained with the Euclidean loss.},
+  url={https://hal.science/hal-03409508},
+  pdf={https://arxiv.org/pdf/2110.14434},
+  poster={posters/GRETSI22_nonnegative.pdf},
+  code={https://gitlab.inria.fr/amarmore/nonnegative-factorization/-/tree/v0.2.0},
+}
+
+@inproceedings{delabaere2025automashup,  
+  bibtex_show={true},
+  abbr={National Conf.},
+  TITLE = {{AutoMashup: Automatic Music Mashups Creation}},
+  AUTHOR = {Delabaere*, Marine and Miqueu*, L{\'e}a and Moreno*, Michael and Bigois*, Gautier and Duong*, Hoang and Fernandez*, Ella and Manent*, Flavie and Salgado-Herrera*, Maria and Pasdeloup*, Bastien and Farrugia*, Nicolas and Marmoret*, Axel},
+  URL = {https://hal.science/hal-05191030},
+  BOOKTITLE = {{GRETSI'25 - XXXe Colloque Francophone de Traitement du Signal et des Images}},
+  YEAR = {2025},
+  annotation={* IMT Atlantique, Lab-STICC, UMR CNRS 6285, F-29238 Brest, France.},
+  PDF = {https://hal.science/hal-05191030/document},
+  code={https://github.com/ax-le/automashup},
+  abstract={We introduce AutoMashup, a system for automatic mashup creation based on source separation, music analysis, and compatibility estimation. We propose using COCOLA to assess compatibility between separated stems and investigate whether general-purpose pretrained audio models (CLAP and MERT) can support zero-shot estimation of track pair compatibility. Our results show that mashup compatibility is asymmetric --- it depends on the role assigned to each track (vocals or accompaniment) --- and that current embeddings fail to reproduce the perceptual coherence measured by COCOLA. These findings underline the limitations of general-purpose audio representations for compatibility estimation in mashup creation.},
+}
+
+@inproceedings{pasdeloup2025raining,  
+  bibtex_show={true},
+  abbr={National Conf.},
+  TITLE = {{Raining Words : Les modèles d'ASR peuvent-ils retranscrire les sous-genres de Metal ?}},
+  AUTHOR = {Pasdeloup*, Bastien and Marmoret*, Axel},
+  BOOKTITLE = {{GRETSI'25 - XXXe Colloque Francophone de Traitement du Signal et des Images}},
+  YEAR = {2025},
+  annotation={* IMT Atlantique, Lab-STICC, UMR CNRS 6285, F-29238 Brest, France.},
+  code={https://github.com/BastienPasdeloup/extreme_vocals_asr},
+  abstract={Extreme vocal styles in Metal music are known for their intensity, vocal saturation, and low intelligibility. In this paper, we evaluate the ability of recent Automatic Speech Recognition (ASR) models to transcribe such vocals in an out-of-distribution (OOD) setting. We assess five state-of-the-art ASR models using two types of data: isolated extreme vocal recordings and full metal songs from various subgenres. We also apply source separation techniques to extract vocals from the music tracks. Our results show that these models struggle to accurately transcribe extreme vocals, especially in cases of severe vocal distortion or atypical prosody.},
+}
+
+@inproceedings{jean2025apprentissage,  
+  bibtex_show={true},
+  abbr={National Conf.},
+  TITLE = {{Apprentissage par transfert pour la détection et la classification automatiques de grandes baleines dans l'océan austral}},
+  AUTHOR = {Jean-Labadye*†‡, Lucie and Dubus*†, Gabriel and Cazau†, Dorian and Farrugia‡, Nicolas and Marmoret‡, Axel and Adam*, Olivier},
+  BOOKTITLE = {{GRETSI'25 - XXXe Colloque Francophone de Traitement du Signal et des Images}},
+  YEAR = {2025},
+  annotation={* Institut ∂'Alembert, Sorbonne Université, UMR CNRS 7190, F-75005, Paris.<br>† ENSTA Bretagne, Lab STICC, UMR CNRS 6285, F-29200, Brest.<br>‡ IMT Atlantique, Lab-STICC, UMR CNRS 6285, F-29238 Brest, France.},
+  abstract={Automatic detection and classification of cetacean vocalizations in passive acoustic recordings are complex tasks. While convolutional neural networks are widely used, their generalization is often constrained by scarce annotated data and high recording variability (geographic, temporal, equipment-related, etc.). Transfer learning, leveraging larger pretrained networks, offers a potential solution. In this context, we investigated the Perch encoder and evaluated it using metrics ensuring a fair comparison.}
+}
+
+
+
+# Other
+@article{marmoret2019multi,
+  bibtex_show={true},
+  abbr={Master's Thesis},
+  title={Multi-Channel Automatic Music Transcription Using Tensor Algebra},
+  author={Marmoret*, Axel and Bertin*, Nancy and Cohen*, Jérémy E},
+  annotation={* Univ. Rennes 1, Inria, CNRS, IRISA, France.},
+  journal={arXiv preprint arXiv:2107.11250},
+  year={2019},
+  url={https://hal.science/hal-03301448},
+  pdf={https://arxiv.org/pdf/2107.11250},
+  code={https://gitlab.inria.fr/amarmore/nonnegative-factorization/},
+  abstract={Music is an art, perceived in unique ways by every listener, coming from acoustic signals. In the meantime, standards as musical scores exist to describe it. Even if humans can make this transcription, it is costly in terms of time and efforts, even more with the explosion of information consecutively to the rise of the Internet. In that sense, researches are driven in the direction of Automatic Music Transcription. While this task is considered solved in the case of single notes, it is still open when notes superpose themselves, forming chords. This report aims at developing some of the existing techniques towards Music Transcription, particularly matrix factorization, and introducing the concept of multi-channel automatic music transcription. This concept will be explored with mathematical objects called tensors.},
+}
+
+@phdthesis{marmoret2022unsupervised,
+  bibtex_show={true},
+  abbr={Ph.D. Thesis},
+  title={Unsupervised machine learning paradigms for the representation of music similarity and structure},
+  author={Marmoret*, Axel},
+  annotation={* Univ. Rennes 1, Inria, CNRS, IRISA, France.},
+  year={2022},
+  school={Universit{\'e} de Rennes},
+  abstract={Musical structure, defined as a simplified representation of the organization of a song, is an important musicological concept, but hard to automatically estimate. This thesis presents new methods to automatically estimate the structural segmentation of a song, focusing the study of music at the barscale. By developing a new segmentation algorithm (called ``CBM'') and by comparing several unsupervised compression schemes (from linear and multilinear algebra to neural networks), paradigms introduced in this thesis result in segmentation performance outperforming those of the unsupervised State-of-the-Art methods and almost similar with those of the global State-of-the-Art, obtained with supervised machine learning algorithms. In particular, as the methods described in this thesis are unsupervised, the estimation do not rely on annotated data, lowering the bias in the estimates related to ambiguity and subjectivity (inherent to musical structure) while limiting the loss in performance compared to the best supervised methods. In addition, some of the methods studied in this thesis (in particular Nonnegative Tucker Decomposition) allow to extract automatically interpretable parts of a song which may be used for other task than the estimation of structure, and participate in the development of interpretable machine and deep learning algorithms, which is a major field of research nowadays.},
+  url={https://hal.science/tel-03937846},
+  pdf={https://hal.science/tel-03937846/document},
+  video={https://www.youtube.com/live/Mw7WiuDlQjs?si=j_u4CQy6KIjMzaJm},
+  additional_info={. Segmentation code can be [found here](https://gitlab.inria.fr/amarmore/autosimilarity_segmentation), low-rank factorization code can be [found here](https://gitlab.inria.fr/amarmore/nonnegative-factorization), and the specific methods for compressing music barwise can be [found here](https://gitlab.inria.fr/amarmore/barmuscomp)},
+}
+
+
+# Pre-prints
+@article{marmoret2022polytopic,
+  bibtex_show={true},
+  abbr={Preprint}, 
+  title={Polytopic Analysis of Music}, 
+  author={Marmoret*, Axel and Cohen*, J{\'e}r{\'e}my E and Bimbot*, Fr{\'e}d{\'e}ric}, 
+  annotation={* Univ. Rennes 1, Inria, CNRS, IRISA, France.},
+  journal={arXiv preprint arXiv:2212.11054}, 
+  year={2021},
+  pdf={https://arxiv.org/pdf/2212.11054v2},
+  code={https://gitlab.imt-atlantique.fr/a23marmo/musiconpolytopes},
+  abstract={Structural segmentation of music refers to the task of finding a symbolic representation of the organisation of a song, reducing the musical flow to a partition of non-overlapping segments. Under this definition, the musical structure may not be unique, and may even be ambiguous. One way to resolve that ambiguity is to see this task as a compression process, and to consider the musical structure as the optimization of a given compression criteria. In that viewpoint, C. Guichaoua developed a compression-driven model for retrieving the musical structure, based on the "System and Contrast" model, and on polytopes, which are extension of nhypercubes. We present this model, which we call "polytopic analysis of music", along with a new opensource dedicated toolbox called MusicOnPolytopes (in Python). This model is also extended to the use of the Tonnetz as a relation system. Structural segmentation experiments are conducted on the RWC Pop dataset. Results show improvements compared to the previous ones, presented by C. Guichaoua.},
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

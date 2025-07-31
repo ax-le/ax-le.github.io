@@ -93,9 +93,15 @@ layout: default
               {% case data[0] %}
                 {% when 'basics' %}
                   {% include resume/basics.liquid %}
+                {% when 'position' %}
+                  {% include resume/work.liquid %}
+                {% when 'phd' %}
+                  {% include resume/work.liquid %}
+                {% when 'music' %}
+                  {% include resume/interests.liquid %}
                 {% when 'education' %}
                   {% include resume/education.liquid %}
-                {% when 'work' %}
+                {% when 'industry' %}
                   {% include resume/work.liquid %}
                 {% when 'volunteer' %}
                   {% include resume/volunteer.liquid %}
@@ -109,8 +115,8 @@ layout: default
                   {% include resume/publications.liquid %}
                 {% when 'languages' %}
                   {% include resume/languages.liquid %}
-                {% when 'interests' %}
-                  {% include resume/interests.liquid %}
+                {% when 'computer-wise' %}
+                  {% include resume/skills.liquid %}
                 {% when 'certificates' %}
                   {% include resume/certificates.liquid %}
                 {% when 'references' %}
