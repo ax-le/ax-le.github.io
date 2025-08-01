@@ -44,18 +44,137 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "dropdown-music-albums",
-              title: "music albums",
+        },{id: "nav-music",
+          title: "music",
+          description: "Music stuff. That I make or that I listen to.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/music/";
+          },
+        },{id: "dropdown-resources",
+              title: "resources",
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/musicalbums/";
+                window.location.href = "/resources/";
               },
-            },{id: "music-example",
-          title: 'Example',
-          description: "TODO.",
+            },{id: "dropdown-talks",
+              title: "talks",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/talks";
+              },
+            },{id: "music-c-dead-weather",
+          title: 'C_dead_weather',
+          description: "",
           section: "Music",handler: () => {
-              window.location.href = "/music/todo/";
+              window.location.href = "/music/c_dead_weather/";
+            },},{id: "music-c-deftones-copy",
+          title: 'C_deftones copy',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/c_deftones%20copy/";
+            },},{id: "music-c-deftones",
+          title: 'C_deftones',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/c_deftones/";
+            },},{id: "music-c-gojira",
+          title: 'C_gojira',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/c_gojira/";
+            },},{id: "music-c-gong",
+          title: 'C_gong',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/c_gong/";
+            },},{id: "music-c-hendrix",
+          title: 'C_hendrix',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/c_hendrix/";
+            },},{id: "music-c-kvelertak",
+          title: 'C_kvelertak',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/c_kvelertak/";
+            },},{id: "music-c-kyuss",
+          title: 'C_kyuss',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/c_kyuss/";
+            },},{id: "music-c-meshuggah",
+          title: 'C_meshuggah',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/c_meshuggah/";
+            },},{id: "music-c-primus",
+          title: 'C_primus',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/c_primus/";
+            },},{id: "music-c-ratm",
+          title: 'C_ratm',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/c_ratm/";
+            },},{id: "music-c-slipknot",
+          title: 'C_slipknot',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/c_slipknot/";
+            },},{id: "music-c-tool",
+          title: 'C_tool',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/c_tool/";
+            },},{id: "music-n-atw",
+          title: 'N_atw',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/n_atw/";
+            },},{id: "music-n-fleuves",
+          title: 'N_fleuves',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/n_fleuves/";
+            },},{id: "music-n-kl",
+          title: 'N_kl',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/n_kl/";
+            },},{id: "music-n-leffondras",
+          title: 'N_leffondras',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/n_leffondras/";
+            },},{id: "music-n-pilgrims",
+          title: 'N_pilgrims',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/n_pilgrims/";
+            },},{id: "music-n-psychonaut-first",
+          title: 'N_psychonaut_first',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/n_psychonaut_first/";
+            },},{id: "music-n-rotns",
+          title: 'N_rotns',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/n_rotns/";
+            },},{id: "music-n-slope",
+          title: 'N_slope',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/n_slope/";
+            },},{id: "music-shaka",
+          title: 'Shaka',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/shaka/";
             },},{id: "news-so-i-got-a-new-template-for-my-website-sparkles-smile-it-s-empty-now-though",
           title: 'So I got a new template for my website! :sparkles: :smile: It’s empty...',
           description: "",
@@ -109,6 +228,31 @@ ninja.data = [{
           description: "Implement signal processing tools on FPGA for real-time vocoding.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/vocoder_fpga/";
+            },},{id: "resources-icassp-2022-gretsi-2022",
+          title: 'ICASSP 2022 - GRETSI 2022',
+          description: "A companion website to the ICASSP 2022 submission &quot;Nonnegative tucker decomposition with beta-divergence for music structure analysis of audio signals&quot; (got refused and was published in the GRETSI 2022 conference instead)",
+          section: "Resources",handler: () => {
+              window.location.href = "/resources/ICASSP2022/";
+            },},{id: "resources-ismir-2020",
+          title: 'ISMIR 2020',
+          description: "A companion website to navigate through the ISMIR 2020 paper &quot;Uncovering audio patterns in music with nonnegative Tucker decomposition for structural segmentation&quot;",
+          section: "Resources",handler: () => {
+              window.location.href = "/resources/ISMIR2020/";
+            },},{id: "resources-jjba-2024",
+          title: 'JJBA 2024',
+          description: "A companion website to navigate through the JJBA 2024 poster &quot;Naïve Unsupervised Bioacoustics Signal Processing with Nonnegative Matrix Factorization&quot;.",
+          section: "Resources",handler: () => {
+              window.location.href = "/resources/JJBA/";
+            },},{id: "resources-listening-to-ntd",
+          title: 'Listening to NTD',
+          description: "An example to listen to the patterns in NTD, showcasing its potential in pattern estimation.",
+          section: "Resources",handler: () => {
+              window.location.href = "/resources/listening_NTD/";
+            },},{id: "resources-nuit-des-chercheurs",
+          title: 'Nuit des Chercheurs',
+          description: "Examples for the use of Artificial Intelligence in AI for a vulgarization event called &quot;Nuit des Chercheur·es&quot;.",
+          section: "Resources",handler: () => {
+              window.location.href = "/resources/nuit_des_chercheurs/";
             },},{id: "supervision-florian-voorwinden",
           title: 'Florian_voorwinden',
           description: "Co-supervised by Jérémy Cohen.",
