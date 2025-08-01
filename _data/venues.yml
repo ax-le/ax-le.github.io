@@ -1,9 +1,11 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+# "Journal":
+#   color: var(--global-theme-color)
 
-"PhysRev":
-  url: https://journals.aps.org/
+# "International Conf.":
+#   color: "#009f36"
 
-"Vision":
-  color: "#009f36"
+# "National Conf.":
+#   color: "#009f36"
+
+# "Preprint":
+#   color: "#009f36"

@@ -1,0 +1,38 @@
+<div class="col mb-4">
+  {% if person.website %}<a href="{{ person.website }}">{% endif %}
+    <div class="card h-100 hoverable">
+      <div class="row no-gutters">
+
+          {% if person.image %}
+            <div class="col-md-3">
+             <div class="card-img">
+              {% assign profile_image_path = person.image | prepend: 'assets/img/' %}
+              {% include figure.liquid loading="eager" path=profile_image_path sizes="(min-width: 768px) 156px, 50vw" alt="person" class="img-fluid z-depth-1 rounded-circle" %}
+            </div>
+            </div>
+          {% endif %}
+                
+                
+              <div class="{% if person.image %}col-md-9{% else %}col-md-12{% endif %}">
+                <div class="card-body">
+                  <h3 class="card-title">{{ person.name }}</h3>
+                  <h4><em>"{{ person.subject }}"</em></h4>
+                  <p class="card-text">{{ person.starting_date }} {% if person.ending_date %}| {{ person.ending_date }}{% endif %}</p>
+                  <p class="card-text">{{ person.description }}</p>
+                  <div class="row ml-1 mr-1 p-0">
+                    {% if person.github %}
+                        <div class="col-md-3">
+                          <div class="social">
+                            <div class="contact-icons">
+                                <a href="{{ person.github }}" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                          </div>
+                      </div>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+      </div>
+    </div>
+    {% if person.website %}</a>{% endif %}
+</div>

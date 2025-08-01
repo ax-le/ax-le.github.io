@@ -172,6 +172,9 @@ ul.task-list input[type="checkbox"] {
   .card-img {
     width: 100%;
     padding-top: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .card-title {
