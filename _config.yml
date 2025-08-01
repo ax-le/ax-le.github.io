@@ -156,6 +156,8 @@ collections:
     output: true
   music:
     output: true
+  resources:
+    output: true
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

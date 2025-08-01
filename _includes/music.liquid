@@ -1,0 +1,20 @@
+<div class="col">
+    <div class="card h-100 hoverable">
+      {% if music.img %}
+        {% assign music_image_path = music.img | prepend: 'assets/img/' %}
+        {%
+          include figure.liquid
+          loading="eager"
+          path=music_image_path
+          sizes = "(width 200px) (height 200px)"
+          alt="project thumbnail"
+          class="card-img-top"
+        %}
+      {% endif %}
+      <div class="card-body">
+        <h2 class="card-title">{{ music.album_name }}</h2>
+        <p class="card-text">{{ music.artist_name }}</p>
+      </div>
+    </div>
+
+</div>
