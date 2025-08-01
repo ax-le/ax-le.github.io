@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-supervision",
           title: "supervision",
-          description: "People I supervise",
+          description: "People I supervise(d)",
           section: "Navigation",
           handler: () => {
             window.location.href = "/supervision/";
@@ -109,11 +109,36 @@ ninja.data = [{
           description: "Implement signal processing tools on FPGA for real-time vocoding.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/vocoder_fpga/";
-            },},{id: "supervision-example",
-          title: 'Example',
-          description: "TODO.",
+            },},{id: "supervision-florian-voorwinden",
+          title: 'Florian_voorwinden',
+          description: "Co-supervised by Jérémy Cohen.",
           section: "Supervision",handler: () => {
-              window.location.href = "/supervision/todo/";
+              window.location.href = "/supervision/florian_voorwinden/";
+            },},{id: "supervision-jeanlabadye-lucie",
+          title: 'Jeanlabadye_lucie',
+          description: "Co-directed by Olivier Adam and Nicolas Farrugia. Co-supervised by Dorian Cazau.",
+          section: "Supervision",handler: () => {
+              window.location.href = "/supervision/jeanlabadye_lucie/";
+            },},{id: "supervision-lys-jonathan",
+          title: 'Lys_jonathan',
+          description: "Directed by Vincent Gripon. Co-supervised by Bastien Pasdeloup.",
+          section: "Supervision",handler: () => {
+              window.location.href = "/supervision/lys_jonathan/";
+            },},{id: "supervision-mahamat",
+          title: 'Mahamat',
+          description: "Co-supervised by Dorian Cazau.",
+          section: "Supervision",handler: () => {
+              window.location.href = "/supervision/mahamat/";
+            },},{id: "supervision-michael-moreno",
+          title: 'Michael_moreno',
+          description: "Co-supervised by Nicolas Farrugia.",
+          section: "Supervision",handler: () => {
+              window.location.href = "/supervision/michael_moreno/";
+            },},{id: "supervision-ulysse-lefeuvre",
+          title: 'Ulysse_lefeuvre',
+          description: "Co-directed by Luc Arnal and Nicolas Farrugia. Co-supervised by Nicolas Epain. CIFRE at L-Acoustics.",
+          section: "Supervision",handler: () => {
+              window.location.href = "/supervision/ulysse_lefeuvre/";
             },},{id: "teaching-signal-processing",
           title: 'Signal Processing',
           description: "Standard Signal Processing tools.",
