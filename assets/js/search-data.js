@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-cv",
           title: "cv",
-          description: "Last updated 31/07/2025.",
+          description: "Last updated 07/08/2025.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -51,19 +51,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/music/";
           },
-        },{id: "dropdown-resources",
-              title: "resources",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/resources/";
-              },
-            },{id: "dropdown-talks",
+        },{id: "dropdown-talks",
               title: "talks",
               description: "",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/talks";
+              },
+            },{id: "dropdown-resources",
+              title: "resources",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/resources/";
               },
             },{id: "music-c-dead-weather",
           title: 'C_dead_weather',
@@ -283,24 +283,69 @@ ninja.data = [{
           description: "Co-directed by Luc Arnal and Nicolas Farrugia. Co-supervised by Nicolas Epain. CIFRE at L-Acoustics.",
           section: "Supervision",handler: () => {
               window.location.href = "/supervision/ulysse_lefeuvre/";
+            },},{id: "talks-low-rank-factorization-for-the-representation-of-music-similarity-and-the-estimation-of-structure",
+          title: 'Low-Rank Factorization for the Representation of Music Similarity and the Estimation of Structure....',
+          description: "",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/brain_23/";
+            },},{id: "talks-unsupervised-barwise-music-compression-for-pattern-uncovering-and-structural-segmentation",
+          title: 'Unsupervised Barwise Music Compression for Pattern Uncovering and Structural Segmentation.',
+          description: "",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/c4dm_22/";
+            },},{id: "talks-unsupervised-machine-learning-paradigms-for-the-representation-of-music-similarity-and-structure",
+          title: 'Unsupervised Machine Learning paradigms for the representation of music similarity and structure.',
+          description: "",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/myriad_23/";
+            },},{id: "talks-low-rank-factorization-for-unsupervised-automatic-audio-signal-processing",
+          title: 'Low-Rank Factorization for Unsupervised Automatic Audio Signal Processing.',
+          description: "",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/ose_24/";
+            },},{id: "talks-des-machines-mélomanes-l-39-intelligence-artificielle-permet-elle-de-développer-des-machines-qui-comprennent-la-musique",
+          title: 'Des Machines Mélomanes ! L&amp;#39;Intelligence Artificielle permet-elle de développer des machines qui comprennent...',
+          description: "",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/pos_23/";
+            },},{id: "talks-low-rank-factorization-for-unsupervised-audio-signal-processing",
+          title: 'Low-rank Factorization for Unsupervised Audio Signal Processing.',
+          description: "",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/sims_24/";
             },},{id: "teaching-signal-processing",
           title: 'Signal Processing',
-          description: "Standard Signal Processing tools.",
+          description: "",
           section: "Teaching",handler: () => {
               window.location.href = "/teaching/atsa/";
+            },},{id: "teaching-advanced-database",
+          title: 'Advanced Database',
+          description: "",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/databases_istic/";
+            },},{id: "teaching-ecological-transition-teaching-assistant",
+          title: 'Ecological Transition (Teaching Assistant)',
+          description: "",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/ecological_transition/";
             },},{id: "teaching-fundamentals-of-machine-learning",
           title: 'Fundamentals of Machine Learning',
-          description: "A mathematical class about Fundamentals of Machine Learning.",
+          description: "",
           section: "Teaching",handler: () => {
               window.location.href = "/teaching/fml/";
+            },},{id: "teaching-high-scale-statistical-learning-and-recommendation-system-teaching-assistant",
+          title: 'High-Scale Statistical Learning and Recommendation System (Teaching Assistant)',
+          description: "",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/high_scale_ensai/";
             },},{id: "teaching-introduction-to-artificial-intelligence",
           title: 'Introduction to Artificial Intelligence',
-          description: "An introductory course for learning Artificial Intelligence",
+          description: "",
           section: "Teaching",handler: () => {
               window.location.href = "/teaching/intro_to_ai/";
-            },},{id: "teaching-algo-prog",
-          title: 'Algo Prog',
-          description: "An introduction to programming by leveraging  game called PyRat.",
+            },},{id: "teaching-algorithmics-and-programming",
+          title: 'Algorithmics and Programming',
+          description: "",
           section: "Teaching",handler: () => {
               window.location.href = "/teaching/pyrat/";
             },},{
