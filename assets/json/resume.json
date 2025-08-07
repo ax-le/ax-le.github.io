@@ -124,6 +124,36 @@
       "icon": ""
     }
   ],
+  "fundings": [
+    {
+      "date": "2026 / 2029",
+      "title": "MusAIc -- Steerable and Interpretable Music Analysis through Hybrid Models.",
+      "awarder": "ANR JCJC",
+      "summary": "Principal Investigator. Funding for one Ph.D., one 18-months post-doctoral position, and one 6-months internship."
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Journals",
+      "organism": [
+        "EURASIP Journal on Audio, Speech, and Music Processing - 2024"
+      ]
+    },
+    {
+      "name": "Conferences",
+      "organism": [
+        "ICASSP (IEEE International Conference on Acoustics, Speech, and Signal Processing) - 2024, 2025",
+        "ISMIR (International Society for Music Information Retrieval) - 2024, 2025",
+        "WASPAA (IEEE Workshop on Applications of Signal Processing to Audio and Acoustics) - 2025"
+      ]
+    },
+    {
+      "name": "Funding",
+      "organism": [
+        "ANR (French funding agency) - 2024"
+      ]
+    }
+  ],
   "industry": [
     {
       "name": "SOPRA STERIA",
@@ -164,9 +194,7 @@
       "summary": "Des Machines Mélomanes : l'Intelligence Artificielle permet-elle de développer des machines qui comprennent la musique ?",
       "location": "Rennes, <br>Brittany, <br>France",
       "position": "Presenter (Scientific Vulgarization)",
-      "startDate": "2023",
-      "endDate": "2023"
-    },
+      "startDate": "2023"    },
     {
       "organization": "Journée Science et Musique",
       "location": "Rennes, <br>Brittany, <br>France",

@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Fundamentals of Machine Learning
-description: A mathematical class about Fundamentals of Machine Learning.
-importance: 1
-category: test
+keywords: Machine Learning, notably Statistical (Bayesian) formalism.
+years_given: 2024, 2025
+category: Still Given
+location: IMT Atlantique
+level: 2nd & 3rd year Engineering
+importance: 2
 ---
-
-TODO.

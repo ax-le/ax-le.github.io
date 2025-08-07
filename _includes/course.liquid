@@ -1,0 +1,20 @@
+<div class="col mb-4">  
+  {% if course.link %}<a href="{{ course.link }}">{% endif %}
+
+    <div class="card h-100 hoverable">
+      <div class="row no-gutters">               
+                
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h3 class="card-title">{{ course.title }}</h3>
+                    <p class="card-text">Given at {{ course.location }} for {{ course.level }} students.</p>
+
+                    <p class="card-text">Keywords: {{ course.keywords }}</p>
+                    <p class="card-text">Given in: {{ course.years_given }}</p>
+
+                </div>
+              </div>
+      </div>
+    </div>
+  {% if course.link %}</a>{% endif %}
+</div>

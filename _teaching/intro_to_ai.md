@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Introduction to Artificial Intelligence
-description: An introductory course for learning Artificial Intelligence
+keywords: Artificial Intelligence; Python; Machine & Deep Learning.
+category: Still Given
+years_given: 2023, 2024, 2025
+link: https://github.com/brain-bzh/introduction-to-ai
+location: IMT Atlantique
+level: 2nd & 3rd year Engineering
 importance: 1
-category: test
 ---
-
-[Link to the course.](https://github.com/brain-bzh/introduction-to-ai)
-
-TODO.

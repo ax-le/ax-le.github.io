@@ -158,6 +158,8 @@ collections:
     output: true
   resources:
     output: true
+  talks:
+    output: true
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -649,6 +651,8 @@ jsonresume:
   - projects
   - volunteer
   - awards
+  - fundings
+  - reviews
   - certificates
   - skills
   - languages

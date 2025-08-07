@@ -101,6 +101,10 @@ layout: default
                   {% include resume/interests.liquid %}
                 {% when 'education' %}
                   {% include resume/education.liquid %}
+                {% when 'fundings' %}
+                  {% include resume/awards.liquid %}
+                {% when 'reviews' %}
+                  {% include resume/reviews.liquid %}
                 {% when 'industry' %}
                   {% include resume/work.liquid %}
                 {% when 'volunteer' %}
