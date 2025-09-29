@@ -5,7 +5,7 @@ permalink: /projects/
 description: Projects I'm involved in. Basically, it regroups the toolboxes I developed in research context, and the students project I supervised.
 nav: true
 nav_order: 6
-display_categories: [toolbox, students]
+display_categories: [funding, toolbox, students]
 horizontal: false
 ---
 
