@@ -6,9 +6,9 @@ importance: 1
 category: funding
 ---
 ## TL;DR
-The **MusAIc** project is a 48-month research project, funded by ANR (ANR JCJC 2025 - CE23), that aims to develop Artificial Intelligence (AI) models for music analysis that are efficient, steerable, and interpretable.
+The **MusAIc** project is a 48-month research project, funded by ANR (ANR JCJC 2025 - CE23), that aims to develop Artificial Intelligence (AI) models for music analysis that are efficient, steerable, and interpretable, by bridging low-rank factorization and deep learning methods.
 
-MusAIc's central hypothesis is that by creating novel hybrid models that merge the strengths of low-rank factorization methods (like nonnegative low-rank factorization) with the expressive power of deep learning, it is possible to achieve high performance while embedding user steerability and interpretability by design. The project will focus on tasks such as automatic music transcription, source separation, and structure analysis. Through close collaboration with music professionals, the ultimate goal is to empower musicians, musicologists, and researchers with adaptable and insightful AI tools that bridge the gap between computational efficiency and artistic and analytical needs.
+<!--MusAIc's central hypothesis is that by creating novel hybrid models that merge the strengths of low-rank factorization methods (like nonnegative low-rank factorization) with the expressive power of deep learning, it is possible to achieve high performance while embedding user steerability and interpretability by design. The project will focus on tasks such as automatic music transcription, source separation, and structure analysis. Through close collaboration with music professionals, the ultimate goal is to empower musicians, musicologists, and researchers with adaptable and insightful AI tools that bridge the gap between computational efficiency and artistic and analytical needs.-->
 
 The project will fund one master's internship (starting in 2026), one Ph.D. (starting late 2026), and one 18-month post-doctoral position (starting 2028).
 
