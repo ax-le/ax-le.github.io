@@ -203,6 +203,11 @@ ninja.data = [{
           description: "Easy handle to compute spectrogram and everything.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/base_audio/";
+            },},{id: "projects-musaic-anr-jcjc-2025",
+          title: 'MusAIc (ANR JCJC 2025)',
+          description: "Steerable and Interpretable Music Analysis through Hybrid Models.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/musaic/";
             },},{id: "projects-musiconpolytopes",
           title: 'MusicOnPolytopes',
           description: "Polytopical analysis of music.",
@@ -258,6 +263,11 @@ ninja.data = [{
           description: "Co-supervised by Jérémy Cohen.",
           section: "Supervision",handler: () => {
               window.location.href = "/supervision/florian_voorwinden/";
+            },},{id: "supervision-han-changheon",
+          title: 'Han_changheon',
+          description: "Co-supervised by Giorgio Fabbro (SONY Stuttgart) and Nicolas Farrugia. Took place at SONY Stuttgart.",
+          section: "Supervision",handler: () => {
+              window.location.href = "/supervision/han_changheon/";
             },},{id: "supervision-jeanlabadye-lucie",
           title: 'Jeanlabadye_lucie',
           description: "Co-directed by Olivier Adam and Nicolas Farrugia. Co-supervised by Dorian Cazau.",
