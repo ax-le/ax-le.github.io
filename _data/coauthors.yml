@@ -32,6 +32,11 @@
   - firstname: ["Ulysse", "U."]
     url: https://www.linkedin.com/in/ulysse-lefeuvre-638591170
 
+# PhD I worked with (not supervised)
+"bensaid":
+  - firstname: ["Reda", "R."]
+    url: https://scholar.google.com/citations?user=InQw64sAAAAJ
+
 # External colleagues
 "leplat":
   - firstname: ["Valentin", "V."]

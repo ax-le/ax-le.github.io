@@ -189,6 +189,20 @@
 
 
 # Pre-prints
+@article{marmoret2025tenslora,
+  bibtex_show={true},
+  abbr={Preprint},
+  title={TensLoRA: Tensor Alternatives for Low-Rank Adaptation},
+  author={Marmoret*, Axel and Bensaid*†, Reda and Lys*, Jonathan and Gripon*, Vincent and Leduc-Primeau†, Fran{\c{c}}ois},
+  annotation={* IMT Atlantique, Lab-STICC, UMR CNRS 6285, F-29238 Brest, France.<br>† Polytechnique Montr{\'e}al, Canada.},
+  url={https://arxiv.org/abs/2509.19391},
+  pdf={https://arxiv.org/pdf/2509.19391},
+  journal={arXiv preprint arXiv:2509.19391},
+  year={2025},
+  additional_info={. Code can be [found here](https://github.com/ax-le/TensLoRA)},
+  abstract={Low-Rank Adaptation (LoRA) is widely used to efficiently adapt Transformers by adding trainable low-rank matrices to attention projections. While effective, these matrices are considered independent for each attention projection (Query, Key, and Value) and each layer. Recent extensions have considered joint, tensor-based adaptations, but only in limited forms and without a systematic framework. We introduce TensLoRA, a unified framework that aggregates LoRA updates into higher-order tensors and models a broad family of tensor-based low-rank adaptations. Our formulation generalizes existing tensor-based methods and enables mode-specific compression rates, allowing parameter budgets to be tailored according to the modality and task. Experiments on vision and language benchmarks reveal that the tensor construction directly impacts performance, sometimes better than standard LoRA under similar parameter counts.},
+}
+
 @article{marmoret2022polytopic,
   bibtex_show={true},
   abbr={Preprint}, 
