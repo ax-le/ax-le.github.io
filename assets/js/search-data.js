@@ -257,6 +257,11 @@ ninja.data = [{
           description: "A companion website to navigate through the JJBA 2024 poster &quot;Naïve Unsupervised Bioacoustics Signal Processing with Nonnegative Matrix Factorization&quot;.",
           section: "Resources",handler: () => {
               window.location.href = "/resources/JJBA/";
+            },},{id: "resources-nuit-des-chercheurs",
+          title: 'Nuit des Chercheurs',
+          description: "Examples for the use of Artificial Intelligence in AI for a vulgarization event called &quot;Fête de la Science&quot;.",
+          section: "Resources",handler: () => {
+              window.location.href = "/resources/fete_de_la_science/";
             },},{id: "resources-listening-to-ntd",
           title: 'Listening to NTD',
           description: "An example to listen to the patterns in NTD, showcasing its potential in pattern estimation.",
