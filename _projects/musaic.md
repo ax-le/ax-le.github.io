@@ -42,7 +42,7 @@ The project roots itself in Music Information Retrieval, and aims at studying ta
 
 ## Funded positions
 Concretly, the project will fund three positions:
-1. A master's internship, which is expected to start in the first half of 2026, and on the subject of improving low-rank factorization using large datasets (batch-wise and epoch-based learning). The offer is available <a href="TODO">here</a>.
+1. A master's internship, which is expected to start in the first half of 2026, and on the subject of improving low-rank factorization using large datasets (batch-wise and epoch-based learning). The offer is available <a href="{{baseurl}}/assets/pdf/postes/MusAIc_master_offer.pdf">here</a>.
 1. A Ph.D. (starting late 2026), focusing on WP1 and 3 (*i.e.,* improving low-rank factorization models using dep learning principles). The offer is available <a href="TODO">here</a>.
 1. A 18-month post-doctoral position (expected to start in 2028), focusing on WP2 and 3 (*i.e.,* using low-rank factorization and signal processing principles to enhance the interpretability and steerability of deep learning models).
 
