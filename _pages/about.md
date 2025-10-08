@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Tenured Assistant Professor at <a href='https://www.imt-atlantique.fr/en'>IMT Atlantique</a>, and researcher in the <a href='https://www.imt-atlantique.fr/en/research-innovation/teams/brain'>BRAIN team</a>.
+subtitle: Tenured Assistant Professor at <a href='https://www.imt-atlantique.fr/en'>IMT Atlantique</a>, and researcher in the <a href='https://www.imt-atlantique.fr/en/research-innovation/teams/brain'>BRAIN team</a>.<br><br><strong>Open positions</strong> can be found <a href='/open_positions'>here</a>.
 
 profile:
   align: left

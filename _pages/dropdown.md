@@ -10,6 +10,9 @@ children:
   - title: divider
   - title: resources
     permalink: /resources/
+  - title: divider
+  - title: open positions
+    permalink: /open_positions/
   # - title: blog
   #   permalink: /blog/
 ---
