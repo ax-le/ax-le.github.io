@@ -65,6 +65,13 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/resources/";
               },
+            },{id: "dropdown-open-positions",
+              title: "open positions",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/open_positions/";
+              },
             },{id: "music-c-dead-weather",
           title: 'C_dead_weather',
           description: "",
