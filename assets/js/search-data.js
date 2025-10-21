@@ -142,6 +142,11 @@ ninja.data = [{
           description: "",
           section: "Music",handler: () => {
               window.location.href = "/music/n_atw/";
+            },},{id: "music-n-cult-of-luna",
+          title: 'N_cult_of_luna',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/n_cult_of_luna/";
             },},{id: "music-n-fleuves",
           title: 'N_fleuves',
           description: "",
@@ -167,11 +172,6 @@ ninja.data = [{
           description: "",
           section: "Music",handler: () => {
               window.location.href = "/music/n_psychonaut_first/";
-            },},{id: "music-n-rotns",
-          title: 'N_rotns',
-          description: "",
-          section: "Music",handler: () => {
-              window.location.href = "/music/n_rotns/";
             },},{id: "music-n-slope",
           title: 'N_slope',
           description: "",
