@@ -3,6 +3,6 @@ layout: page
 album_name: \#1
 artist_name: Fleuves
 img: music/fleuves.jpg
-importance: 6
+importance: 7
 category: Exciting new stuff
 ---

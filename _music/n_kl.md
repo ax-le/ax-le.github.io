@@ -1,8 +1,8 @@
 ---
 layout: page
-album_name: You Won't Go Before You're Supposed To
+album_name: Laugh Tracks
 artist_name: Knocked Loose
 img: music/kl.jpg
-importance: 8
+importance: 5
 category: Exciting new stuff
 ---
