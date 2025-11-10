@@ -129,7 +129,8 @@
       "date": "2026 / 2029",
       "title": "MusAIc -- Steerable and Interpretable Music Analysis through Hybrid Models.",
       "awarder": "ANR JCJC",
-      "summary": "Principal Investigator. Funding for one Ph.D., one 18-months post-doctoral position, and one 6-months internship."
+      "summary": "Principal Investigator. Funding for one Ph.D., one 18-months post-doctoral position, and one 6-months internship.",
+      "url": "https://ax-le.github.io/assets/pdf/administrative/JCJC_MusAIc_phase_2.pdf"
     }
   ],
   "reviews": [
@@ -142,7 +143,7 @@
     {
       "name": "Conferences",
       "organism": [
-        "ICASSP (IEEE International Conference on Acoustics, Speech, and Signal Processing) - 2024, 2025",
+        "ICASSP (IEEE International Conference on Acoustics, Speech, and Signal Processing) - 2024, 2025, 2026",
         "ISMIR (International Society for Music Information Retrieval) - 2024, 2025",
         "WASPAA (IEEE Workshop on Applications of Signal Processing to Audio and Acoustics) - 2025"
       ]
@@ -150,7 +151,7 @@
     {
       "name": "Funding",
       "organism": [
-        "ANR (French funding agency) - 2024"
+        "ANR (French funding agency) JCJC - 2024"
       ]
     }
   ],

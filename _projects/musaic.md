@@ -10,7 +10,7 @@ The **MusAIc** project is a 48-month research project, funded by ANR (ANR JCJC 2
 
 <!--MusAIc's central hypothesis is that by creating novel hybrid models that merge the strengths of low-rank factorization methods (like nonnegative low-rank factorization) with the expressive power of deep learning, it is possible to achieve high performance while embedding user steerability and interpretability by design. The project will focus on tasks such as automatic music transcription, source separation, and structure analysis. Through close collaboration with music professionals, the ultimate goal is to empower musicians, musicologists, and researchers with adaptable and insightful AI tools that bridge the gap between computational efficiency and artistic and analytical needs.-->
 
-The project will fund one master's internship (starting in 2026), one Ph.D. (starting late 2026), and one 18-month post-doctoral position (starting 2028).
+The project will fund one master's internship (starting in 2026), one Ph.D. (starting late 2026), and one 18-month post-doctoral position (starting 2028). The complete scientific proposal (20 pages) is available <a href="{{baseurl}}/assets/pdf/administrative/JCJC_MusAIc_phase_2.pdf">here</a>.
 
 # MusAIc: Steerable and Interpretable Music Analysis through Hybrid Models.
 
@@ -53,4 +53,8 @@ By prioritizing steerability and interpretability, we aim to transform AI from a
 
 The **MusAIc** project is a multidisciplinary effort bringing together experts in signal processing, machine learning, and the arts. We are committed to open science, with plans to release open-source code and publications to benefit the entire community.
 
-We are excited to embark on this journey and look forward to sharing our progress as we work to build models that truly understands and empowers the world of music!
+## More details
+
+The complete scientific proposal (20 pages) is available <a href="{{baseurl}}/assets/pdf/administrative/JCJC_MusAIc_phase_2.pdf">here</a>.
+
+**We are excited to embark on this journey and look forward to sharing our progress as we work to build models that truly understands and empowers the world of music!**
