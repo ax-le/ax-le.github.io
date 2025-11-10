@@ -191,7 +191,7 @@ ninja.data = [{
           section: "News",},{id: "news-we-submitted-tenslora-at-2026-icassp-conference-about-low-rank-adaptation-with-tensors",
           title: 'We submitted TensLoRA at 2026 ICASSP conference, about Low-Rank Adaptation with tensors.',
           description: "",
-          section: "News",},{id: "news-i-am-happy-to-annouce-that-i-my-anr-jcjc-musaic-was-funded-for-2026-2029-partying-face-more-details-here",
+          section: "News",},{id: "news-i-am-happy-to-annouce-that-i-my-anr-jcjc-musaic-was-funded-for-2026-2029-partying-face-more-details-on-this-page-you-may-also-find-the-complete-scientific-proposal-20-pages-here",
           title: 'I am happy to annouce that I my ANR JCJC MusAIc was funded...',
           description: "",
           section: "News",},{id: "projects-autosimilarity-segmentation",
@@ -294,6 +294,11 @@ ninja.data = [{
           description: "Co-directed by Olivier Adam and Nicolas Farrugia. Co-supervised by Dorian Cazau.",
           section: "Supervision",handler: () => {
               window.location.href = "/supervision/jeanlabadye_lucie/";
+            },},{id: "supervision-jiang-kaiteng",
+          title: 'Jiang_kaiteng',
+          description: "Directed by Nicolas Farrugia. Co-supervised by Mathieu Léonardon and Giorgio Fabbro (SONY STC).",
+          section: "Supervision",handler: () => {
+              window.location.href = "/supervision/jiang_kaiteng/";
             },},{id: "supervision-lys-jonathan",
           title: 'Lys_jonathan',
           description: "Directed by Vincent Gripon. Co-supervised by Bastien Pasdeloup.",
