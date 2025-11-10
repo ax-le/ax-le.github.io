@@ -1,6 +1,6 @@
 ---
 layout: page
-album_name: SlipKnot
+album_name: Vol. 3 (The Subliminal Verses)
 artist_name: SlipKnot
 img: music/slipknot.jpg
 importance: 4
