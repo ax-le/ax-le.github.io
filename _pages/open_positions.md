@@ -7,10 +7,6 @@ nav: false
 ---
 
 Several positions are opened in the context of the <a href="{{base.url}}/projects/musaic">MusAIc project</a>:
-1. <strong>Master's 2 internship</strong> (first half of 2026). <br>
-Title: <u>Large-Scale Learning with NMF for Music Transcription.</u><br>
-The detailed offer is available <a href="{{baseurl}}/assets/pdf/postes/MusAIc_master_offer.pdf">here</a>.
-<br><br>
 1. <strong>Ph.D. thesis</strong> (late 2026-2029). <br>
 Title: <u>Hybrid Deep Learning Models for Interpretable Music Analysis.</u> <br>
 The offer is available <a href="{{baseurl}}/assets/pdf/postes/MusAIc_phd_offer.pdf">here</a>.
