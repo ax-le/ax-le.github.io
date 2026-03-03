@@ -231,20 +231,32 @@
   abstract={Structural segmentation of music refers to the task of finding a symbolic representation of the organisation of a song, reducing the musical flow to a partition of non-overlapping segments. Under this definition, the musical structure may not be unique, and may even be ambiguous. One way to resolve that ambiguity is to see this task as a compression process, and to consider the musical structure as the optimization of a given compression criteria. In that viewpoint, C. Guichaoua developed a compression-driven model for retrieving the musical structure, based on the "System and Contrast" model, and on polytopes, which are extension of nhypercubes. We present this model, which we call "polytopic analysis of music", along with a new opensource dedicated toolbox called MusicOnPolytopes (in Python). This model is also extended to the use of the Tonnetz as a relation system. Structural segmentation experiments are conducted on the RWC Pop dataset. Results show improvements compared to the previous ones, presented by C. Guichaoua.},
 }
 
+@article{lys2026residual,
+  bibtex_show={true},
+  abbr={Preprint}, 
+  title={Residual Connections and the Causal Shift: Uncovering a Structural Misalignment in Transformers},
+  author={Lys*, Jonathan and Gripon*, Vincent and Pasdeloup*, Bastien and Marmoret*, Axel and Mauch†, Lukas and Cardinaux†, Fabien and Hacene†, Ghouthi Boukli},
+  annotation={* IMT Atlantique, Lab-STICC, UMR CNRS 6285, F-29238 Brest, France.<br>† Sony Europe Ltd, Stuttgart Technology Center, EUREC, Germany.},
+  journal={arXiv preprint arXiv:2602.14760},
+  year={2026},
+  month={},
+  pdf={https://arxiv.org/pdf/2602.14760},
+  code={https://github.com/jonathanlys01/causal-shift},
+  abstract={Large Language Models (LLMs) are trained with next-token prediction, implemented in autoregressive Transformers via causal masking for parallelism. This creates a subtle misalignment: residual connections tie activations to the current token, while supervision targets the next token, potentially propagating mismatched information if the current token is not the most informative for prediction. In this work, we empirically localize this input-output alignment shift in pretrained LLMs, using decoding trajectories over tied embedding spaces and similarity-based metrics. Our experiments reveal that the hidden token representations switch from input alignment to output alignment deep within the network. Motivated by this observation, we propose a lightweight residual-path mitigation based on residual attenuation, implemented either as a fixed-layer intervention or as a learnable gating mechanism. Experiments on multiple benchmarks show that these strategies alleviate the representation misalignment and yield improvements, providing an efficient and general architectural enhancement for autoregressive Transformers.},
+  additional_info={. Submitted at EUSIPCO 2026},
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@article{lys2026inner,
+  bibtex_show={true},
+  abbr={Preprint}, 
+  title={Inner Loop Inference for Pretrained Transformers: Unlocking Latent Capabilities Without Training},
+  author={Lys*, Jonathan and Gripon*, Vincent and Pasdeloup*, Bastien and Marmoret*, Axel and Mauch†, Lukas and Cardinaux†, Fabien and Hacene†, Ghouthi Boukli},
+  annotation={* IMT Atlantique, Lab-STICC, UMR CNRS 6285, F-29238 Brest, France.<br>† Sony Europe Ltd, Stuttgart Technology Center, EUREC, Germany.},
+  journal={arXiv preprint arXiv:2602.14759},
+  year={2026},
+  month={},
+  pdf={https://arxiv.org/pdf/2602.14759},
+  code={https://github.com/jonathanlys01/looped-transformer},
+  abstract={Deep Learning architectures, and in particular Transformers, are conventionally viewed as a composition of layers. These layers are actually often obtained as the sum of two contributions: a residual path that copies the input and the output of a Transformer block. As a consequence, the inner representations (i.e. the input of these blocks) can be interpreted as iterative refinement of a propagated latent representation. Under this lens, many works suggest that the inner space is shared across layers, meaning that tokens can be decoded at early stages. Mechanistic interpretability even goes further by conjecturing that some layers act as refinement layers. Following this path, we propose inference-time inner looping, which prolongs refinement in pretrained off-the-shelf language models by repeatedly re-applying a selected block range. Across multiple benchmarks, inner looping yields modest but consistent accuracy improvements. Analyses of the resulting latent trajectories suggest more stable state evolution and continued semantic refinement. Overall, our results suggest that additional refinement can be obtained through simple test-time looping, extending computation in frozen pretrained models.},
+  additional_info={. Submitted at EUSIPCO 2026},
+}
