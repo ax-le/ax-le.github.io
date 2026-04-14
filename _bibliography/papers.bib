@@ -231,6 +231,36 @@
   abstract={Structural segmentation of music refers to the task of finding a symbolic representation of the organisation of a song, reducing the musical flow to a partition of non-overlapping segments. Under this definition, the musical structure may not be unique, and may even be ambiguous. One way to resolve that ambiguity is to see this task as a compression process, and to consider the musical structure as the optimization of a given compression criteria. In that viewpoint, C. Guichaoua developed a compression-driven model for retrieving the musical structure, based on the "System and Contrast" model, and on polytopes, which are extension of nhypercubes. We present this model, which we call "polytopic analysis of music", along with a new opensource dedicated toolbox called MusicOnPolytopes (in Python). This model is also extended to the use of the Tonnetz as a relation system. Structural segmentation experiments are conducted on the RWC Pop dataset. Results show improvements compared to the previous ones, presented by C. Guichaoua.},
 }
 
+@article{marmoret2026can,
+  bibtex_show={true},
+  abbr={Preprint}, 
+  title={Can pre-trained Deep Learning models predict groove ratings?},
+  author={Marmoret*, Axel and Farrugia*, Nicolas and Stupacher†, Jan Alexander},
+  annotation={* IMT Atlantique, Lab-STICC, UMR CNRS 6285, F-29238 Brest, France.<br>† Center for Music In the Brain, Aarhus University, Århus, Denmark.},
+  journal={arXiv preprint arXiv:2603.27237},
+  year={2026},
+  month={},
+  pdf={https://arxiv.org/pdf/2603.27237},
+  code={https://github.com/ax-le/deep_groove_prediction},
+  abstract={This study explores the extent to which deep learning models can predict groove and its related perceptual dimensions directly from audio signals. We critically examine the effectiveness of seven state-of-the-art deep learning models in predicting groove ratings and responses to groove-related queries through the extraction of audio embeddings. Additionally, we compare these predictions with traditional handcrafted audio features. To better understand the underlying mechanics, we extend this methodology to analyze predictions based on source-separated instruments, thereby isolating the contributions of individual musical elements. Our analysis reveals a clear separation of groove characteristics driven by the underlying musical style of the tracks (funk, pop, and rock). These findings indicate that deep audio representations can successfully encode complex, style-dependent groove components that traditional features often miss. Ultimately, this work highlights the capacity of advanced deep learning models to capture the multifaceted concept of groove, demonstrating the strong potential of representation learning to advance predictive Music Information Retrieval methodologies.},
+  additional_info={. Submitted at SMC 2026},
+}
+
+@article{marmoret2026unsupervised,
+  bibtex_show={true},
+  abbr={Preprint}, 
+  title={Unsupervised Evaluation of Deep Audio Embeddings for Music Structure Analysis},
+  author={Marmoret*, Axel},
+  annotation={* IMT Atlantique, Lab-STICC, UMR CNRS 6285, F-29238 Brest, France.},
+  journal={arXiv preprint arXiv:2603.27218},
+  year={2026},
+  month={},
+  pdf={https://arxiv.org/pdf/2603.27218},
+  code={https://github.com/ax-le/msa_deep_embeddings},
+  abstract={Music Structure Analysis (MSA) aims to uncover the high-level organization of musical pieces. State-of-the-art methods are often based on supervised deep learning, but these methods are bottlenecked by the need for heavily annotated data and inherent structural ambiguities. In this paper, we propose an unsupervised evaluation of nine open-source, generic pre-trained deep audio models, on MSA. For each model, we extract barwise embeddings and segment them using three unsupervised segmentation algorithms (Foote's checkerboard kernels, spectral clustering, and Correlation Block-Matching (CBM)), focusing exclusively on boundary retrieval. Our results demonstrate that modern, generic deep embeddings generally outperform traditional spectrogram-based baselines, but not systematically. Furthermore, our unsupervised boundary estimation methodology generally yields stronger performance than recent linear probing baselines. Among the evaluated techniques, the CBM algorithm consistently emerges as the most effective downstream segmentation method. Finally, we highlight the artificial inflation of standard evaluation metrics and advocate for the systematic adoption of ``trimming'', or even ``double trimming'' annotations to establish more rigorous MSA evaluation standards.},
+  additional_info={. Submitted at SMC 2026},
+}
+
 @article{lys2026residual,
   bibtex_show={true},
   abbr={Preprint}, 
@@ -274,35 +304,4 @@
   code={https://github.com/jonathanlys01/d5p4},
   abstract={Discrete diffusion models are promising alternatives to autoregressive approaches for text generation, yet their decoding methods remain under-studied. Standard decoding methods for autoregressive models, such as beam search, do not directly apply to iterative denoising, and existing diffusion decoding techniques provide limited control over in-batch diversity. To bridge this gap, we introduce a generalized beam-search framework for discrete diffusion that generates candidates in parallel and supports modular beam-selection objectives. As a diversity-focused instantiation, we propose D5P4, which formulates the selection step as MAP inference over a Determinantal Point Process. Leveraging a scalable greedy solver, D5P4 maintains multi-GPU compatibility and enables an explicit trade-off between model probability and target diversity with near-zero compute overhead. Experiments on free-form generation and question answering demonstrate that D5P4 improves diversity over strong baselines while maintaining competitive generation quality.},
   additional_info={. Submitted at ICML 2026},
-}
-
-
-@article{marmoret2026can,
-  bibtex_show={true},
-  abbr={Preprint}, 
-  title={Can pre-trained Deep Learning models predict groove ratings?},
-  author={Marmoret*, Axel and Farrugia*, Nicolas and Stupacher†, Jan Alexander},
-  annotation={* IMT Atlantique, Lab-STICC, UMR CNRS 6285, F-29238 Brest, France.<br>† Center for Music In the Brain, Aarhus University, Århus, Denmark.},
-  journal={arXiv preprint arXiv:2603.27237},
-  year={2026},
-  month={},
-  pdf={https://arxiv.org/pdf/2603.27237},
-  code={https://github.com/ax-le/deep_groove_prediction},
-  abstract={This study explores the extent to which deep learning models can predict groove and its related perceptual dimensions directly from audio signals. We critically examine the effectiveness of seven state-of-the-art deep learning models in predicting groove ratings and responses to groove-related queries through the extraction of audio embeddings. Additionally, we compare these predictions with traditional handcrafted audio features. To better understand the underlying mechanics, we extend this methodology to analyze predictions based on source-separated instruments, thereby isolating the contributions of individual musical elements. Our analysis reveals a clear separation of groove characteristics driven by the underlying musical style of the tracks (funk, pop, and rock). These findings indicate that deep audio representations can successfully encode complex, style-dependent groove components that traditional features often miss. Ultimately, this work highlights the capacity of advanced deep learning models to capture the multifaceted concept of groove, demonstrating the strong potential of representation learning to advance predictive Music Information Retrieval methodologies.},
-  additional_info={. Submitted at SMC 2026},
-}
-
-@article{marmoret2026unsupervised,
-  bibtex_show={true},
-  abbr={Preprint}, 
-  title={Unsupervised Evaluation of Deep Audio Embeddings for Music Structure Analysis},
-  author={Marmoret*, Axel},
-  annotation={* IMT Atlantique, Lab-STICC, UMR CNRS 6285, F-29238 Brest, France.},
-  journal={arXiv preprint arXiv:2603.27218},
-  year={2026},
-  month={},
-  pdf={https://arxiv.org/pdf/2603.27218},
-  code={https://github.com/ax-le/msa_deep_embeddings},
-  abstract={Music Structure Analysis (MSA) aims to uncover the high-level organization of musical pieces. State-of-the-art methods are often based on supervised deep learning, but these methods are bottlenecked by the need for heavily annotated data and inherent structural ambiguities. In this paper, we propose an unsupervised evaluation of nine open-source, generic pre-trained deep audio models, on MSA. For each model, we extract barwise embeddings and segment them using three unsupervised segmentation algorithms (Foote's checkerboard kernels, spectral clustering, and Correlation Block-Matching (CBM)), focusing exclusively on boundary retrieval. Our results demonstrate that modern, generic deep embeddings generally outperform traditional spectrogram-based baselines, but not systematically. Furthermore, our unsupervised boundary estimation methodology generally yields stronger performance than recent linear probing baselines. Among the evaluated techniques, the CBM algorithm consistently emerges as the most effective downstream segmentation method. Finally, we highlight the artificial inflation of standard evaluation metrics and advocate for the systematic adoption of ``trimming'', or even ``double trimming'' annotations to establish more rigorous MSA evaluation standards.},
-  additional_info={. Submitted at SMC 2026},
 }
