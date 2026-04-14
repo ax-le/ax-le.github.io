@@ -285,6 +285,11 @@ ninja.data = [{
           description: "Examples for the use of Artificial Intelligence in AI for a vulgarization event called &quot;Nuit des Chercheur·es&quot;.",
           section: "Resources",handler: () => {
               window.location.href = "/resources/nuit_des_chercheurs/";
+            },},{id: "supervision-baptiste-hilaire",
+          title: 'Baptiste_hilaire',
+          description: "Co-supervised by Lucas Drumetz.",
+          section: "Supervision",handler: () => {
+              window.location.href = "/supervision/baptiste_hilaire/";
             },},{id: "supervision-florian-voorwinden",
           title: 'Florian_voorwinden',
           description: "Co-supervised by Jérémy Cohen.",
