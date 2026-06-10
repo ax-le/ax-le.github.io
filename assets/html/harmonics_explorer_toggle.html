@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timbre Explorer</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #ffffff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 24px;
+    gap: 0;
+  }
+
+  /* ── Frequency display ── */
+  #freq-display {
+    font-size: clamp(3.5rem, 10vw, 6rem);
+    font-weight: 700;
+    letter-spacing: -2px;
+    color: #111;
+    line-height: 1;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 32px;
+  }
+  #freq-unit {
+    font-size: 0.32em;
+    font-weight: 400;
+    color: #888;
+    letter-spacing: 1px;
+    margin-left: 4px;
+  }
+
+  /* ── Canvas ── */
+  #canvas-wrap {
+    width: 100%;
+    max-width: 820px;
+    margin-bottom: 28px;
+  }
+  canvas { width: 100%; height: 220px; display: block; }
+
+  /* ── Frequency slider ── */
+  #slider-wrap {
+    width: 100%;
+    max-width: 820px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 36px;
+  }
+  input[type=range] {
+    -webkit-appearance: none; appearance: none;
+    width: 100%; height: 3px;
+    background: #ddd; border-radius: 2px;
+    outline: none; cursor: pointer;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; appearance: none;
+    width: 28px; height: 28px; border-radius: 50%;
+    background: #111; cursor: pointer; transition: transform 0.1s;
+  }
+  input[type=range]::-webkit-slider-thumb:hover { transform: scale(1.15); }
+  input[type=range]::-moz-range-thumb {
+    width: 28px; height: 28px; border-radius: 50%;
+    background: #111; border: none; cursor: pointer;
+  }
+  .slider-labels {
+    width: 100%; display: flex; justify-content: space-between;
+    color: #bbb; font-size: 0.75rem; letter-spacing: 0.5px;
+  }
+
+  /* ── Toggle switch ── */
+  #toggle-wrap {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 36px;
+    user-select: none;
+  }
+  .toggle-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #bbb;
+    transition: color 0.2s;
+    cursor: pointer;
+  }
+  .toggle-label.active { color: #111; }
+
+  /* The pill */
+  #toggle-pill {
+    width: 56px; height: 28px;
+    background: #111;
+    border-radius: 14px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.2s;
+    flex-shrink: 0;
+  }
+  #toggle-knob {
+    position: absolute;
+    top: 3px; left: 3px;
+    width: 22px; height: 22px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 0.22s cubic-bezier(.4,0,.2,1);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.18);
+  }
+  #toggle-pill.complex #toggle-knob { transform: translateX(28px); }
+
+  /* ── Play button ── */
+  #play-btn {
+    width: 56px; height: 56px; border-radius: 50%;
+    border: 2px solid #111; background: white;
+    cursor: pointer; display: flex; align-items: center;
+    justify-content: center; transition: background 0.15s; flex-shrink: 0;
+  }
+  #play-btn:hover { background: #111; }
+  #play-btn:hover svg path, #play-btn:hover svg rect { fill: #fff; }
+  #play-btn svg { width: 22px; height: 22px; pointer-events: none; }
+  #play-btn svg path, #play-btn svg rect { fill: #111; transition: fill 0.15s; }
+</style>
+</head>
+<body>
+
+<div id="freq-display">
+  <span id="freq-val">220</span><span id="freq-unit">Hz</span>
+</div>
+
+<div id="canvas-wrap">
+  <canvas id="waveCanvas"></canvas>
+</div>
+
+<div id="slider-wrap">
+  <input type="range" id="freqSlider" min="80" max="1200" value="220" step="1">
+  <div class="slider-labels"><span>80 Hz</span><span>1200 Hz</span></div>
+</div>
+
+<div id="toggle-wrap">
+  <span class="toggle-label active" id="label-simple">Signal simple</span>
+  <div id="toggle-pill">
+    <div id="toggle-knob"></div>
+  </div>
+  <span class="toggle-label" id="label-complex">Signal complexe</span>
+</div>
+
+<button id="play-btn" title="Play / Pause" aria-label="Play / Pause">
+  <svg id="icon-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  <svg id="icon-pause" viewBox="0 0 24 24" style="display:none">
+    <rect x="6" y="5" width="4" height="14"/><rect x="14" y="5" width="4" height="14"/>
+  </svg>
+</button>
+
+<script>
+// ── Piano harmonic series ─────────────────────────────────────────────────
+const B = 0.00015; // inharmonicity coefficient
+
+const AMPS = [1.00, 0.70, 0.60, 0.40, 0.22, 0.15, 0.10, 0.08, 0.06, 0.04, 0.03];
+
+function partialFreq(fund, n) {
+  return fund * n * Math.sqrt(1 + B * n * n);
+}
+
+// ── State ─────────────────────────────────────────────────────────────────
+let isComplex  = false;
+let isPlaying  = false;
+let currentFreq = 220;
+
+// ── Canvas ────────────────────────────────────────────────────────────────
+const canvas = document.getElementById('waveCanvas');
+const ctx    = canvas.getContext('2d');
+const WINDOW_MS = 20;
+
+function resizeCanvas() {
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.getBoundingClientRect();
+  canvas.width  = rect.width  * dpr;
+  canvas.height = rect.height * dpr;
+  ctx.scale(dpr, dpr);
+}
+window.addEventListener('resize', () => { resizeCanvas(); drawWave(); });
+
+function drawWave() {
+  const freq = currentFreq;
+  const rect = canvas.getBoundingClientRect();
+  const W = rect.width, H = rect.height;
+  const midY = H / 2, amp = H * 0.38;
+
+  ctx.clearRect(0, 0, W, H);
+
+  // Zero line
+  ctx.beginPath();
+  ctx.strokeStyle = '#e0e0e0'; ctx.lineWidth = 1;
+  ctx.moveTo(0, midY); ctx.lineTo(W, midY);
+  ctx.stroke();
+
+  // Tick marks every 5 ms
+  ctx.fillStyle = '#bbb';
+  ctx.font = '11px Helvetica Neue, Arial, sans-serif';
+  ctx.textAlign = 'center';
+  for (let ms = 0; ms <= WINDOW_MS; ms += 5) {
+    const x = (ms / WINDOW_MS) * W;
+    ctx.beginPath();
+    ctx.strokeStyle = '#ebebeb'; ctx.lineWidth = 1;
+    ctx.moveTo(x, midY - amp - 8); ctx.lineTo(x, midY + amp + 8);
+    ctx.stroke();
+    if (ms > 0) ctx.fillText(ms + ' ms', x, midY + amp + 22);
+  }
+
+  // Waveform
+  const nH = isComplex ? AMPS.length : 1;
+  let total = 0;
+  for (let h = 0; h < nH; h++) total += AMPS[h];
+
+  const N = W * 2;
+  ctx.beginPath();
+  ctx.strokeStyle = '#111'; ctx.lineWidth = 2.2; ctx.lineJoin = 'round';
+
+  for (let i = 0; i <= N; i++) {
+    const t = (i / N) * WINDOW_MS / 1000;
+    let val = 0;
+    for (let h = 0; h < nH; h++) {
+      val += AMPS[h] * Math.sin(2 * Math.PI * partialFreq(freq, h + 1) * t);
+    }
+    val /= total;
+    const x = (i / N) * W;
+    const y = midY - amp * val;
+    i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+  }
+  ctx.stroke();
+}
+
+// ── Audio ─────────────────────────────────────────────────────────────────
+let audioCtx   = null;
+let oscillators = [];
+let gainNodes   = [];
+let masterGain  = null;
+
+function buildOscillators() {
+  const nH = isComplex ? AMPS.length : 1;
+  let total = 0;
+  for (let h = 0; h < nH; h++) total += AMPS[h];
+
+  masterGain = audioCtx.createGain();
+  masterGain.gain.value = 0.4;
+  masterGain.connect(audioCtx.destination);
+
+  for (let h = 0; h < nH; h++) {
+    const osc  = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = 'sine';
+    osc.frequency.value = partialFreq(currentFreq, h + 1);
+    gain.gain.value = AMPS[h] / total;
+    osc.connect(gain);
+    gain.connect(masterGain);
+    osc.start();
+    oscillators.push(osc);
+    gainNodes.push(gain);
+  }
+}
+
+function startAudio() {
+  audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  masterGain = audioCtx.createGain();
+  masterGain.gain.setValueAtTime(0, audioCtx.currentTime);
+  masterGain.gain.linearRampToValueAtTime(0.4, audioCtx.currentTime + 0.05);
+  masterGain.connect(audioCtx.destination);
+
+  const nH = isComplex ? AMPS.length : 1;
+  let total = 0;
+  for (let h = 0; h < nH; h++) total += AMPS[h];
+  for (let h = 0; h < nH; h++) {
+    const osc  = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = 'sine';
+    osc.frequency.value = partialFreq(currentFreq, h + 1);
+    gain.gain.value = AMPS[h] / total;
+    osc.connect(gain); gain.connect(masterGain);
+    osc.start();
+    oscillators.push(osc); gainNodes.push(gain);
+  }
+}
+
+function stopAudio() {
+  if (!audioCtx) return;
+  masterGain.gain.setValueAtTime(masterGain.gain.value, audioCtx.currentTime);
+  masterGain.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.06);
+  setTimeout(() => {
+    oscillators.forEach(o => o.stop());
+    audioCtx.close();
+    audioCtx = null; oscillators = []; gainNodes = []; masterGain = null;
+  }, 80);
+}
+
+function rebuildAudio() {
+  if (!isPlaying || !audioCtx) return;
+  oscillators.forEach(o => o.stop());
+  oscillators = []; gainNodes = [];
+  if (masterGain) { masterGain.disconnect(); masterGain = null; }
+  buildOscillators();
+}
+
+function updateFrequencies() {
+  // Smoothly ramp fundamental and all partials
+  oscillators.forEach((osc, h) => {
+    osc.frequency.setTargetAtTime(partialFreq(currentFreq, h + 1), audioCtx.currentTime, 0.01);
+  });
+}
+
+// ── Play button ───────────────────────────────────────────────────────────
+const playBtn   = document.getElementById('play-btn');
+const iconPlay  = document.getElementById('icon-play');
+const iconPause = document.getElementById('icon-pause');
+
+playBtn.addEventListener('click', () => {
+  if (!isPlaying) {
+    startAudio();
+    isPlaying = true;
+    iconPlay.style.display = 'none';
+    iconPause.style.display = '';
+  } else {
+    stopAudio();
+    isPlaying = false;
+    iconPlay.style.display = '';
+    iconPause.style.display = 'none';
+  }
+});
+
+// ── Frequency slider ──────────────────────────────────────────────────────
+const freqSlider = document.getElementById('freqSlider');
+const freqVal    = document.getElementById('freq-val');
+
+freqSlider.addEventListener('input', () => {
+  currentFreq = +freqSlider.value;
+  freqVal.textContent = currentFreq;
+  drawWave();
+  if (isPlaying) updateFrequencies();
+});
+
+// ── Toggle ────────────────────────────────────────────────────────────────
+const pill         = document.getElementById('toggle-pill');
+const labelSimple  = document.getElementById('label-simple');
+const labelComplex = document.getElementById('label-complex');
+
+function applyToggle() {
+  if (isComplex) {
+    pill.classList.add('complex');
+    labelSimple.classList.remove('active');
+    labelComplex.classList.add('active');
+  } else {
+    pill.classList.remove('complex');
+    labelSimple.classList.add('active');
+    labelComplex.classList.remove('active');
+  }
+  drawWave();
+  rebuildAudio();
+}
+
+pill.addEventListener('click', () => { isComplex = !isComplex; applyToggle(); });
+labelSimple.addEventListener('click',  () => { if (isComplex)  { isComplex = false; applyToggle(); } });
+labelComplex.addEventListener('click', () => { if (!isComplex) { isComplex = true;  applyToggle(); } });
+
+// ── Init ──────────────────────────────────────────────────────────────────
+resizeCanvas();
+drawWave();
+</script>
+</body>
+</html>
