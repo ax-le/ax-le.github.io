@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA, Son et Environnement</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            flex: 1 1 45%;
+            min-width: 300px;
+        }
+        h2 {
+            margin-top: 0;
+            color: #e74c3c;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 5px;
+        }
+        .env-title {
+            color: #27ae60;
+        }
+        h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+        a {
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        a:hover {
+            color: #1abc9c;
+        }
+        p {
+            margin: 5px 0 0 0;
+            font-size: 0.95em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎙️ IA, Son et Bioacoustique</h1>
+    <p style="text-align: center; font-size: 1.1em;">Boîte à outils interactive pour explorer le traitement du son par l'Intelligence Artificielle.</p>
+
+    <div class="container">
+        
+        <!-- SECTION MUSIQUE -->
+        <div class="card">
+            <h2>🎵 L'IA et la Musique</h2>
+			<p>Outils d'IA pour comprendre et transformer la musique.</p>
+
+            <h3>Transformer l'instrument, le timbre.</h3>
+            <ul>
+                <li>
+                    <a href="https://sites.research.google/tonetransfer" target="_blank">"ToneTransfer"</a>
+                    <p>Transforme n'importe quel son (comme un fredonnement) en instrument de musique classique.</p>
+                </li>
+                <li>
+                    <a href="https://youtu.be/8xiwuumLkOQ?si=wDkTuYWxRysgs65p" target="_blank">"Meowify"</a>
+					<p>Transforme n'importe quelle voix en miaulement de chat (exemple avec Nirvana ici).</p>
+                </li>   
+            <h3>Outils pour musiciens et musiciennes -- Des outils pratiques qui peuvent vous être utiles !</h3>				
+				<li>
+                    <a href="https://basicpitch.spotify.com/" target="_blank">"BasicPitch"</a>
+                    <p>Trouver les notes présentes dans une musique.</p>
+                </li>		
+                <li>
+                    <a href="https://www.lalal.ai/fr/stem-splitter/" target="_blank">Séparation d'instruments</a>
+                    <p>Séparer les différents instruments dans un morceau de musique.</p>
+                </li>			
+			
+            </ul>
+        </div>
+
+        <!-- SECTION ENVIRONNEMENT -->
+        <div class="card">
+            <h2 class="env-title">🌍 L'IA et l'Environnement</h2>
+            <p>Outils d'IA pour écouter, visualiser et identifier les animaux.</p>
+
+            <h3>🐦 Bioacoustique Terrestre</h3>
+            <ul>
+                <li>
+                    <a href="https://experiments.withgoogle.com/ai/bird-sounds/view/" target="_blank">"Bird Sounds" (Une expérience de Google)</a>
+                    <p>Des milliers de chants d'oiseaux visualisés et regroupés par une IA en fonction de leurs similarités. Ainsi, c'est l'IA qui a regroupé et estimé les espèces d'oiseaux !</p>
+                </li>
+                <li>
+                    <a href="https://birdnet.cornell.edu/demo/?lang=fr" target="_blank">"BirdNET" - outil de démonstration</a>
+                    <p>Testez l'identification d'oiseaux en direct avec votre micro ou un fichier audio. Le traitement se fait directement dans le navigateur.</p>
+                </li>
+            </ul>
+
+            <h3>🐋 Acoustique Sous-Marine</h3>
+            <ul>
+                <li>
+                    <a href="https://seastats.whalesound.ca/olab/fibs-01#events" target="_blank">Sons (chants et vocalisations) de mammifères marins (baleines, orcs, ...)</a>
+                    <p>Site (en anglais) permettant d'écouter des sons de mammifères marins (baleines, orcs, dauphins, ...) prédits par l'IA.</p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
