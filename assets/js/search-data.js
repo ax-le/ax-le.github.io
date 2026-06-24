@@ -333,6 +333,16 @@ ninja.data = [{
           description: "Co-directed by Luc Arnal and Nicolas Farrugia. Co-supervised by Nicolas Epain. CIFRE at L-Acoustics.",
           section: "Supervision",handler: () => {
               window.location.href = "/supervision/ulysse_lefeuvre/";
+            },},{id: "talks-low-rank-factorization-for-music-audio-signals-analysis",
+          title: 'Low-rank factorization for music audio signals analysis.',
+          description: "",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/SciCADE_26/";
+            },},{id: "talks-interpretable-and-lightweight-music-analysis-through-matrix-and-tensor-decomposition",
+          title: 'Interpretable and Lightweight Music Analysis through Matrix and Tensor Decomposition.',
+          description: "",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/adasp_26/";
             },},{id: "talks-low-rank-factorization-for-the-representation-of-music-similarity-and-the-estimation-of-structure",
           title: 'Low-Rank Factorization for the Representation of Music Similarity and the Estimation of Structure....',
           description: "",
