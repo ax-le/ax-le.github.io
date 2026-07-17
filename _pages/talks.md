@@ -4,19 +4,18 @@ title: talks
 permalink: /talks/
 nav: false
 horizontal: true
-display_years: [2024,2023,2022]
 ---
 
 <div class="projects">
 
-
-  {% for year in page.display_years %}
+  {% assign talks_by_year = site.talks | group_by_exp: "talk", "talk.year" | sort: "name" | reverse %}
+  {% for year_group in talks_by_year %}
+  {% assign year = year_group.name %}
   <a id="{{ year }}" href=".#{{ year }}">
     <h2 class="category">{{ year }}</h2>
   </a>
-  {% assign categorized_talks = site.talks | where: "year", year %}
 
-    {% for talk in categorized_talks %}
+    {% for talk in year_group.items %}
         <div class="clearfix">
         {% include talk.liquid %}
         </div>
