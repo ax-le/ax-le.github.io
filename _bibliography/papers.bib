@@ -321,3 +321,16 @@
   abstract={Discrete diffusion models are promising alternatives to autoregressive approaches for text generation, yet their decoding methods remain under-studied. Standard decoding methods for autoregressive models, such as beam search, do not directly apply to iterative denoising, and existing diffusion decoding techniques provide limited control over in-batch diversity. To bridge this gap, we introduce a generalized beam-search framework for discrete diffusion that generates candidates in parallel and supports modular beam-selection objectives. As a diversity-focused instantiation, we propose D5P4, which formulates the selection step as MAP inference over a Determinantal Point Process. Leveraging a scalable greedy solver, D5P4 maintains multi-GPU compatibility and enables an explicit trade-off between model probability and target diversity with near-zero compute overhead. Experiments on free-form generation and question answering demonstrate that D5P4 improves diversity over strong baselines while maintaining competitive generation quality.},
   additional_info={. Submitted at NeurIPS 2026},
 }
+
+@article{raumer2026self,
+  bibtex_show={true},
+  abbr={Preprint}, 
+  title={A Self-Supervised Approach for Minimal-Annotation Hydroacoustic Data Exploration},
+  author={Raumer, Pierre-Yves and Marmoret, Axel and Cazau, Dorian and Gros-Martial, Anatole and Dreo, Richard and Torterotot, Maelle and Bazin, Sara and Samaran, Flore and Royer, Jean-Yves},
+  journal={arXiv preprint arXiv:2607.07733},
+  year={2026},
+  month={},
+  pdf={https://arxiv.org/pdf/2607.07733},
+  abstract={Passive hydroacoustic monitoring often generates large volumes of continuous recordings that are only partially exploited due to the cost of manual annotation. Supervised detection methods perform well but require large labeled datasets, seldom available for rare signals or understudied environments. This work proposes a self-supervised exploration pipeline to address this limitation in low-frequency settings. A Masked AutoEncoder (MAE) is pre-trained on a reconstruction pretext task, then used to extract patch-level representations from spectrograms. Within each spectrogram, adjacent informative patches are aggregated into event-level embeddings, enabling the disentanglement of overlapping events. These embeddings are then clustered at the dataset scale using the dimension reduction algorithm UMAP and the clustering algorithm HDBSCAN to identify hydroacoustic patterns. The pipeline was applied to a multi-year hydroacoustic dataset collected near Mayotte Island, Indian Ocean, containing marine mammal vocalizations, seismo-volcanic signals, and anthropogenic noise. The 317 clusters were manually mapped to 15 hydroacoustic classes or noise in less than one hour. The method was evaluated in two ways. Quantitatively, when used as a classifier, it achieved performance comparable to two existing detectors. Qualitatively, it recovered known seasonal patterns of marine mammal acoustic activity. It also identified patterns of previously unstudied signals, thereby demonstrating its practical value.}, 
+  additional_info={. Submitted at JASA},
+}
