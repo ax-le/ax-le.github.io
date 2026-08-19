@@ -6,7 +6,7 @@ subtitle: Tenured Assistant Professor at <a href='https://www.imt-atlantique.fr/
 
 profile:
   align: left
-  image: light_photo_sympa.jpeg
+  image: photo_drums.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
     <!-- <h5>Inspirational quote:</h5> -->
