@@ -203,7 +203,15 @@ ninja.data = [{
           section: "News",},{id: "news-i-am-excited-to-announce-that-my-paper-unsupervised-evaluation-of-deep-audio-embeddings-for-music-structure-analysis-has-been-accepted-for-presentation-at-the-smc-2026-conference-partying-face-smile-however-our-second-submission-can-pre-trained-deep-learning-models-predict-groove-ratings-was-rejected-stay-tuned-for-news-related-to-this-article-as-we-will-certainly-continue-the-work",
           title: 'I am excited to announce that my paper Unsupervised Evaluation of Deep Audio...',
           description: "",
-          section: "News",},{id: "projects-autosimilarity-segmentation",
+          section: "News",},{id: "news-i-am-happy-to-annouce-that-i-the-anr-prc-anatieba-was-funded-for-2026-2029-partying-face-more-details-on-this-page",
+          title: 'I am happy to annouce that I the ANR PRC ANATIEBA was funded...',
+          description: "",
+          section: "News",},{id: "projects-anatieba-anr-prc-2026",
+          title: 'ANATIEBA (ANR PRC 2026)',
+          description: "Automatic Analysis of the Temperaments of Historical Instruments and Recordings, from Brittany and Elsewhere.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/anatieba/";
+            },},{id: "projects-autosimilarity-segmentation",
           title: 'Autosimilarity Segmentation',
           description: "Toolbox to segment autosimilarity matrices",
           section: "Projects",handler: () => {
