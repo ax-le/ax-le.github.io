@@ -14,6 +14,8 @@ The **MusAIc** project is a 48-month research project, funded by ANR (ANR JCJC 2
 
 The project will fund one master's internship (starting in 2026), one Ph.D. (starting late 2026), and one 18-month post-doctoral position (starting 2028). The complete scientific proposal (20 pages) is available <a href="{{ '/assets/pdf/administrative/JCJC_MusAIc_phase_2.pdf' | relative_url }}">here</a>.
 
+# MusAIc: Steerable and Interpretable Music Analysis through Hybrid Models.
+
 Artificial Intelligence has made incredible strides in the world of music. From automatically transcribing piano pieces to separating individual instruments from a finished track, AI tools are rapidly advancing the field of Music Information Retrieval. However, for many developers and practicioners (musicians, musicologists, sound engineers, ...), these tools may feel like a "black box": they produce impressive results, but it is quite hard to decipher how they work or guide them to fit our specific artistic or analytical needs.
 
 This is the challenge at the heart of the **MusAIc** project (funded by ANR AAPG 2025 - JCJC). MusAIc is a 48-month research project (starting Jan. 2026), that I conduct as Principal Investigator. Our goal is to develop AI for music analysis that is not only high-performing but also *steerable* and *interpretable*.
@@ -37,13 +39,26 @@ The project is organized into four main work packages:
 - WP3: Develop entirely new hybrid architectures that natively balance performance, steerability, and interpretability.
 - WP4: Collaborate directly with a consortium of musicians, musicologists, and sound engineers to co-design and evaluate these tools, ensuring they are genuinely useful in real-world contexts.
 
+```mermaid
+graph TD
+  WP1["WP1 — Deep<br/>low-rank factorization"]
+  WP2["WP2 — Constrained<br/>deep learning"]
+  WP3["WP3 — New hybrid<br/>architectures"]
+  WP4["WP4 — Co-design & evaluate<br/>with practitioners"]
+  WP1 --> WP3
+  WP2 --> WP3
+  WP3 --> WP4
+  WP4 -.feedback.-> WP1
+  WP4 -.feedback.-> WP2
+```
+
 ## Which musical tasks could be tackled?
 The project roots itself in Music Information Retrieval, and aims at studying tasks such as Automatic Music Transcription, Music Source Separation, and Music Structure Analysis. These tasks are standard and notoriously difficult to solve, even if significant progresses have observed in the recent years. Our personal conviction is that solving these tasks may largely advance musical expressivity, and help music practicionners to study music as a whole (*e.g.,* for improving practice, study historical recordings, assist music production, ...).
 
 ## Funded positions
 Concretly, the project will fund three positions:
 1. A master's internship, which is expected to start in the first half of 2026, and on the subject of improving low-rank factorization using large datasets (batch-wise and epoch-based learning). <s>The offer is available <a href="{{ '/assets/pdf/postes/MusAIc_master_offer.pdf' | relative_url }}">here</a>.</s> The position is now filled!
-1. A Ph.D. (starting late 2026), focusing on WP1 and 3 (*i.e.,* improving low-rank factorization models using deep learning principles). The offer is available <a href="{{ '/assets/pdf/postes/MusAIc_phd_offer.pdf' | relative_url }}">here</a>.
+1. A Ph.D. (starting late 2026), focusing on WP1 and 3 (*i.e.,* improving low-rank factorization models using deep learning principles). <s>The offer is available <a href="{{ '/assets/pdf/postes/MusAIc_phd_offer.pdf' | relative_url }}">here</a>.</s> The position is now filled!
 1. A 18-month post-doctoral position (expected to start in 2028), focusing on WP2 and 3 (*i.e.,* using low-rank factorization and signal processing principles to enhance the interpretability and steerability of deep learning models).
 
 The master's internship is expected to follow as Ph.D., but this is not mandatory.

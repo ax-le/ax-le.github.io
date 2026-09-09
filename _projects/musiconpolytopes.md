@@ -12,6 +12,8 @@ toc:
 
 [Link to the toolbox](https://gitlab.imt-atlantique.fr/a23marmo/musiconpolytopes)
 
+# Polytopes for music segmentation #
+
 Polytopic paradigms to study music, defined in {% cite marmoret2022polytopic %}, based on [2] and [3].
 
 The goal of the polytopic approach is to define a new compression criteria, then used as cost for music segmentation, based on dynamic programming. See [4] for more details on this approach.

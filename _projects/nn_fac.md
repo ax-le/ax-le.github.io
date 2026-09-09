@@ -11,6 +11,8 @@ toc:
 
 [Link to the toolbox](https://github.com/ax-le/nn-fac)
 
+# nn-fac: Nonnegative Factorization techniques toolbox
+
 Python code for computing some Nonnegative Factorizations, using either an accelerated version of Hierarchical Alternating Least Squares algorithm (HALS) with resolution of Nonnegative Least Squares problem (NNLS) [1] for factorizations subject to the minimization of the Euclidean/Frobenius norm, or the Multiplicative Update [2,3] for factors, by minimizing the $\beta$-divergence [3].
 
 This work has been done during my Research Master's (SIF, master.irisa.fr) internship in PANAMA team at IRISA/Inria Rennes, under the direction of BERTIN Nancy and COHEN Jeremy.

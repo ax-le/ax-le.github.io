@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: A live view of my public GitHub activity and repositories (edit `_data/repositories.yml` to change which ones are listed).
+description: A recap of my public GitHub repositories (might be outdated).
 nav: false
 ---
 

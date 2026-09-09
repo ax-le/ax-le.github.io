@@ -16,6 +16,9 @@ A musical mashup, where an artist blends two or more songs into one, is a great 
 
 The results is that it is very hard to make convicing mashups, but we are progressing!
 
+# Automashup: Automatically creating mashup songs
+
+
 ## (2023-2024) The First Idea: Can a Computer Make a Mashup?
 
 The initial project proposal, which I co-supervised with Nicolas Farrugia, laid out the basic plan. The goal was to build an algorithm that could automatically generate a mashup. To do this, the students needed to use clever tools that could:

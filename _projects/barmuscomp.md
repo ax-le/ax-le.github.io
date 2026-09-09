@@ -12,6 +12,8 @@ toc:
 
 [Link to the toolbox](https://gitlab.imt-atlantique.fr/a23marmo/barmuscomp)
 
+# BarMusComp: Encoding songs with linear and nonlinear compression methods to reveal structure #
+
 Hello, and welcome on this repository!
 
 This project aims at compressing all bars in a song, and studies the compressed representations of every bar to infer its structure. It is related to my PhD thesis {% cite marmoret2022unsupervised %}.
@@ -23,6 +25,16 @@ This project is an extension of the toolbox as_seg [3], which computes the segme
 It can be installed with pip using `pip install barmuscomp`.
 
 This is a first release, and may contain bug. Comments are welcomed!
+
+## Listen to the NTD patterns
+
+NTD decomposes a song into a handful of recurring patterns. Here is one, reconstructed under two different divergences, next to the original bar it approximates:
+
+{% include audio.liquid path="assets/audio/a_bar_original.wav" caption="Original bar" controls=true %}
+{% include audio.liquid path="assets/audio/NTD_pattern_kl.wav" caption="NTD pattern (KL divergence)" controls=true %}
+{% include audio.liquid path="assets/audio/NTD_recons_kl.wav" caption="Reconstruction from that pattern (KL divergence)" controls=true %}
+
+More examples, across divergences and songs, are on the [ISMIR 2020 companion page](/resources/ISMIR2020) and the [Listening to NTD](/resources/listening_NTD) page.
 
 ## Software version ##
 

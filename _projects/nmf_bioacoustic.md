@@ -9,6 +9,8 @@ github: https://gitlab.imt-atlantique.fr/a23marmo/nmf_bioacoustic
 
 [Link to the toolbox](https://gitlab.imt-atlantique.fr/a23marmo/nmf_bioacoustic)
 
+# nmf_bioacoustic: NMF to approach bioacoustic tasks
+
 Hello!
 
 This is a repository presenting the Nonnegative Matrix Factorization (NMF) method for unsupervised bioacoustic signal processing. This work is introduced at the JJBA conference. [You can find the poster here](https://hal.science/hal-04696125).
@@ -20,6 +22,22 @@ This repository focuses on presenting the use of NMF for several bioacoustics ta
 In particular, these tasks have been tested with the same method for both amphibean and whales acoustic signals, highlighting the ability of NMF to be relevant in very different conditions.
 
 For now, this repository is mainly a Proof-Of-Concpet that NMF-like methods can be used. This is intended to be developed, and future work should be carried to consolidate the first conclusions.
+
+A more detailed, interactive walkthrough of these results (with more sources and figures) is available on the [JJBA companion page](/resources/JJBA).
+
+## Listen to examples
+
+**Amphibian chorus (anuraset)** — separating a mixed recording into individual calling sources:
+
+{% include audio.liquid path="assets/audio/JJBA/original_anuraset_audio.wav" caption="Original mixed anuraset recording" controls=true %}
+{% include audio.liquid path="assets/audio/JJBA/anuraset_separated_source1.wav" caption="Separated source 1" controls=true %}
+{% include audio.liquid path="assets/audio/JJBA/anuraset_separated_source2.wav" caption="Separated source 2" controls=true %}
+
+**Marine mammals** — same method, applied to underwater recordings:
+
+{% include audio.liquid path="assets/audio/JJBA/marine_mammals/original_signal.wav" caption="Original marine mammal recording" controls=true %}
+{% include audio.liquid path="assets/audio/JJBA/marine_mammals/source_0.wav" caption="Separated source 0" controls=true %}
+{% include audio.liquid path="assets/audio/JJBA/marine_mammals/source_1.wav" caption="Separated source 1" controls=true %}
 
 This repository does not include the NMF code, which is instead maintained in the [GitLab project](https://gitlab.imt-atlantique.fr/a23marmo/nonnegative-factorization/) `nn_fac` of the current corresponding author.
 

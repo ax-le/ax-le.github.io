@@ -12,6 +12,8 @@ toc:
 
 [Link to the toolbox](https://github.com/ax-le/nmf_audio_benchmark/)
 
+# NMF Audio Benchmark: Benchmarking audio tasks with NMF
+
 This is a toolbox aimed at facilitating the benchmarking of NMF-based techniques in the context of audio processing.
 
 ## TL;DR
@@ -93,6 +95,13 @@ The toolbox is separated in four modules:
 
 - benchmarks --- the benchmark defining code. Benchmarks are supported by Hydra [Hydra].
 
+```mermaid
+graph LR
+  Data["dataloaders<br/>(datasets + preprocessing)"] --> Tasks["tasks<br/>(MSS, transcription, MSA)"]
+  Algo["algorithms<br/>(NMF variants)"] --> Tasks
+  Tasks --> Bench["benchmarks<br/>(Hydra-configured runs)"]
+```
+
 The modular design is justified by the fact that, as such, it is possible to add any component (algorithm, task, dataset, or benchmark) without having to tackle the other aspects. Hence, we hope that communities specialized in one of these aspects will be able to contribute.
 
 ### Tasks (and datasets) Supported
@@ -128,7 +137,7 @@ Additional requirements can be installed depending on the specific task (e.g., `
 
 - APA: Marmoret, A. (2024). nmf_audio_benchmark. ⟨hal-04667145⟩.
 
-- bibtex: @softwareversion{nmf_audio_benchmark, TITLE = {{nmf\_audio\_benchmark}}, AUTHOR = {Marmoret, Axel}, URL = {https://hal.science/hal-04667145}, YEAR = {2024}, url = {https://github.com/ax-le/nmf_audio_benchmark/}, LICENSE = {BSD 3-Clause ''New'' or ''Revised'' License}, HAL_ID = {hal-04667145},}
+- bibtex: {% raw %}@softwareversion{nmf_audio_benchmark, TITLE = {{nmf\_audio\_benchmark}}, AUTHOR = {Marmoret, Axel}, URL = {https://hal.science/hal-04667145}, YEAR = {2024}, url = {https://github.com/ax-le/nmf_audio_benchmark/}, LICENSE = {BSD 3-Clause ''New'' or ''Revised'' License}, HAL_ID = {hal-04667145},}{% endraw %}
 
 
 ## Future Work

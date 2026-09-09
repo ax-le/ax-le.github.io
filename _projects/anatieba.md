@@ -12,6 +12,9 @@ The **ANATIEBA** project is a 42-month collaborative research project, funded by
 
 The consortium gathers four partners: the Université de Bretagne Occidentale (Lab-STICC, Perception Sonore team, coordinator), IMT Atlantique (Lab-STICC, BRAIN team), Le Mans Université (LAUM), and the association Drom. The project is coordinated by Mathieu Paquier (UBO). **I am the scientific lead for IMT Atlantique, and more specifically for task T2**, which develops the automatic transcription tools applied to historical recordings.
 
+# ANATIEBA: Automatic Analysis of the Temperaments of Historical Instruments and Recordings, from Brittany and Elsewhere.
+
+
 Many of us grew up hearing music built on twelve equal semitones. But equal temperament is a convention, not a law of nature: across the world, countless traditional musics use *unequal temperaments:* scales made of micro-intervals that simply do not fit the chromatic grid of a piano.
 
 This is probably the case for historical and traditional Brittany music! In particular, we focus on recordings from the first half of the 20th century, where the *sonneurs de tradition* played the **bombarde** and the **biniou** in duo, and this is the challenge at the heart of the **ANATIEBA** project (funded by ANR AAPG 2026 - PRC). ANATIEBA is a 42-month research project that brings together acousticians, psychoacousticians, signal processing and machine learning researchers, and ethnomusicologists, around a single question: *what scales did these musicians actually play, and why?*
@@ -32,6 +35,17 @@ ANATIEBA attacks the problem from both ends and cross-checks the results.
 - **T2 -- Exploiting the historical recordings: automatic transcription and domain adaptation** (IMT Atlantique). Extracting the pitches actually played, from a corpus of about fifty historical recordings. This yields the scale *as it was really played*.
 - **T3 -- Theorizing the old scales** (UBO, Drom). Combining T1 and T2 to determine how the scales varied with the luthier, the region, the musician, the tune, and even the melodic direction -- and then testing, with listening experiments, whether these differences are actually perceived.
 - **T4 -- Extension to other instruments and traditions** (UBO, Drom). Applying the same tools to Breton clarinet, fiddle and singing, then to repertoires from the Massif Central, Galicia, Bulgaria, and the wider *maqâm* world (Middle East, India).
+
+```mermaid
+graph LR
+  T1["T1 — Physical measurements<br/>(instrument + reed)"]
+  T2["T2 — Automatic transcription<br/>(historical recordings)"]
+  T3["T3 — Theorizing the old scales<br/>(cross-check T1 & T2, listening tests)"]
+  T4["T4 — Extension<br/>(other instruments & traditions)"]
+  T1 --> T3
+  T2 --> T3
+  T3 --> T4
+```
 
 Comparing the scale obtained from the bare instrument body (T1), from the complete instrument played by an artificial mouth (T1), and from the historical recordings (T2) tells us something no single measurement can: how much of the temperament was dictated by the instrument itself, how much by the reed, and how much by the musician.
 

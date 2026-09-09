@@ -12,6 +12,8 @@ toc:
 
 [Link to the toolbox](https://gitlab.imt-atlantique.fr/a23marmo/autosimilarity_segmentation)
 
+# as_seg: module for computing and segmenting autosimilarity matrices.
+
 Hello, and welcome on this repository!
 
 This project aims at computing autosimilarity matrices, and segmenting them, which consists of the task of structural segmentation.

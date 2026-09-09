@@ -4,8 +4,13 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - ax-le/nmf_audio_benchmark
   - ax-le/nn-fac
+  - ax-le/nmf_audio_benchmark
   - ax-le/automashup
+  - ax-le/autosimilarity_segmentation
+  - ax-le/msa_deep_embeddings
+  - ax-le/TensLoRA
+  - ax-le/deep_groove_prediction
+  - ax-le/base_audio
+
   - ax-le/ax-le.github.io
-  # add more of your GitHub (not GitLab) repos here, as "owner/repo"
