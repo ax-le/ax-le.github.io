@@ -4,17 +4,19 @@ title: Autosimilarity Segmentation
 description: Toolbox to segment autosimilarity matrices
 importance: 2
 category: toolbox
+github: https://gitlab.imt-atlantique.fr/a23marmo/autosimilarity_segmentation
+related_publications: true
+toc:
+  sidebar: left
 ---
 
 [Link to the toolbox](https://gitlab.imt-atlantique.fr/a23marmo/autosimilarity_segmentation)
-
-# as_seg: module for computing and segmenting autosimilarity matrices. #
 
 Hello, and welcome on this repository!
 
 This project aims at computing autosimilarity matrices, and segmenting them, which consists of the task of structural segmentation.
 
-The current version contains the CBM algorithm [1], along with an implementation of Foote's novelty algorithm [2] based on the MSAF toolbox [3].
+The current version contains the CBM algorithm {% cite marmoret2023barwise %}, along with an implementation of Foote's novelty algorithm [2] based on the MSAF toolbox [3].
 
 It can be installed using pip as `pip install as-seg`.
 
@@ -53,7 +55,6 @@ Code was created by Axel Marmoret (<axel.marmoret@imt-atlantique.fr>), and stron
 The technique in itself was also developed by Frédéric Bimbot (<bimbot@irisa.fr>).
 
 ## References ##
-[1] A. Marmoret, J.E. Cohen, F. Bimbot. Barwise Music Structure Analysis with the Correlation Block-Matching Segmentation Algorithm. Transactions of the International Society for Music Information Retrieval (TISMIR), 2023, 6 (1), pp.167-185. ⟨10.5334/tismir.167⟩. ⟨hal-04323556⟩, https://hal.science/hal-04323556.
 
 [2] J. Foote, "Automatic audio segmentation using a measure of audio novelty," in: 2000 IEEE Int. Conf. Multimedia and Expo. ICME2000. Proc. Latest Advances in the Fast Changing World of Multimedia, vol. 1, IEEE, 2000, pp. 452–455.
 

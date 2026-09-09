@@ -4,17 +4,19 @@ title: BarMusComp
 description: Barwise music compression schemes.
 importance: 3
 category: toolbox
+github: https://gitlab.imt-atlantique.fr/a23marmo/barmuscomp
+related_publications: true
+toc:
+  sidebar: left
 ---
 
 [Link to the toolbox](https://gitlab.imt-atlantique.fr/a23marmo/barmuscomp)
 
-# BarMusComp: Encoding songs with linear and nonlinear compression methods to reveal structure #
-
 Hello, and welcome on this repository!
 
-This project aims at compressing all bars in a song, and studies the compressed representations of every bar to infer its structure. It is related to my PhD thesis [1].
+This project aims at compressing all bars in a song, and studies the compressed representations of every bar to infer its structure. It is related to my PhD thesis {% cite marmoret2022unsupervised %}.
 
-This repository contains code for the NTD, PCA, NMF, and Autoencoders (developed in PyTorch), as presented in [2].
+This repository contains code for the NTD, PCA, NMF, and Autoencoders (developed in PyTorch), as presented in {% cite marmoret2022barwise %}.
 
 This project is an extension of the toolbox as_seg [3], which computes the segmentation of an autosimilarity matrix.
 
@@ -49,9 +51,5 @@ Code was created by Axel Marmoret (<axel.marmoret@gmail.com>), and strongly supp
 The technique in itself was also developed by Frédéric Bimbot (<bimbot@irisa.fr>).
 
 ## References ##
-[1] A. Marmoret, "Unsupervised Machine Learning Paradigms for the Representation of Music Similarity and Structure", Ph.D. dissertation, Université de Rennes 1, 2022.
-(not uploaded yet but will be soon! You should check the website hal.archives-ouvertes.fr/ in case this README is not updated with the reference.)
-
-[2] A. Marmoret, J.E. Cohen, and F. Bimbot, "Barwise Compression Schemes for Audio-Based Music Structure Analysis"", in: 19th Sound and Music Computing Conference, SMC 2022, Sound and music Computing network, 2022.
 
 [3] A. Marmoret, J.E. Cohen, and F. Bimbot, "as_seg: module for computing and segmenting autosimilarity matrices", 2022, url: https://gitlab.inria.fr/amarmore/autosimilarity_segmentation.

@@ -4,13 +4,13 @@ title: NMF audio benchmark
 description: Benchmarking NMF methods on audio tasks.
 importance: 1
 category: toolbox
-giscus_comments: true
+github: https://github.com/ax-le/nmf_audio_benchmark/
+# giscus_comments: true # re-enable once giscus.repo / repo_id / category_id are set in _config.yml (see https://giscus.app)
+toc:
+  sidebar: left
 ---
 
 [Link to the toolbox](https://github.com/ax-le/nmf_audio_benchmark/)
-
-
-# Welcome on NMF Audio Benchmark
 
 This is a toolbox aimed at facilitating the benchmarking of NMF-based techniques in the context of audio processing.
 
@@ -117,8 +117,8 @@ The code was developed using Python 3.12, and numpy version 1.26.4. Using numpy 
 To install the toolbox, clone the repository and install the required dependencies:
 
 ```bash
-git clone https://github.com/yourusername/nmf-audio-benchmark.git
-cd nmf-audio-benchmark
+git clone https://github.com/ax-le/nmf_audio_benchmark.git
+cd nmf_audio_benchmark
 pip install -r requirements.txt
 ```
 

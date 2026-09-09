@@ -4,13 +4,15 @@ title: AutoMashup
 description: Automatically creating mashup songs.
 importance: 1
 category: students
+github: https://github.com/ax-le/automashup
+related_publications: true
+toc:
+  sidebar: left
 ---
-
-# Automashup: Automatically creating mashup songs
 
 ## TL;DR: Making a Music Mashup Bot
 
-A musical mashup, where an artist blends two or more songs into one, is a great example of creative remixing. It's a process I've been exploring with students through a project I supervise called *AutoMashup*, which aims to get a computer to do this automatically. We have run two projects (for now), and it has led to a [scientific publication at GRETSI 2025](https://hal.science/hal-05191030), a French national Signal Processing conference.
+A musical mashup, where an artist blends two or more songs into one, is a great example of creative remixing. It's a process I've been exploring with students through a project I supervise called *AutoMashup*, which aims to get a computer to do this automatically. We have run two projects (for now), and it has led to a scientific publication at GRETSI 2025 {% cite delabaere2025automashup %}, a French national Signal Processing conference.
 
 The results is that it is very hard to make convicing mashups, but we are progressing!
 
@@ -30,7 +32,7 @@ After the first group of students created a functional version, we needed to imp
 
 - They sometimes sound weird: The first mashups occasionally had clashing sounds, or what musicians call "dissonances". The new plan was to fix this by aligning the musical keys of the tracks section by section, instead of just once for the whole song. For this task, it was preferable to have students with some basic musical training. We managed to solve this problem, leading to more pleasant mashups in the signal processing sense (not always in the musical one).
 
-- You had to pick the songs yourself: The process was still very manual. The next goal was for the algorithm to suggest which songs would mix well together. This meant the students needed to develop a "similarity metric," likely using deep learning models to analyze and compare tracks for compatibility. Our study was partly deceiving: we found a (perceptually and qualitatively) accurate deep learning method (COCOLA), which doesn't scale with big datasets ; our attemps to use deep learning methods that could scale to massive datasets was infructuful. You can find more details in [this scientific publication](https://hal.science/hal-05191030).
+- You had to pick the songs yourself: The process was still very manual. The next goal was for the algorithm to suggest which songs would mix well together. This meant the students needed to develop a "similarity metric," likely using deep learning models to analyze and compare tracks for compatibility. Our study was partly deceiving: we found a (perceptually and qualitatively) accurate deep learning method (COCOLA), which doesn't scale with big datasets ; our attemps to use deep learning methods that could scale to massive datasets was infructuful. You can find more details in the paper cited above {% cite delabaere2025automashup %}.
 
 
 ## (2025-2026) Leveraging Creativity: Using Generative AI

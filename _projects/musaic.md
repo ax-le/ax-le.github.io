@@ -4,15 +4,15 @@ title: MusAIc (ANR JCJC 2025)
 description: Steerable and Interpretable Music Analysis through Hybrid Models.
 importance: 1
 category: funding
+toc:
+  sidebar: left
 ---
 ## TL;DR
 The **MusAIc** project is a 48-month research project, funded by ANR (ANR JCJC 2025 - CE23), that aims to develop Artificial Intelligence (AI) models for music analysis that are efficient, steerable, and interpretable, by bridging low-rank factorization and deep learning methods.
 
 <!--MusAIc's central hypothesis is that by creating novel hybrid models that merge the strengths of low-rank factorization methods (like nonnegative low-rank factorization) with the expressive power of deep learning, it is possible to achieve high performance while embedding user steerability and interpretability by design. The project will focus on tasks such as automatic music transcription, source separation, and structure analysis. Through close collaboration with music professionals, the ultimate goal is to empower musicians, musicologists, and researchers with adaptable and insightful AI tools that bridge the gap between computational efficiency and artistic and analytical needs.-->
 
-The project will fund one master's internship (starting in 2026), one Ph.D. (starting late 2026), and one 18-month post-doctoral position (starting 2028). The complete scientific proposal (20 pages) is available <a href="{{baseurl}}/assets/pdf/administrative/JCJC_MusAIc_phase_2.pdf">here</a>.
-
-# MusAIc: Steerable and Interpretable Music Analysis through Hybrid Models.
+The project will fund one master's internship (starting in 2026), one Ph.D. (starting late 2026), and one 18-month post-doctoral position (starting 2028). The complete scientific proposal (20 pages) is available <a href="{{ '/assets/pdf/administrative/JCJC_MusAIc_phase_2.pdf' | relative_url }}">here</a>.
 
 Artificial Intelligence has made incredible strides in the world of music. From automatically transcribing piano pieces to separating individual instruments from a finished track, AI tools are rapidly advancing the field of Music Information Retrieval. However, for many developers and practicioners (musicians, musicologists, sound engineers, ...), these tools may feel like a "black box": they produce impressive results, but it is quite hard to decipher how they work or guide them to fit our specific artistic or analytical needs.
 
@@ -42,8 +42,8 @@ The project roots itself in Music Information Retrieval, and aims at studying ta
 
 ## Funded positions
 Concretly, the project will fund three positions:
-1. A master's internship, which is expected to start in the first half of 2026, and on the subject of improving low-rank factorization using large datasets (batch-wise and epoch-based learning). <s>The offer is available <a href="{{baseurl}}/assets/pdf/postes/MusAIc_master_offer.pdf">here</a>.</s> The position is now filled!
-1. A Ph.D. (starting late 2026), focusing on WP1 and 3 (*i.e.,* improving low-rank factorization models using deep learning principles). The offer is available <a href="{{baseurl}}/assets/pdf/postes/MusAIc_phd_offer.pdf">here</a>.
+1. A master's internship, which is expected to start in the first half of 2026, and on the subject of improving low-rank factorization using large datasets (batch-wise and epoch-based learning). <s>The offer is available <a href="{{ '/assets/pdf/postes/MusAIc_master_offer.pdf' | relative_url }}">here</a>.</s> The position is now filled!
+1. A Ph.D. (starting late 2026), focusing on WP1 and 3 (*i.e.,* improving low-rank factorization models using deep learning principles). The offer is available <a href="{{ '/assets/pdf/postes/MusAIc_phd_offer.pdf' | relative_url }}">here</a>.
 1. A 18-month post-doctoral position (expected to start in 2028), focusing on WP2 and 3 (*i.e.,* using low-rank factorization and signal processing principles to enhance the interpretability and steerability of deep learning models).
 
 The master's internship is expected to follow as Ph.D., but this is not mandatory.
@@ -55,6 +55,6 @@ The **MusAIc** project is a multidisciplinary effort bringing together experts i
 
 ## More details
 
-The complete scientific proposal (20 pages) is available <a href="{{baseurl}}/assets/pdf/administrative/JCJC_MusAIc_phase_2.pdf">here</a>.
+The complete scientific proposal (20 pages) is available <a href="{{ '/assets/pdf/administrative/JCJC_MusAIc_phase_2.pdf' | relative_url }}">here</a>.
 
 **We are excited to embark on this journey and look forward to sharing our progress as we work to build models that truly understands and empowers the world of music!**

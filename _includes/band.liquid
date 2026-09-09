@@ -1,0 +1,32 @@
+<div class="clearfix">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-1">
+            <div class="card h-100 hoverable">
+                <div class="row no-gutters">
+                    <div class="card-body">
+                        <h1 align="center" class="card-title">{{ include.band.name }}</h1>
+                        {% if include.band.subtitle %}
+                          <h5>{{ include.band.subtitle }}</h5>
+                        {% endif %}
+                        {% if include.band.socials %}
+                          <div class="social">
+                              <div class="contact-icons">
+                                {% for s in include.band.socials %}
+                                  <a href="{{ s.url }}" target="_blank"><i class="fab {{ s.icon }}"></i></a>
+                                {% endfor %}
+                              </div>
+                          </div>
+                        {% endif %}
+                        {% if include.band.video %}
+                          <br><br>
+                          <div align="center">
+                              {% if include.band.video.title %}<h2>{{ include.band.video.title }}</h2>{% endif %}
+                              <iframe class="responsive-iframe" src="{{ include.band.video.embed_url }}" width="80%" height="300px" title="{{ include.band.video.embed_title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

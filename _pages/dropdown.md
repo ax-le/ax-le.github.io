@@ -13,6 +13,9 @@ children:
   - title: divider
   - title: open positions
     permalink: /open_positions/
+  - title: divider
+  - title: repositories
+    permalink: /repositories/
   # - title: blog
   #   permalink: /blog/
 ---

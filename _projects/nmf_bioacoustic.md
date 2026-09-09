@@ -4,11 +4,10 @@ title: NMF for bioacoustic
 description: A naïve tentative in using NMF for bioacoustic data. 
 importance: 2
 category: toolbox
+github: https://gitlab.imt-atlantique.fr/a23marmo/nmf_bioacoustic
 ---
 
 [Link to the toolbox](https://gitlab.imt-atlantique.fr/a23marmo/nmf_bioacoustic)
-
-# nmf_bioacoustic
 
 Hello!
 
@@ -22,7 +21,7 @@ In particular, these tasks have been tested with the same method for both amphib
 
 For now, this repository is mainly a Proof-Of-Concpet that NMF-like methods can be used. This is intended to be developed, and future work should be carried to consolidate the first conclusions.
 
-This repository does not include the NMF code, which is instead maintained in the [github project](https://gitlab.imt-atlantique.fr/a23marmo/nonnegative-factorization/) `nn_fac` of the current corresponding author.
+This repository does not include the NMF code, which is instead maintained in the [GitLab project](https://gitlab.imt-atlantique.fr/a23marmo/nonnegative-factorization/) `nn_fac` of the current corresponding author.
 
 ## Installation
 

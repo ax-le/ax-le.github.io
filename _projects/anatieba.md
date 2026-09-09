@@ -4,13 +4,13 @@ title: ANATIEBA (ANR PRC 2026)
 description: Automatic Analysis of the Temperaments of Historical Instruments and Recordings, from Brittany and Elsewhere.
 importance: 1
 category: funding
+toc:
+  sidebar: left
 ---
 ## TL;DR
 The **ANATIEBA** project is a 42-month collaborative research project, funded by ANR (ANR AAPG 2026 - PRC, axis H.15), which aims to characterize the *unequal temperaments* (microtonal scales) used by traditional Breton musicians in the first half of the 20th century, and to extend the resulting methodology to other instruments and oral music traditions.
 
 The consortium gathers four partners: the Université de Bretagne Occidentale (Lab-STICC, Perception Sonore team, coordinator), IMT Atlantique (Lab-STICC, BRAIN team), Le Mans Université (LAUM), and the association Drom. The project is coordinated by Mathieu Paquier (UBO). **I am the scientific lead for IMT Atlantique, and more specifically for task T2**, which develops the automatic transcription tools applied to historical recordings.
-
-# ANATIEBA: Automatic Analysis of the Temperaments of Historical Instruments and Recordings, from Brittany and Elsewhere.
 
 Many of us grew up hearing music built on twelve equal semitones. But equal temperament is a convention, not a law of nature: across the world, countless traditional musics use *unequal temperaments:* scales made of micro-intervals that simply do not fit the chromatic grid of a piano.
 

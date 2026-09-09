@@ -4,13 +4,15 @@ title: MusicOnPolytopes
 description: Polytopical analysis of music.
 importance: 3
 category: toolbox
+github: https://gitlab.imt-atlantique.fr/a23marmo/musiconpolytopes
+related_publications: true
+toc:
+  sidebar: left
 ---
 
 [Link to the toolbox](https://gitlab.imt-atlantique.fr/a23marmo/musiconpolytopes)
 
-# Polytopes for music segmentation #
-
-Polytopic paradigms to study music, defined in [1], based on [2] and [3].
+Polytopic paradigms to study music, defined in {% cite marmoret2022polytopic %}, based on [2] and [3].
 
 The goal of the polytopic approach is to define a new compression criteria, then used as cost for music segmentation, based on dynamic programming. See [4] for more details on this approach.
 
@@ -33,7 +35,6 @@ Code was created by Axel Marmoret (<axel.marmoret@gmail.com>).
 The technique in itself was strongly developed by Corentin Guichaoua, Corentin Louboutin, and Frédéric Bimbot (<bimbot@irisa.fr>).
 
 ## References ##
-[1] A. Marmoret, J.E. Cohen, and F. Bibmot, "Polytopic Analysis of Music", 2022, arXiv preprint arXiv:2212.11054.
 
 [2] C. Guichaoua, "Modèles de compression et critères de complexité pour la description et l’inférence de structure musicale", PhD thesis, Rennes 1, 2017.
 

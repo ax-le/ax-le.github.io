@@ -1,0 +1,19 @@
+# Bands/projects you made yourself, shown at the top of /music/.
+# To add a new one, just add another entry below - no HTML needed.
+# `socials` and `video` are both optional.
+
+- name: NDC
+  subtitle: Instrumental groove rock/metal band - Trio (drummer)
+  socials:
+    - icon: fa-spotify
+      url: https://open.spotify.com/intl-fr/artist/76YwJfiLX2BZpTQIA8SkxB?si=o9PAl9beQci_WhVaMc98NQ
+    - icon: fa-deezer
+      url: https://deezer.page.link/zfW3Wv3ikxqNt9vW9
+    - icon: fa-bandcamp
+      url: https://ndcmusic.bandcamp.com/album/dragon-baton
+    - icon: fa-youtube
+      url: https://www.youtube.com/playlist?list=PLbrbETXTA4-AO8fy5eDiYYkdLs8FtZOp4
+  video:
+    title: Awesome clip
+    embed_url: https://www.youtube.com/embed/61QtrT5_kCU?si=yJjjHsAO5TXHD9s3
+    embed_title: NDC awesome video clip

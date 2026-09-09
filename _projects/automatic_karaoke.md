@@ -4,6 +4,7 @@ title: Automatic Karaoke
 description: Could we automatically create karaokes?
 importance: 2
 category: students
+github: https://github.com/ZWhimsi/karaoke
 ---
 
 This project was an attempt at automatically creating karaoke tracks directly from a song's audio signal.
