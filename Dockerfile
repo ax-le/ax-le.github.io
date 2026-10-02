@@ -1,4 +1,6 @@
-FROM ruby:slim
+# pinned: ruby:slim follows the newest Ruby, which can silently break gems
+# (3.4 minimum: jekyll-terser 1.x requires Ruby >= 3.4.2)
+FROM ruby:3.4-slim
 
 # uncomment these if you are having this issue with the build:
 # /usr/local/bundle/gems/jekyll-4.3.4/lib/jekyll/site.rb:509:in `initialize': Permission denied @ rb_sysopen - /srv/jekyll/.jekyll-cache/.gitignore (Errno::EACCES)
@@ -54,8 +56,8 @@ ENV EXECJS_RUNTIME=Node \
 RUN mkdir /srv/jekyll
 
 # copy the Gemfile and Gemfile.lock to the image
-ADD Gemfile.lock /srv/jekyll
-ADD Gemfile /srv/jekyll
+# Gemfile.lock is optional (it is git-ignored and deleted by entry_point.sh)
+COPY Gemfile* /srv/jekyll/
 
 # set the working directory
 WORKDIR /srv/jekyll
@@ -67,6 +69,7 @@ RUN bundle install --no-cache
 EXPOSE 8080
 
 COPY bin/entry_point.sh /tmp/entry_point.sh
+RUN chmod +x /tmp/entry_point.sh
 
 # uncomment this if you are having this issue with the build:
 # /usr/local/bundle/gems/jekyll-4.3.4/lib/jekyll/site.rb:509:in `initialize': Permission denied @ rb_sysopen - /srv/jekyll/.jekyll-cache/.gitignore (Errno::EACCES)
