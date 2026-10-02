@@ -1,7 +1,7 @@
 ---
 layout: page
 title: base_audio
-description: Easy handle to compute spectrogram and everything.
+description: Small toolbox I use to compute spectrogram and everything.
 importance: 2
 category: toolbox
 github: https://gitlab.imt-atlantique.fr/a23marmo/base_audio
@@ -9,7 +9,7 @@ github: https://gitlab.imt-atlantique.fr/a23marmo/base_audio
 
 [Link to the toolbox](https://gitlab.imt-atlantique.fr/a23marmo/base_audio)
 
-# base_audio: a small package for the standard audio to spectrogram and spctrogram to audio conversion
+## base_audio: a small package for the standard audio to spectrogram and spctrogram to audio conversion
 
 Small package encapsulating the general tools I use to convert audio signals into spectrograms, and spectrograms into audio signals.
 

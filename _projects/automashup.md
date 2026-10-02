@@ -1,7 +1,7 @@
 ---
 layout: page
 title: AutoMashup
-description: Automatically creating mashup songs.
+description: A toolbox to automatically create musical mashups.
 importance: 1
 category: students
 github: https://github.com/ax-le/automashup
@@ -16,7 +16,7 @@ A musical mashup, where an artist blends two or more songs into one, is a great 
 
 The results is that it is very hard to make convicing mashups, but we are progressing!
 
-# Automashup: Automatically creating mashup songs
+## Automashup: Automatically creating mashup songs
 
 
 ## (2023-2024) The First Idea: Can a Computer Make a Mashup?

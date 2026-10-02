@@ -1,7 +1,7 @@
 ---
 layout: page
 title: MusicOnPolytopes
-description: Polytopical analysis of music.
+description: Polytopical analysis of music. A toolbox building on old work, developed during my PhD.
 importance: 3
 category: toolbox
 github: https://gitlab.imt-atlantique.fr/a23marmo/musiconpolytopes
@@ -12,7 +12,7 @@ toc:
 
 [Link to the toolbox](https://gitlab.imt-atlantique.fr/a23marmo/musiconpolytopes)
 
-# Polytopes for music segmentation #
+## Polytopes for music segmentation
 
 Polytopic paradigms to study music, defined in {% cite marmoret2022polytopic %}, based on [2] and [3].
 

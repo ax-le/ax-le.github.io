@@ -9,7 +9,7 @@ github: https://gitlab.imt-atlantique.fr/a23marmo/nmf_bioacoustic
 
 [Link to the toolbox](https://gitlab.imt-atlantique.fr/a23marmo/nmf_bioacoustic)
 
-# nmf_bioacoustic: NMF to approach bioacoustic tasks
+## nmf_bioacoustic: NMF to approach bioacoustic tasks
 
 Hello!
 

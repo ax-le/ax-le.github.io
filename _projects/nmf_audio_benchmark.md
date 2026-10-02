@@ -1,7 +1,7 @@
 ---
 layout: page
 title: NMF audio benchmark
-description: Benchmarking NMF methods on audio tasks.
+description: A toolbox aimed at facilitating the benchmarking of NMF-based techniques in the context of audio processing.
 importance: 1
 category: toolbox
 github: https://github.com/ax-le/nmf_audio_benchmark/
@@ -11,10 +11,6 @@ toc:
 ---
 
 [Link to the toolbox](https://github.com/ax-le/nmf_audio_benchmark/)
-
-# NMF Audio Benchmark: Benchmarking audio tasks with NMF
-
-This is a toolbox aimed at facilitating the benchmarking of NMF-based techniques in the context of audio processing.
 
 ## TL;DR
 
@@ -29,7 +25,7 @@ This toolbox is mainly intended for researchers developing new low-rank factoriz
 
 **This toolbox is still under active development. Any help or comment is welcomed!**
 
-## Summary
+## NMF Audio Benchmark: Benchmarking audio tasks with NMF
 
 Nonnegative Matrix Factorization (NMF) is a numerical linear algebra technique, with applications for modeling and analyzing audio data. It has been successfully applied to a range of Music Information Retrieval (MIR) tasks, and notably music source separation [VVG18], automatic music transcription [Ben+18], and music structure analysis [Nie+20]. It has also been applied to other audio domains (such as Speech Processing and ecoacoustics) but, in a first approximation, we focus towards MIR applications, with the hope that future work will expand to numerous audio domains.
 
@@ -97,9 +93,9 @@ The toolbox is separated in four modules:
 
 ```mermaid
 graph LR
-  Data["dataloaders<br/>(datasets + preprocessing)"] --> Tasks["tasks<br/>(MSS, transcription, MSA)"]
-  Algo["algorithms<br/>(NMF variants)"] --> Tasks
-  Tasks --> Bench["benchmarks<br/>(Hydra-configured runs)"]
+  Data["dataloaders<br/>(datasets + preprocessing)"] --> Bench["benchmarks<br/>(Hydra-configured runs)"]
+  Algo["algorithms<br/>(NMF variants)"] --> Bench
+  Tasks["tasks<br/>(MSS, transcription, MSA)"] --> Bench
 ```
 
 The modular design is justified by the fact that, as such, it is possible to add any component (algorithm, task, dataset, or benchmark) without having to tackle the other aspects. Hence, we hope that communities specialized in one of these aspects will be able to contribute.

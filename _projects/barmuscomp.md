@@ -1,7 +1,7 @@
 ---
 layout: page
 title: BarMusComp
-description: Barwise music compression schemes.
+description: Barwise music compression schemes. It's a toolbox that regroups most methods used/developed during my PhD.
 importance: 3
 category: toolbox
 github: https://gitlab.imt-atlantique.fr/a23marmo/barmuscomp
@@ -12,7 +12,7 @@ toc:
 
 [Link to the toolbox](https://gitlab.imt-atlantique.fr/a23marmo/barmuscomp)
 
-# BarMusComp: Encoding songs with linear and nonlinear compression methods to reveal structure #
+## BarMusComp: Encoding songs with linear and nonlinear compression methods to reveal structure
 
 Hello, and welcome on this repository!
 

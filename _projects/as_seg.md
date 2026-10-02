@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Autosimilarity Segmentation
-description: Toolbox to segment autosimilarity matrices
+description: Toolbox to segment autosimilarity matrices.
 importance: 2
 category: toolbox
 github: https://gitlab.imt-atlantique.fr/a23marmo/autosimilarity_segmentation
@@ -12,7 +12,7 @@ toc:
 
 [Link to the toolbox](https://gitlab.imt-atlantique.fr/a23marmo/autosimilarity_segmentation)
 
-# as_seg: module for computing and segmenting autosimilarity matrices.
+## as_seg: module for computing and segmenting autosimilarity matrices.
 
 Hello, and welcome on this repository!
 

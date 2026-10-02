@@ -7,7 +7,7 @@ category: students
 github: https://github.com/inria-emeraude/syfala
 ---
 
-# Vocoder on a FPGA
+## Vocoder on a FPGA
 
 This project aimed to develop an innovative, open-source portable synthesizer based on FPGA (Field-Programmable Gate Array) technology. The core objective was to achieve real-time audio processing by using as few resources as possible. The final project leaded to a contribution to the [open-source toolbox Syfala](https://github.com/inria-emeraude/syfala/tree/main).
 

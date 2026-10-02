@@ -1,7 +1,7 @@
 ---
 layout: page
 title: MusAIc (ANR JCJC 2025)
-description: Steerable and Interpretable Music Analysis through Hybrid Models.
+description: An ANR JCJC funded project, covering the period 2026-2029, studying interpretable methods for Music Information Retrieval.
 importance: 1
 category: funding
 toc:
@@ -14,7 +14,7 @@ The **MusAIc** project is a 48-month research project, funded by ANR (ANR JCJC 2
 
 The project will fund one master's internship (starting in 2026), one Ph.D. (starting late 2026), and one 18-month post-doctoral position (starting 2028). The complete scientific proposal (20 pages) is available <a href="{{ '/assets/pdf/administrative/JCJC_MusAIc_phase_2.pdf' | relative_url }}">here</a>.
 
-# MusAIc: Steerable and Interpretable Music Analysis through Hybrid Models.
+## MusAIc: Steerable and Interpretable Music Analysis through Hybrid Models.
 
 Artificial Intelligence has made incredible strides in the world of music. From automatically transcribing piano pieces to separating individual instruments from a finished track, AI tools are rapidly advancing the field of Music Information Retrieval. However, for many developers and practicioners (musicians, musicologists, sound engineers, ...), these tools may feel like a "black box": they produce impressive results, but it is quite hard to decipher how they work or guide them to fit our specific artistic or analytical needs.
 
