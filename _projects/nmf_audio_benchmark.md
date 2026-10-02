@@ -8,6 +8,9 @@ github: https://github.com/ax-le/nmf_audio_benchmark/
 # giscus_comments: true # re-enable once giscus.repo / repo_id / category_id are set in _config.yml (see https://giscus.app)
 toc:
   sidebar: left
+mermaid:
+  enabled: true
+  zoomable: true
 ---
 
 [Link to the toolbox](https://github.com/ax-le/nmf_audio_benchmark/)

@@ -11,7 +11,7 @@ profile:
   more_info: >
     <!-- <h5>Inspirational quote:</h5> -->
     <blockquote><a href='https://youtu.be/H105PJP-SHA?si=f4ocpTfx4WoPwu2s'>&quot;...&quot;</a>
-    <p><i>L'âne rouge</i>, <b>L'Effondras<b></p></blockquote> 
+    <p><i>L'âne rouge</i>, <b>L'Effondras</b></p></blockquote> 
     
     
 

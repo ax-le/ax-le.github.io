@@ -6,6 +6,9 @@ importance: 1
 category: funding
 toc:
   sidebar: left
+mermaid:
+  enabled: true
+  zoomable: true
 ---
 ## TL;DR
 The **MusAIc** project is a 48-month research project, funded by ANR (ANR JCJC 2025 - CE23), that aims to develop Artificial Intelligence (AI) models for music analysis that are efficient, steerable, and interpretable, by bridging low-rank factorization and deep learning methods.
@@ -48,8 +51,9 @@ graph TD
   WP1 --> WP3
   WP2 --> WP3
   WP3 --> WP4
-  WP4 -.feedback.-> WP1
-  WP4 -.feedback.-> WP2
+  WP1 <-. feedback .-> WP4
+  WP2 <-. feedback .-> WP4
+  linkStyle 3,4 marker-end:none
 ```
 
 ## Which musical tasks could be tackled?
