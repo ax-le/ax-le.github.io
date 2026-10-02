@@ -215,17 +215,17 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-anatieba-anr-prc-2026",
           title: 'ANATIEBA (ANR PRC 2026)',
-          description: "Automatic Analysis of the Temperaments of Historical Instruments and Recordings, from Brittany and Elsewhere.",
+          description: "An ANR PRC funding, covering the 2026-2029 period, about the study of historical recordings of brittany music.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/anatieba/";
             },},{id: "projects-autosimilarity-segmentation",
           title: 'Autosimilarity Segmentation',
-          description: "Toolbox to segment autosimilarity matrices",
+          description: "Toolbox to segment autosimilarity matrices.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/as_seg/";
             },},{id: "projects-automashup",
           title: 'AutoMashup',
-          description: "Automatically creating mashup songs.",
+          description: "A toolbox to automatically create musical mashups.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/automashup/";
             },},{id: "projects-automatic-karaoke",
@@ -235,27 +235,27 @@ ninja.data = [{
               window.location.href = "/projects/automatic_karaoke/";
             },},{id: "projects-barmuscomp",
           title: 'BarMusComp',
-          description: "Barwise music compression schemes.",
+          description: "Barwise music compression schemes. It&#39;s a toolbox that regroups most methods used/developed during my PhD.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/barmuscomp/";
             },},{id: "projects-base-audio",
           title: 'base_audio',
-          description: "Easy handle to compute spectrogram and everything.",
+          description: "Small toolbox I use to compute spectrogram and everything.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/base_audio/";
             },},{id: "projects-musaic-anr-jcjc-2025",
           title: 'MusAIc (ANR JCJC 2025)',
-          description: "Steerable and Interpretable Music Analysis through Hybrid Models.",
+          description: "An ANR JCJC funded project, covering the period 2026-2029, studying interpretable methods for Music Information Retrieval.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/musaic/";
             },},{id: "projects-musiconpolytopes",
           title: 'MusicOnPolytopes',
-          description: "Polytopical analysis of music.",
+          description: "Polytopical analysis of music. A toolbox building on old work, developed during my PhD.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/musiconpolytopes/";
             },},{id: "projects-nmf-audio-benchmark",
           title: 'NMF audio benchmark',
-          description: "Benchmarking NMF methods on audio tasks.",
+          description: "A toolbox aimed at facilitating the benchmarking of NMF-based techniques in the context of audio processing.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/nmf_audio_benchmark/";
             },},{id: "projects-nmf-for-bioacoustic",
