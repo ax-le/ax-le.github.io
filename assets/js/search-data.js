@@ -84,11 +84,6 @@ ninja.data = [{
           description: "",
           section: "Music",handler: () => {
               window.location.href = "/music/c_dead_weather/";
-            },},{id: "music-c-deftones-copy",
-          title: 'C_deftones copy',
-          description: "",
-          section: "Music",handler: () => {
-              window.location.href = "/music/c_deftones%20copy/";
             },},{id: "music-c-deftones",
           title: 'C_deftones',
           description: "",
@@ -119,6 +114,11 @@ ninja.data = [{
           description: "",
           section: "Music",handler: () => {
               window.location.href = "/music/c_kyuss/";
+            },},{id: "music-c-lamb-of-god",
+          title: 'C_lamb_of_god',
+          description: "",
+          section: "Music",handler: () => {
+              window.location.href = "/music/c_lamb_of_god/";
             },},{id: "music-c-meshuggah",
           title: 'C_meshuggah',
           description: "",
