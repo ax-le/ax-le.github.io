@@ -378,6 +378,11 @@ ninja.data = [{
           description: "",
           section: "Talks",handler: () => {
               window.location.href = "/talks/ose_24/";
+            },},{id: "talks-unsupervised-machine-learning-paradigms-for-the-representation-of-music-similarity-and-structure",
+          title: 'Unsupervised Machine Learning Paradigms for the Representation of Music Similarity and Structure.',
+          description: "",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/phd_defense_22/";
             },},{id: "talks-des-machines-mélomanes-l-39-intelligence-artificielle-permet-elle-de-développer-des-machines-qui-comprennent-la-musique",
           title: 'Des Machines Mélomanes ! L&amp;#39;Intelligence Artificielle permet-elle de développer des machines qui comprennent...',
           description: "",
