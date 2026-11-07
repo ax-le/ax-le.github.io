@@ -1,5 +1,5 @@
 <div class="col mb-4">  
-{% if talk.record %}<a href="{{ talk.record }}">{% endif %}
+{% if talk.record and talk.slides == nil %}<a href="{{ talk.record }}">{% endif %}
 
     <div class="card h-100 hoverable">
       <div class="row no-gutters">               
@@ -9,9 +9,10 @@
                   <h4 class="card-title">{{ talk.organization }} | {{ talk.type }}</h4>
                   <h5><em>"{{ talk.title }}"</em></h5>
                       {% if talk.description %}<p class="card-text">{{ talk.description }}</p>{% endif %}
+                      {% if talk.slides %}<p class="card-text">{% if talk.record %}<a href="{{ talk.record }}">Video</a> · {% endif %}<a href="{{ talk.slides | relative_url }}">Slides</a></p>{% endif %}
                 </div>
               </div>
       </div>
     </div>
-{% if talk.record %}</a>{% endif %}
+{% if talk.record and talk.slides == nil %}</a>{% endif %}
 </div>

@@ -177,8 +177,9 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages", "_scripts"]
+include: ["_pages", "_scripts", ".nojekyll"] # .nojekyll: GitHub Pages then serves the built site as it is (folders starting with "_" too)
 exclude:
+  - assets/talks/ # static Quarto slide decks: copied into _site after the build (.github/workflows/deploy.yml), never processed
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md

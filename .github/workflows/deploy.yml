@@ -98,6 +98,12 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+      - name: Add the static talks 🎤
+        run: |
+          # Quarto slide decks (assets/talks/NAME/index.html …): copied as they are, after the build
+          # and the CSS purge (Jekyll would skip their _extensions/ folder and minify their CSS and JS)
+          mkdir -p _site/assets/talks
+          cp -r assets/talks/. _site/assets/talks/
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4

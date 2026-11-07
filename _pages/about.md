@@ -35,7 +35,7 @@ My name is Axel Marmoret, and I am a tenured Assistant Professor at <a href='htt
 
 I study Audio Signal Processing (in particular Music, and starting underwater bioacoustics) by leveraging Machine Learning methods (mainly Low-rank Factorization, Deep Learning methods, and intersection between both).
 
-I received my Ph.D. in 2022 from Université de Rennes, where I was working on automatic structural segmentation of music (audio signals), under the supervision of Jérémy Cohen, Nancy Bertin, and Frédéric Bimbot. You can find the manuscript <a href="https://hal.science/hal-02928733v1">here</a> and watch the defense <a href="https://www.youtube.com/live/Mw7WiuDlQjs?si=hbvqe5u4oyKkoQR3">here</a>. Prior to that, I graduated as an engineer from Mines Douai, now <a href="https://imt-nord-europe.fr/">IMT Nord Europe</a>.
+I received my Ph.D. in 2022 from Université de Rennes, where I was working on automatic structural segmentation of music (audio signals), under the supervision of Jérémy Cohen, Nancy Bertin, and Frédéric Bimbot. You can find the manuscript <a href="https://hal.science/hal-02928733v1">here</a>, watch the defense <a href="https://www.youtube.com/live/Mw7WiuDlQjs?si=hbvqe5u4oyKkoQR3">here</a>, and you will find the slides (now in HTML) <a href="{{ '/assets/talks/phd_defense/' | relative_url }}">here</a>. Prior to that, I graduated as an engineer from Mines Douai, now <a href="https://imt-nord-europe.fr/">IMT Nord Europe</a>.
 
 Finally, I am a music lover, and a musician. I play drums (since 20 years or so), and, when I find time, bass (started 5 years ago).
 
