@@ -121,14 +121,18 @@
   title={Unsupervised Evaluation of Deep Audio Embeddings for Music Structure Analysis},
   author={Marmoret*, Axel},
   annotation={* IMT Atlantique, Lab-STICC, UMR CNRS 6285, F-29238 Brest, France.},
-  booktitle={{23rd Sound and Music Computing Conference (SMC)}}, 
+  booktitle = {Proceedings of the 23rd Sound and Music Computing Conference (SMC2026), Zagreb, November 2026},
   year={2026},
+  pages = {242-249},
+  publisher = {Music Biennale Zagreb (MBZ)},
   month={Nov},
+  venue = {Zagreb, Croatia},
   pdf={https://arxiv.org/pdf/2603.27218},
   poster={posters/SMC26_unsupervised.pdf},
   code={https://github.com/ax-le/msa_deep_embeddings},
+  doi = {10.5281/zenodo.24024236},
+  url = {https://doi.org/10.5281/zenodo.24024236},
   abstract={Music Structure Analysis (MSA) aims to uncover the high-level organization of musical pieces. State-of-the-art methods are often based on supervised deep learning, but these methods are bottlenecked by the need for heavily annotated data and inherent structural ambiguities. In this paper, we propose an unsupervised evaluation of nine open-source, generic pre-trained deep audio models, on MSA. For each model, we extract barwise embeddings and segment them using three unsupervised segmentation algorithms (Foote's checkerboard kernels, spectral clustering, and Correlation Block-Matching (CBM)), focusing exclusively on boundary retrieval. Our results demonstrate that modern, generic deep embeddings generally outperform traditional spectrogram-based baselines, but not systematically. Furthermore, our unsupervised boundary estimation methodology generally yields stronger performance than recent linear probing baselines. Among the evaluated techniques, the CBM algorithm consistently emerges as the most effective downstream segmentation method. Finally, we highlight the artificial inflation of standard evaluation metrics and advocate for the systematic adoption of ``trimming'', or even ``double trimming'' annotations to establish more rigorous MSA evaluation standards.},
-  additional_info={. To be published at SMC 2026},
 }
 
 @inproceedings{lys2026residual,
@@ -143,7 +147,6 @@
   pdf={https://arxiv.org/pdf/2602.14760},
   code={https://github.com/jonathanlys01/causal-shift},
   abstract={Large Language Models (LLMs) are trained with next-token prediction, implemented in autoregressive Transformers via causal masking for parallelism. This creates a subtle misalignment: residual connections tie activations to the current token, while supervision targets the next token, potentially propagating mismatched information if the current token is not the most informative for prediction. In this work, we empirically localize this input-output alignment shift in pretrained LLMs, using decoding trajectories over tied embedding spaces and similarity-based metrics. Our experiments reveal that the hidden token representations switch from input alignment to output alignment deep within the network. Motivated by this observation, we propose a lightweight residual-path mitigation based on residual attenuation, implemented either as a fixed-layer intervention or as a learnable gating mechanism. Experiments on multiple benchmarks show that these strategies alleviate the representation misalignment and yield improvements, providing an efficient and general architectural enhancement for autoregressive Transformers.},
-  additional_info={. To be published at EUSIPCO 2026},
 }
 
 @inproceedings{lys2026inner,
@@ -158,7 +161,6 @@
   pdf={https://arxiv.org/pdf/2602.14759},
   code={https://github.com/jonathanlys01/looped-transformer},
   abstract={Deep Learning architectures, and in particular Transformers, are conventionally viewed as a composition of layers. These layers are actually often obtained as the sum of two contributions: a residual path that copies the input and the output of a Transformer block. As a consequence, the inner representations (i.e. the input of these blocks) can be interpreted as iterative refinement of a propagated latent representation. Under this lens, many works suggest that the inner space is shared across layers, meaning that tokens can be decoded at early stages. Mechanistic interpretability even goes further by conjecturing that some layers act as refinement layers. Following this path, we propose inference-time inner looping, which prolongs refinement in pretrained off-the-shelf language models by repeatedly re-applying a selected block range. Across multiple benchmarks, inner looping yields modest but consistent accuracy improvements. Analyses of the resulting latent trajectories suggest more stable state evolution and continued semantic refinement. Overall, our results suggest that additional refinement can be obtained through simple test-time looping, extending computation in frozen pretrained models.},
-  additional_info={. To be published at EUSIPCO 2026},
 }
 
 # Nat Conf
